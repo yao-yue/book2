@@ -1,0 +1,1367 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 16 Templates And Generic Programming · yaoyue 的随笔</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yaoyue">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter-17 Specialized Library Facilities/" />
+    
+    
+    <link rel="prev" href="../Chapter-15 Object-Oriented Programming/" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"yao-yue","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"yao-yue","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter-1 Getting Started/">
+            
+                <a href="../Chapter-1 Getting Started/">
+            
+                    
+                    Chapter 1 Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter-2 Variables and Basic Types/">
+            
+                <a href="../Chapter-2 Variables and Basic Types/">
+            
+                    
+                    Chapter 2 Variables And Basic Types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter-2 Variables and Basic Types/1-基本内置类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/1-基本内置类型.html">
+            
+                    
+                    基本内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter-2 Variables and Basic Types/2-变量.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/2-变量.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chapter-2 Variables and Basic Types/3-复合类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/3-复合类型.html">
+            
+                    
+                    复合类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Chapter-2 Variables and Basic Types/4-const限定符.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/4-const限定符.html">
+            
+                    
+                    Const限定符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Chapter-2 Variables and Basic Types/5-处理类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/5-处理类型.html">
+            
+                    
+                    处理类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Chapter-2 Variables and Basic Types/6-自定义数据结构.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/6-自定义数据结构.html">
+            
+                    
+                    自定义数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter-3 Strings, Vectors, and Arrays/">
+            
+                <a href="../Chapter-3 Strings, Vectors, and Arrays/">
+            
+                    
+                    Chapter 3 Strings, Vectors, And Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter-4 Expressions/">
+            
+                <a href="../Chapter-4 Expressions/">
+            
+                    
+                    Chapter 4 Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter-5 Statements/">
+            
+                <a href="../Chapter-5 Statements/">
+            
+                    
+                    Chapter 5 Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter-6 Functions/">
+            
+                <a href="../Chapter-6 Functions/">
+            
+                    
+                    Chapter 6 Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter-7 Classes/">
+            
+                <a href="../Chapter-7 Classes/">
+            
+                    
+                    Chapter 7 Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Chapter-8 The IO Library/">
+            
+                <a href="../Chapter-8 The IO Library/">
+            
+                    
+                    Chapter 8 The IO Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Chapter-9 Sequential Containers/">
+            
+                <a href="../Chapter-9 Sequential Containers/">
+            
+                    
+                    Chapter 9 Sequential Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Chapter-10 Generic Algorithms/">
+            
+                <a href="../Chapter-10 Generic Algorithms/">
+            
+                    
+                    Chapter 10 Generic Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Chapter-11 Associative Containers/">
+            
+                <a href="../Chapter-11 Associative Containers/">
+            
+                    
+                    Chapter 11 Associative Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Chapter-12 Dynamic Memory/">
+            
+                <a href="../Chapter-12 Dynamic Memory/">
+            
+                    
+                    Chapter 12 Dynamic Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Chapter-13 Copy Control/">
+            
+                <a href="../Chapter-13 Copy Control/">
+            
+                    
+                    Chapter 13 Copy Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Chapter-14 Overloaded Operations and Conversions/">
+            
+                <a href="../Chapter-14 Overloaded Operations and Conversions/">
+            
+                    
+                    Chapter 14 Overloaded Operations And Conversions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Chapter-15 Object-Oriented Programming/">
+            
+                <a href="../Chapter-15 Object-Oriented Programming/">
+            
+                    
+                    Chapter 15 Object Oriented Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter 16 Templates And Generic Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../Chapter-17 Specialized Library Facilities/">
+            
+                <a href="../Chapter-17 Specialized Library Facilities/">
+            
+                    
+                    Chapter 17 Specialized Library Facilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../Chapter-18 Tools for Large Programs/">
+            
+                <a href="../Chapter-18 Tools for Large Programs/">
+            
+                    
+                    Chapter 18 Tools For Large Programs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../Chapter-19 Specialized Tools and Techniques/">
+            
+                <a href="../Chapter-19 Specialized Tools and Techniques/">
+            
+                    
+                    Chapter 19 Specialized Tools And Techniques
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Chapter 16 Templates And Generic Programming</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;16&#x7AE0;-&#x6A21;&#x677F;&#x4E0E;&#x6CDB;&#x578B;&#x7F16;&#x7A0B;"><b></b>&#x7B2C;16&#x7AE0; &#x6A21;&#x677F;&#x4E0E;&#x6CDB;&#x578B;&#x7F16;&#x7A0B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#xFF08;defining-a-template&#xFF09;"><b></b>&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#xFF08;Defining a Template&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;function-templates&#xFF09;"><b></b>&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;Function Templates&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x7C7B;&#x6A21;&#x677F;&#xFF08;class-templates&#xFF09;"><b></b>&#x7C7B;&#x6A21;&#x677F;&#xFF08;Class Templates&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x6A21;&#x677F;&#x53C2;&#x6570;&#xFF08;template-parameters&#xFF09;"><b></b>&#x6A21;&#x677F;&#x53C2;&#x6570;&#xFF08;Template Parameters&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x6210;&#x5458;&#x6A21;&#x677F;&#xFF08;member-templates&#xFF09;"><b></b>&#x6210;&#x5458;&#x6A21;&#x677F;&#xFF08;Member Templates&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x63A7;&#x5236;&#x5B9E;&#x4F8B;&#x5316;&#xFF08;controlling-instantiations&#xFF09;"><b></b>&#x63A7;&#x5236;&#x5B9E;&#x4F8B;&#x5316;&#xFF08;Controlling Instantiations&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x6548;&#x7387;&#x4E0E;&#x7075;&#x6D3B;&#x6027;&#xFF08;efficiency-and-flexibility&#xFF09;"><b></b>&#x6548;&#x7387;&#x4E0E;&#x7075;&#x6D3B;&#x6027;&#xFF08;Efficiency and Flexibility&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#xFF08;template-argument-deduction&#xFF09;"><b></b>&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#xFF08;Template Argument Deduction&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF08;conversions-and-template-type-parameters&#xFF09;"><b></b>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF08;Conversions and Template Type Parameters&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x6A21;&#x677F;&#x663E;&#x5F0F;&#x5B9E;&#x53C2;&#xFF08;function-template-explicit-arguments&#xFF09;"><b></b>&#x51FD;&#x6570;&#x6A21;&#x677F;&#x663E;&#x5F0F;&#x5B9E;&#x53C2;&#xFF08;Function-Template Explicit Arguments&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5C3E;&#x7F6E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E0E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;trailing-return-types-and-type-transformation&#xFF09;"><b></b>&#x5C3E;&#x7F6E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E0E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;Trailing Return Types and Type Transformation&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x6307;&#x9488;&#x548C;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#xFF08;function-pointers-and-argument-deduction&#xFF09;"><b></b>&#x51FD;&#x6570;&#x6307;&#x9488;&#x548C;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#xFF08;Function Pointers and Argument Deduction&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#x548C;&#x5F15;&#x7528;&#xFF08;template-argument-deduction-and-references&#xFF09;"><b></b>&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#x548C;&#x5F15;&#x7528;&#xFF08;Template Argument Deduction and References&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x7406;&#x89E3;stdmove&#xFF08;understanding-stdmove&#xFF09;"><b></b>&#x7406;&#x89E3;std::move&#xFF08;Understanding std::move&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x8F6C;&#x53D1;&#xFF08;forwarding&#xFF09;"><b></b>&#x8F6C;&#x53D1;&#xFF08;Forwarding&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x91CD;&#x8F7D;&#x4E0E;&#x6A21;&#x677F;&#xFF08;overloading-and-templates&#xFF09;"><b></b>&#x91CD;&#x8F7D;&#x4E0E;&#x6A21;&#x677F;&#xFF08;Overloading and Templates&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x6A21;&#x677F;&#xFF08;variadic-templates&#xFF09;"><b></b>&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x6A21;&#x677F;&#xFF08;Variadic Templates&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7F16;&#x5199;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;writing-a-variadic-function-template&#xFF09;"><b></b>&#x7F16;&#x5199;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;Writing a Variadic Function Template&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5305;&#x6269;&#x5C55;&#xFF08;pack-expansion&#xFF09;"><b></b>&#x5305;&#x6269;&#x5C55;&#xFF08;Pack Expansion&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x8F6C;&#x53D1;&#x53C2;&#x6570;&#x5305;&#xFF08;forwarding-parameter-packs&#xFF09;"><b></b>&#x8F6C;&#x53D1;&#x53C2;&#x6570;&#x5305;&#xFF08;Forwarding Parameter Packs&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6A21;&#x677F;&#x7279;&#x4F8B;&#x5316;&#xFF08;template-specializations&#xFF09;"><b></b>&#x6A21;&#x677F;&#x7279;&#x4F8B;&#x5316;&#xFF08;Template Specializations&#xFF09;</a></li></ul></ul></div><a href="#&#x7B2C;16&#x7AE0;-&#x6A21;&#x677F;&#x4E0E;&#x6CDB;&#x578B;&#x7F16;&#x7A0B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;16&#x7AE0;-&#x6A21;&#x677F;&#x4E0E;&#x6CDB;&#x578B;&#x7F16;&#x7A0B;"><a name="&#x7B2C;16&#x7AE0;-&#x6A21;&#x677F;&#x4E0E;&#x6CDB;&#x578B;&#x7F16;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;16&#x7AE0;-&#x6A21;&#x677F;&#x4E0E;&#x6CDB;&#x578B;&#x7F16;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;16&#x7AE0; &#x6A21;&#x677F;&#x4E0E;&#x6CDB;&#x578B;&#x7F16;&#x7A0B;</h1>
+<h2 id="&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#xFF08;defining-a-template&#xFF09;"><a name="&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#xFF08;defining-a-template&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#xFF08;defining-a-template&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#xFF08;Defining a Template&#xFF09;</h2>
+<h3 id="&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;function-templates&#xFF09;"><a name="&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;function-templates&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;function-templates&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;Function Templates&#xFF09;</h3>
+<p>&#x51FD;&#x6570;&#x6A21;&#x677F;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x751F;&#x6210;&#x9488;&#x5BF9;&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x51FD;&#x6570;&#x7248;&#x672C;&#x3002;</p>
+<p>&#x6A21;&#x677F;&#x5B9A;&#x4E49;&#x4EE5;&#x5173;&#x952E;&#x5B57;<code>template</code>&#x5F00;&#x59CB;&#xFF0C;&#x540E;&#x8DDF;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF08;template parameter list&#xFF09;&#x3002;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4EE5;&#x5C16;&#x62EC;&#x53F7;<code>&lt;&gt;</code>&#x5305;&#x56F4;&#xFF0C;&#x5185;&#x542B;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6A21;&#x677F;&#x53C2;&#x6570;&#xFF08;template parameter&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+int compare(const T &amp;v1, const T &amp;v2)
+{
+    if (v1 &lt; v2) return -1;
+    if (v2 &lt; v1) return 1;
+    return 0;
+}
+</code></pre>
+<p>&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#x65F6;&#xFF0C;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x3002;</p>
+<p>&#x6A21;&#x677F;&#x53C2;&#x6570;&#x8868;&#x793A;&#x5728;&#x7C7B;&#x6216;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x4E2D;&#x7528;&#x5230;&#x7684;&#x7C7B;&#x578B;&#x6216;&#x503C;&#x3002;&#x5F53;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x663E;&#x5F0F;&#x6216;&#x9690;&#x5F0F;&#x5730;&#x6307;&#x5B9A;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#xFF08;template argument&#xFF09;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x7ED1;&#x5B9A;&#x5230;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x4E0A;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x65F6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x7528;&#x63A8;&#x65AD;&#x51FA;&#x7684;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x6765;&#x5B9E;&#x4F8B;&#x5316;&#xFF08;instantiate&#xFF09;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E9B;&#x751F;&#x6210;&#x7684;&#x51FD;&#x6570;&#x901A;&#x5E38;&#x88AB;&#x79F0;&#x4E3A;&#x6A21;&#x677F;&#x7684;&#x5B9E;&#x4F8B;&#xFF08;instantiation&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// instantiates int compare(const int&amp;, const int&amp;)
+cout &lt;&lt; compare(1, 0) &lt;&lt; endl;    // T is int
+// instantiates int compare(const vector<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>&amp;, const vector<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>&amp;)
+vector<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span> vec1{1, 2, 3}, vec2{4, 5, 6};
+cout &lt;&lt; compare(vec1, vec2) &lt;&lt; endl;    // T is vector<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF08;type parameter&#xFF09;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x6216;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#xFF0C;&#x4EE5;&#x53CA;&#x5728;&#x51FD;&#x6570;&#x4F53;&#x5185;&#x7528;&#x4E8E;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x548C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x524D;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;<code>class</code>&#x6216;<code>typename</code>&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// ok: same type used for the return type and parameter
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+T foo(T* p)
+{
+    T tmp = *p; // tmp will have the type to which p points
+    // ...
+    return tmp;
+}
+
+// error: must precede U with either typename or class
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T,</span> <span class="token attr-name">U</span><span class="token punctuation">&gt;</span></span> T calc(const T&amp;, const U&amp;);
+// ok: no distinction between typename and class in a template parameter list
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T,</span> <span class="token attr-name">class</span> <span class="token attr-name">U</span><span class="token punctuation">&gt;</span></span> calc (const T&amp;, const U&amp;);
+</code></pre>
+<p>&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;<code>typename</code>&#x800C;&#x4E0D;&#x662F;<code>class</code>&#x6765;&#x6307;&#x5B9A;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x6837;&#x66F4;&#x52A0;&#x76F4;&#x89C2;&#x3002;</p>
+<p>&#x6A21;&#x677F;&#x975E;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF08;nontype parameter&#xFF09;&#x9700;&#x8981;&#x7528;&#x7279;&#x5B9A;&#x7684;&#x7C7B;&#x578B;&#x540D;&#x6765;&#x6307;&#x5B9A;&#xFF0C;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x503C;&#x800C;&#x975E;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x3002;&#x975E;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x662F;&#x6574;&#x578B;&#x3001;&#x6307;&#x5411;&#x5BF9;&#x8C61;&#x6216;&#x51FD;&#x6570;&#x7C7B;&#x578B;&#x7684;&#x6307;&#x9488;&#x6216;&#x5DE6;&#x503C;&#x5F15;&#x7528;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>unsigned</span> <span class="token attr-name">N,</span> <span class="token attr-name">unsigned</span> <span class="token attr-name">M</span><span class="token punctuation">&gt;</span></span>
+int compare(const char (&amp;p1)[N], const char (&amp;p2)[M])
+{
+    return strcmp(p1, p2);
+}
+
+int compare(const char (&amp;p1)[3], const char (&amp;p2)[4]);
+</code></pre>
+<p>&#x7ED1;&#x5B9A;&#x5230;&#x6574;&#x578B;&#x975E;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x5B9E;&#x53C2;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x7ED1;&#x5B9A;&#x5230;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#x975E;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x5B9E;&#x53C2;&#x5FC5;&#x987B;&#x5177;&#x6709;&#x9759;&#x6001;&#x7684;&#x751F;&#x5B58;&#x671F;&#xFF0C;&#x4E0D;&#x80FD;&#x7528;&#x666E;&#x901A;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x6216;&#x52A8;&#x6001;&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#x975E;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x5B9E;&#x53C2;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x6A21;&#x677F;&#x4E5F;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x4E3A;<code>inline</code>&#x6216;<code>constexpr</code>&#x7684;&#xFF0C;&#x8BF4;&#x660E;&#x7B26;&#x653E;&#x5728;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E4B;&#x540E;&#xFF0C;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E4B;&#x524D;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// ok: inline specifier follows the template parameter list
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> inline T min(const T&amp;, const T&amp;);
+// error: incorrect placement of the inline specifier
+inline template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> T min(const T&amp;, const T&amp;);
+</code></pre>
+<p>&#x6A21;&#x677F;&#x7A0B;&#x5E8F;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x51CF;&#x5C11;&#x5BF9;&#x5B9E;&#x53C2;&#x7C7B;&#x578B;&#x7684;&#x8981;&#x6C42;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// expected comparison
+if (v1 &lt; v2) return -1;
+if (v1 &gt; v2) return 1;
+return 0;
+
+// version of compare that will be correct even if used on pointers
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+int compare(const T &amp;v1, const T &amp;v2)
+{
+    if (less<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>()(v1, v2)) return -1;
+    if (less<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>()(v2, v1)) return 1;
+    return 0;
+}
+</code></pre>
+<p>&#x53EA;&#x6709;&#x5F53;&#x6A21;&#x677F;&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x65F6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x624D;&#x4F1A;&#x751F;&#x6210;&#x4EE3;&#x7801;&#x3002;&#x6B64;&#x65F6;&#x7F16;&#x8BD1;&#x5668;&#x9700;&#x8981;&#x638C;&#x63E1;&#x751F;&#x6210;&#x4EE3;&#x7801;&#x6240;&#x9700;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x56E0;&#x6B64;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x548C;&#x7C7B;&#x6A21;&#x677F;&#x6210;&#x5458;&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x901A;&#x5E38;&#x653E;&#x5728;&#x5934;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x65F6;&#xFF0C;&#x6240;&#x6709;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x7684;&#x540D;&#x5B57;&#x90FD;&#x5FC5;&#x987B;&#x662F;&#x53EF;&#x89C1;&#x7684;&#xFF0C;&#x8FD9;&#x662F;&#x7531;&#x6A21;&#x677F;&#x7684;&#x8BBE;&#x8BA1;&#x8005;&#x6765;&#x4FDD;&#x8BC1;&#x7684;&#x3002;&#x6A21;&#x677F;&#x8BBE;&#x8BA1;&#x8005;&#x5E94;&#x8BE5;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5934;&#x6587;&#x4EF6;&#xFF0C;&#x5305;&#x542B;&#x6A21;&#x677F;&#x5B9A;&#x4E49;&#x4EE5;&#x53CA;&#x5728;&#x7C7B;&#x6A21;&#x677F;&#x6216;&#x6210;&#x5458;&#x5B9A;&#x4E49;&#x4E2D;&#x7528;&#x5230;&#x7684;&#x6240;&#x6709;&#x540D;&#x5B57;&#x7684;&#x58F0;&#x660E;&#x3002;</p>
+<p>&#x8C03;&#x7528;&#x8005;&#x8D1F;&#x8D23;&#x4FDD;&#x8BC1;&#x4F20;&#x9012;&#x7ED9;&#x6A21;&#x677F;&#x7684;&#x5B9E;&#x53C2;&#x80FD;&#x6B63;&#x786E;&#x652F;&#x6301;&#x6A21;&#x677F;&#x6240;&#x8981;&#x6C42;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<h3 id="&#x7C7B;&#x6A21;&#x677F;&#xFF08;class-templates&#xFF09;"><a name="&#x7C7B;&#x6A21;&#x677F;&#xFF08;class-templates&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x6A21;&#x677F;&#xFF08;class-templates&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x6A21;&#x677F;&#xFF08;Class Templates&#xFF09;</h3>
+<p>&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7C7B;&#x6A21;&#x677F;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x63D0;&#x4F9B;&#x663E;&#x5F0F;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#xFF08;explicit template argument&#xFF09;&#x5217;&#x8868;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x6765;&#x5B9E;&#x4F8B;&#x5316;&#x51FA;&#x7279;&#x5B9A;&#x7684;&#x7C7B;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+class Blob
+{
+public:
+    Blob();
+    Blob(std::initializer_list<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span> il);
+    void push_back(const T &amp;t) { data-&gt;push_back(t); }
+    void push_back(T &amp;&amp;t) { data-&gt;push_back(std::move(t)); }
+    // ...
+
+private:
+    std::shared_ptr&lt;std::vector<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>&gt; data;
+};
+
+Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span> ia;   // empty Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>
+Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span> ia2 = { 0, 1, 2, 3, 4 };    // Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span> with five elements
+// these definitions instantiate two distinct Blob types
+Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span> names;     // Blob that holds strings
+Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>double</span><span class="token punctuation">&gt;</span></span> prices;    // different element type
+</code></pre>
+<p>&#x4E00;&#x4E2A;&#x7C7B;&#x6A21;&#x677F;&#x7684;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;&#x90FD;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x7C7B;&#xFF0C;&#x76F8;&#x4E92;&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x5173;&#x8054;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7C7B;&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x4F7F;&#x7528;&#x4E86;&#x53E6;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#xFF0C;&#x901A;&#x5E38;&#x4E0D;&#x4F1A;&#x5C06;&#x4E00;&#x4E2A;&#x5B9E;&#x9645;&#x7C7B;&#x578B;&#xFF08;&#x6216;&#x503C;&#xFF09;&#x7684;&#x540D;&#x5B57;&#x7528;&#x4F5C;&#x5176;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#xFF0C;&#x800C;&#x662F;&#x5C06;&#x6A21;&#x677F;&#x81EA;&#x5DF1;&#x7684;&#x53C2;&#x6570;&#x7528;&#x4F5C;&#x88AB;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x7684;&#x5B9E;&#x53C2;&#x3002;</p>
+<p>&#x7C7B;&#x6A21;&#x677F;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x5177;&#x6709;&#x548C;&#x7C7B;&#x6A21;&#x677F;&#x76F8;&#x540C;&#x7684;&#x6A21;&#x677F;&#x53C2;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x5B9A;&#x4E49;&#x5728;&#x7C7B;&#x6A21;&#x677F;&#x5916;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x4EE5;&#x5173;&#x952E;&#x5B57;<code>template</code>&#x5F00;&#x59CB;&#xFF0C;&#x540E;&#x8DDF;&#x7C7B;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5217;&#x8868;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+ret-type Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>::member-name(parm-list)
+</code></pre>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E00;&#x4E2A;&#x7C7B;&#x6A21;&#x677F;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x53EA;&#x6709;&#x5F53;&#x7A0B;&#x5E8F;&#x7528;&#x5230;&#x5B83;&#x65F6;&#x624D;&#x8FDB;&#x884C;&#x5B9E;&#x4F8B;&#x5316;&#x3002;</p>
+<p>&#x5728;&#x7C7B;&#x6A21;&#x677F;&#x81EA;&#x5DF1;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x540D;&#x800C;&#x4E0D;&#x7528;&#x63D0;&#x4F9B;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+class BlobPtr
+{
+public:
+    // &#x7C7B;&#x6A21;&#x677F;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x4E0D;&#x9700;&#x8981;&#x5199;&#x6210;BlobPtr<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>&#x5F62;&#x5F0F;
+    BlobPtr&amp; operator++();
+}
+
+// &#x7C7B;&#x5916;&#x5B9A;&#x4E49;&#x65F6;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x6A21;&#x677F;&#x5B9E;&#x53C2;
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+BlobPtr<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>&amp; BlobPtr<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>::operator++()
+{
+    // &#x8FDB;&#x5165;&#x7C7B;&#x6A21;&#x677F;&#x4F5C;&#x7528;&#x57DF;
+    BlobPtr Ret = *this;
+}
+</code></pre>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x7C7B;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x53CB;&#x5143;&#x58F0;&#x660E;&#x65F6;&#xFF0C;&#x7C7B;&#x4E0E;&#x53CB;&#x5143;&#x5404;&#x81EA;&#x662F;&#x5426;&#x662F;&#x6A21;&#x677F;&#x5E76;&#x65E0;&#x5173;&#x8054;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7C7B;&#x6A21;&#x677F;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x975E;&#x6A21;&#x677F;&#x53CB;&#x5143;&#xFF0C;&#x5219;&#x53CB;&#x5143;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x6240;&#x6709;&#x7C7B;&#x6A21;&#x677F;&#x5B9E;&#x4F8B;&#x3002;&#x5982;&#x679C;&#x53CB;&#x5143;&#x81EA;&#x8EAB;&#x662F;&#x6A21;&#x677F;&#xFF0C;&#x5219;&#x7C7B;&#x53EF;&#x4EE5;&#x7ED9;&#x6240;&#x6709;&#x53CB;&#x5143;&#x6A21;&#x677F;&#x5B9E;&#x4F8B;&#x6388;&#x4E88;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x53EA;&#x6388;&#x6743;&#x7ED9;&#x7279;&#x5B9A;&#x5B9E;&#x4F8B;&#x3002;</p>
+<ul>
+<li><p>&#x4E00;&#x5BF9;&#x4E00;&#x53CB;&#x5143;&#x5173;&#x7CFB;</p>
+<p>&#x4E3A;&#x4E86;&#x5F15;&#x7528;&#x6A21;&#x677F;&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x5B9E;&#x4F8B;&#xFF0C;&#x5FC5;&#x987B;&#x9996;&#x5148;&#x58F0;&#x660E;&#x6A21;&#x677F;&#x81EA;&#x8EAB;&#x3002;&#x6A21;&#x677F;&#x58F0;&#x660E;&#x5305;&#x62EC;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5217;&#x8868;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// forward declarations needed for friend declarations in Blob
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span><span class="token punctuation">&gt;</span></span> class BlobPtr;
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span><span class="token punctuation">&gt;</span></span> class Blob;    // needed for parameters in operator==
+
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+bool operator==(const Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>&amp;, const Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>&amp;);
+
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+class Blob
+{
+    // each instantiation of Blob grants access to the version of
+    // BlobPtr and the equality operator instantiated with the same type
+    friend class BlobPtr<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>;
+    friend bool operator==<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>(const Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>&amp;, const Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>&amp;);
+};
+</code></pre>
+</li>
+<li><p>&#x901A;&#x7528;&#x548C;&#x7279;&#x5B9A;&#x7684;&#x6A21;&#x677F;&#x53CB;&#x5143;&#x5173;&#x7CFB;</p>
+<p>&#x4E3A;&#x4E86;&#x8BA9;&#x6A21;&#x677F;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#x6210;&#x4E3A;&#x53CB;&#x5143;&#xFF0C;&#x53CB;&#x5143;&#x58F0;&#x660E;&#x4E2D;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x4E0E;&#x7C7B;&#x6A21;&#x677F;&#x672C;&#x8EAB;&#x4E0D;&#x540C;&#x7684;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// forward declaration necessary to befriend a specific instantiation of a template
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> class Pal;
+
+class C
+{ // C is an ordinary, nontemplate class
+    friend class Pal<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>C</span><span class="token punctuation">&gt;</span></span>;    // Pal instantiated with class C is a friend to C
+    // all instances of Pal2 are friends to C;
+    // no forward declaration required when we befriend all instantiations
+    template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> friend class Pal2;
+};
+
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+class C2
+{ // C2 is itself a class template
+    // each instantiation of C2 has the same instance of Pal as a friend
+    friend class Pal<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>;    // a template declaration for Pal must be in scope
+    // all instances of Pal2 are friends of each instance of C2, prior declaration needed
+    template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">X</span><span class="token punctuation">&gt;</span></span> friend class Pal2;
+    // Pal3 is a nontemplate class that is a friend of every instance of C2
+    friend class Pal3;      // prior declaration for Pal3 not needed
+};
+</code></pre>
+</li>
+</ul>
+<p>C++11&#x4E2D;&#xFF0C;&#x7C7B;&#x6A21;&#x677F;&#x53EF;&#x4EE5;&#x5C06;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x58F0;&#x660E;&#x4E3A;&#x53CB;&#x5143;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">Type</span><span class="token punctuation">&gt;</span></span>
+class Bar
+{
+    friend Type;   // grants access to the type used to instantiate Bar
+    // ...
+};
+</code></pre>
+<p>C++11&#x5141;&#x8BB8;&#x4F7F;&#x7528;<code>using</code>&#x4E3A;&#x7C7B;&#x6A21;&#x677F;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x522B;&#x540D;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> using twin = pair<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T,</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>;
+twin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span> authors;   // authors is a pair<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string,</span> <span class="token attr-name">string</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#x7C7B;&#x6A21;&#x677F;&#x53EF;&#x4EE5;&#x58F0;&#x660E;<code>static</code>&#x6210;&#x5458;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+class Foo
+{
+public:
+    static std::size_t count() { return ctr; }
+
+private:
+    static std::size_t ctr;
+};
+
+// instantiates static members Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span>::ctr and Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span>::count
+Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span> fs;
+// all three objects share the same Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>::ctr and Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>::count members
+Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span> fi, fi2, fi3;
+</code></pre>
+<p>&#x7C7B;&#x6A21;&#x677F;&#x7684;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x72EC;&#x6709;&#x7684;<code>static</code>&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x6BCF;&#x4E2A;<code>static</code>&#x6210;&#x5458;&#x5FC5;&#x987B;&#x6709;&#x4E14;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5B9A;&#x4E49;&#x3002;&#x56E0;&#x6B64;&#x4E0E;&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x7C7B;&#x4F3C;&#xFF0C;<code>static</code>&#x6210;&#x5458;&#x4E5F;&#x5E94;&#x8BE5;&#x5B9A;&#x4E49;&#x6210;&#x6A21;&#x677F;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+size_t Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>::ctr = 0;    // define and initialize ctr
+</code></pre>
+<h3 id="&#x6A21;&#x677F;&#x53C2;&#x6570;&#xFF08;template-parameters&#xFF09;"><a name="&#x6A21;&#x677F;&#x53C2;&#x6570;&#xFF08;template-parameters&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x677F;&#x53C2;&#x6570;&#xFF08;template-parameters&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6A21;&#x677F;&#x53C2;&#x6570;&#xFF08;Template Parameters&#xFF09;</h3>
+<p>&#x6A21;&#x677F;&#x53C2;&#x6570;&#x9075;&#x5FAA;&#x666E;&#x901A;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x89C4;&#x5219;&#x3002;&#x4E0E;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;&#x540D;&#x5B57;&#x4E00;&#x6837;&#xFF0C;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x4F1A;&#x9690;&#x85CF;&#x5916;&#x5C42;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x58F0;&#x660E;&#x7684;&#x76F8;&#x540C;&#x540D;&#x5B57;&#x3002;&#x4F46;&#x662F;&#x5728;&#x6A21;&#x677F;&#x5185;&#x4E0D;&#x80FD;&#x91CD;&#x7528;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x540D;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">typedef double A;
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">A,</span> <span class="token attr-name">typename</span> <span class="token attr-name">B</span><span class="token punctuation">&gt;</span></span>
+void f(A a, B b)
+{
+    A tmp = a;   // tmp has same type as the template parameter A, not double
+    double B;    // error: redeclares template parameter B
+}
+</code></pre>
+<p>&#x7531;&#x4E8E;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x540D;&#x4E0D;&#x80FD;&#x91CD;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#x5728;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E2D;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x4E00;&#x6B21;&#x3002;</p>
+<p>&#x4E0E;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x4E00;&#x6837;&#xFF0C;&#x58F0;&#x660E;&#x4E2D;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x7684;&#x540D;&#x5B57;&#x4E0D;&#x5FC5;&#x4E0E;&#x5B9A;&#x4E49;&#x4E2D;&#x7684;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x6587;&#x4EF6;&#x6240;&#x9700;&#x8981;&#x7684;&#x6240;&#x6709;&#x6A21;&#x677F;&#x58F0;&#x660E;&#x901A;&#x5E38;&#x4E00;&#x8D77;&#x653E;&#x7F6E;&#x5728;&#x6587;&#x4EF6;&#x5F00;&#x59CB;&#x4F4D;&#x7F6E;&#xFF0C;&#x51FA;&#x73B0;&#x5728;&#x4EFB;&#x4F55;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x6A21;&#x677F;&#x7684;&#x4EE3;&#x7801;&#x4E4B;&#x524D;&#x3002;</p>
+<p>&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x4F7F;&#x7528;&#x4F5C;&#x7528;&#x57DF;&#x8FD0;&#x7B97;&#x7B26;<code>::</code>&#x65F6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x65E0;&#x6CD5;&#x786E;&#x5B9A;&#x5176;&#x8BBF;&#x95EE;&#x7684;&#x540D;&#x5B57;&#x662F;&#x7C7B;&#x578B;&#x8FD8;&#x662F;<code>static</code>&#x6210;&#x5458;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;C++&#x5047;&#x5B9A;&#x6A21;&#x677F;&#x4E2D;&#x901A;&#x8FC7;&#x4F5C;&#x7528;&#x57DF;&#x8FD0;&#x7B97;&#x7B26;&#x8BBF;&#x95EE;&#x7684;&#x540D;&#x5B57;&#x662F;<code>static</code>&#x6210;&#x5458;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B;&#x6210;&#x5458;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;<code>typename</code>&#x663E;&#x5F0F;&#x5730;&#x544A;&#x77E5;&#x7F16;&#x8BD1;&#x5668;&#x8BE5;&#x540D;&#x5B57;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+typename T::value_type top(const T&amp; c)
+{
+    if (!c.empty())
+        return c.back();
+    else
+        return typename T::value_type();
+}
+</code></pre>
+<p>C++11&#x5141;&#x8BB8;&#x4E3A;&#x51FD;&#x6570;&#x548C;&#x7C7B;&#x6A21;&#x677F;&#x63D0;&#x4F9B;&#x9ED8;&#x8BA4;&#x5B9E;&#x53C2;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// compare has a default template argument, less<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>
+// and a default function argument, F()
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T,</span> <span class="token attr-name">typename</span> <span class="token attr-name">F</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> less&lt;T</span><span class="token punctuation">&gt;</span></span>&gt;
+int compare(const T &amp;v1, const T &amp;v2, F f = F())
+{
+    if (f(v1, v2)) return -1;
+    if (f(v2, v1)) return 1;
+    return 0;
+}
+</code></pre>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7C7B;&#x6A21;&#x677F;&#x4E3A;&#x5176;&#x6240;&#x6709;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x9ED8;&#x8BA4;&#x5B9E;&#x53C2;&#xFF0C;&#x5728;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x9ED8;&#x8BA4;&#x5B9E;&#x53C2;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x5728;&#x6A21;&#x677F;&#x540D;&#x540E;&#x9762;&#x8DDF;&#x4E00;&#x4E2A;&#x7A7A;&#x5C16;&#x62EC;&#x53F7;&#x5BF9;<code>&lt;&gt;</code>&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">T</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> int</span><span class="token punctuation">&gt;</span></span>
+class Numbers
+{ // by default T is int
+public:
+    Numbers(T v = 0): val(v) { }
+    // various operations on numbers
+private:
+    T val;
+};
+
+Numbers<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>long</span> <span class="token attr-name">double</span><span class="token punctuation">&gt;</span></span> lots_of_precision;
+Numbers&lt;&gt; average_precision;    // empty &lt;&gt; says we want the default type
+</code></pre>
+<h3 id="&#x6210;&#x5458;&#x6A21;&#x677F;&#xFF08;member-templates&#xFF09;"><a name="&#x6210;&#x5458;&#x6A21;&#x677F;&#xFF08;member-templates&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6210;&#x5458;&#x6A21;&#x677F;&#xFF08;member-templates&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6210;&#x5458;&#x6A21;&#x677F;&#xFF08;Member Templates&#xFF09;</h3>
+<p>&#x4E00;&#x4E2A;&#x7C7B;&#xFF08;&#x65E0;&#x8BBA;&#x662F;&#x666E;&#x901A;&#x7C7B;&#x8FD8;&#x662F;&#x6A21;&#x677F;&#x7C7B;&#xFF09;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x672C;&#x8EAB;&#x662F;&#x6A21;&#x677F;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x79CD;&#x6210;&#x5458;&#x88AB;&#x79F0;&#x4E3A;&#x6210;&#x5458;&#x6A21;&#x677F;&#x3002;&#x6210;&#x5458;&#x6A21;&#x677F;&#x4E0D;&#x80FD;&#x662F;&#x865A;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class DebugDelete
+{
+public:
+    DebugDelete(std::ostream &amp;s = std::cerr): os(s) { }
+    // as with any function template, the type of T is deduced by the compiler
+    template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+    void operator()(T *p) const
+    { 
+        os &lt;&lt; &quot;deleting unique_ptr&quot; &lt;&lt; std::endl;
+        delete p;
+    }
+
+private:
+    std::ostream <span class="token entity named-entity" title="&amp;os;">&amp;os;</span>
+};
+</code></pre>
+<p>&#x5728;&#x7C7B;&#x6A21;&#x677F;&#x5916;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6210;&#x5458;&#x6A21;&#x677F;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x540C;&#x65F6;&#x4E3A;&#x7C7B;&#x6A21;&#x677F;&#x548C;&#x6210;&#x5458;&#x6A21;&#x677F;&#x63D0;&#x4F9B;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5217;&#x8868;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+class Blob
+{
+    template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">It</span><span class="token punctuation">&gt;</span></span>
+    Blob(It b, It e);
+};
+
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>   // type parameter for the class
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">It</span><span class="token punctuation">&gt;</span></span>  // type parameter for the constructor
+Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>::Blob(It b, It e):
+    data(std::make_shared&lt;std::vector<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>&gt;(b, e))
+    { }
+</code></pre>
+<p>&#x4E3A;&#x4E86;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x7C7B;&#x6A21;&#x677F;&#x7684;&#x6210;&#x5458;&#x6A21;&#x677F;&#xFF0C;&#x5FC5;&#x987B;&#x540C;&#x65F6;&#x63D0;&#x4F9B;&#x7C7B;&#x548C;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x7684;&#x5B9E;&#x53C2;&#x3002;</p>
+<h3 id="&#x63A7;&#x5236;&#x5B9E;&#x4F8B;&#x5316;&#xFF08;controlling-instantiations&#xFF09;"><a name="&#x63A7;&#x5236;&#x5B9E;&#x4F8B;&#x5316;&#xFF08;controlling-instantiations&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x63A7;&#x5236;&#x5B9E;&#x4F8B;&#x5316;&#xFF08;controlling-instantiations&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A7;&#x5236;&#x5B9E;&#x4F8B;&#x5316;&#xFF08;Controlling Instantiations&#xFF09;</h3>
+<p>&#x56E0;&#x4E3A;&#x6A21;&#x677F;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#x624D;&#x4F1A;&#x8FDB;&#x884C;&#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x6240;&#x4EE5;&#x76F8;&#x540C;&#x7684;&#x5B9E;&#x4F8B;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x5728;&#x591A;&#x4E2A;&#x5BF9;&#x8C61;&#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x5F53;&#x4E24;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x72EC;&#x7ACB;&#x7F16;&#x8BD1;&#x7684;&#x6E90;&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x4E86;&#x76F8;&#x540C;&#x7684;&#x6A21;&#x677F;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4E86;&#x76F8;&#x540C;&#x7684;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x90FD;&#x4F1A;&#x6709;&#x8BE5;&#x6A21;&#x677F;&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x5728;&#x5927;&#x578B;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x5B9E;&#x4F8B;&#x5316;&#x76F8;&#x540C;&#x6A21;&#x677F;&#x7684;&#x989D;&#x5916;&#x5F00;&#x9500;&#x53EF;&#x80FD;&#x975E;&#x5E38;&#x4E25;&#x91CD;&#x3002;C++11&#x5141;&#x8BB8;&#x901A;&#x8FC7;&#x663E;&#x5F0F;&#x5B9E;&#x4F8B;&#x5316;&#xFF08;explicit instantiation&#xFF09;&#x6765;&#x907F;&#x514D;&#x8FD9;&#x79CD;&#x5F00;&#x9500;&#x3002;</p>
+<p>&#x663E;&#x5F0F;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c++">extern template declaration;    // instantiation declaration
+template declaration;           // instantiation definition
+</code></pre>
+<p><em>declaration</em>&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x6216;&#x51FD;&#x6570;&#x58F0;&#x660E;&#xFF0C;&#x5176;&#x4E2D;&#x6240;&#x6709;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5DF2;&#x88AB;&#x66FF;&#x6362;&#x4E3A;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x3002;&#x5F53;&#x7F16;&#x8BD1;&#x5668;&#x9047;&#x5230;<code>extern</code>&#x6A21;&#x677F;&#x58F0;&#x660E;&#x65F6;&#xFF0C;&#x5B83;&#x4E0D;&#x4F1A;&#x5728;&#x672C;&#x6587;&#x4EF6;&#x4E2D;&#x751F;&#x6210;&#x5B9E;&#x4F8B;&#x5316;&#x4EE3;&#x7801;&#x3002;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x7ED9;&#x5B9A;&#x7684;&#x5B9E;&#x4F8B;&#x5316;&#x7248;&#x672C;&#xFF0C;&#x53EF;&#x80FD;&#x6709;&#x591A;&#x4E2A;<code>extern</code>&#x58F0;&#x660E;&#xFF0C;&#x4F46;&#x5FC5;&#x987B;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5B9A;&#x4E49;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// templateBuild.cc
+// instantiation file must provide a (nonextern) definition for every
+// type and function that other files declare as extern
+template int compare(const int&amp;, const int&amp;);
+template class Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span>;    // instantiates all members of the class template
+
+// Application.cc
+// these template types must be instantiated elsewhere in the program
+extern template class Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span>;
+extern template int compare(const int&amp;, const int&amp;);
+Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span> sa1, sa2;    // instantiation will appear elsewhere
+// Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span> and its initializer_list constructor instantiated in this file
+Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span> a1 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+Blob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span> a2(a1);    // copy constructor instantiated in this file
+int i = compare(a1[0], a2[0]);    // instantiation will appear elsewhere
+</code></pre>
+<p>&#x5F53;&#x7F16;&#x8BD1;&#x5668;&#x9047;&#x5230;&#x7C7B;&#x6A21;&#x677F;&#x7684;&#x5B9E;&#x4F8B;&#x5316;&#x5B9A;&#x4E49;&#x65F6;&#xFF0C;&#x5B83;&#x4E0D;&#x6E05;&#x695A;&#x7A0B;&#x5E8F;&#x4F1A;&#x4F7F;&#x7528;&#x54EA;&#x4E9B;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;&#x548C;&#x5904;&#x7406;&#x7C7B;&#x6A21;&#x677F;&#x7684;&#x666E;&#x901A;&#x5B9E;&#x4F8B;&#x5316;&#x4E0D;&#x540C;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x5B9E;&#x4F8B;&#x5316;&#x8BE5;&#x6A21;&#x677F;&#x7684;&#x6240;&#x6709;&#x6210;&#x5458;&#xFF0C;&#x5305;&#x62EC;&#x5185;&#x8054;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x7528;&#x6765;&#x663E;&#x5F0F;&#x5B9E;&#x4F8B;&#x5316;&#x7C7B;&#x6A21;&#x677F;&#x7684;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x80FD;&#x7528;&#x4E8E;&#x6A21;&#x677F;&#x7684;&#x6240;&#x6709;&#x6210;&#x5458;&#x3002;</p>
+<h3 id="&#x6548;&#x7387;&#x4E0E;&#x7075;&#x6D3B;&#x6027;&#xFF08;efficiency-and-flexibility&#xFF09;"><a name="&#x6548;&#x7387;&#x4E0E;&#x7075;&#x6D3B;&#x6027;&#xFF08;efficiency-and-flexibility&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6548;&#x7387;&#x4E0E;&#x7075;&#x6D3B;&#x6027;&#xFF08;efficiency-and-flexibility&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6548;&#x7387;&#x4E0E;&#x7075;&#x6D3B;&#x6027;&#xFF08;Efficiency and Flexibility&#xFF09;</h3>
+<p><code>unique_ptr</code>&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x7ED1;&#x5B9A;&#x5220;&#x9664;&#x5668;&#xFF0C;&#x907F;&#x514D;&#x4E86;&#x95F4;&#x63A5;&#x8C03;&#x7528;&#x5220;&#x9664;&#x5668;&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x5F00;&#x9500;&#x3002;<code>shared_ptr</code>&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x7ED1;&#x5B9A;&#x5220;&#x9664;&#x5668;&#xFF0C;&#x4F7F;&#x7528;&#x6237;&#x91CD;&#x8F7D;&#x5220;&#x9664;&#x5668;&#x7684;&#x64CD;&#x4F5C;&#x66F4;&#x52A0;&#x7B80;&#x4FBF;&#x3002;</p>
+<h2 id="&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#xFF08;template-argument-deduction&#xFF09;"><a name="&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#xFF08;template-argument-deduction&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#xFF08;template-argument-deduction&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#xFF08;Template Argument Deduction&#xFF09;</h2>
+<p>&#x5BF9;&#x4E8E;&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#x5B9E;&#x53C2;&#x6765;&#x786E;&#x5B9A;&#x5176;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x88AB;&#x79F0;&#x4F5C;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#x3002;</p>
+<h3 id="&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF08;conversions-and-template-type-parameters&#xFF09;"><a name="&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF08;conversions-and-template-type-parameters&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF08;conversions-and-template-type-parameters&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF08;Conversions and Template Type Parameters&#xFF09;</h3>
+<p>&#x4E0E;&#x975E;&#x6A21;&#x677F;&#x51FD;&#x6570;&#x4E00;&#x6837;&#xFF0C;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x65F6;&#x4F20;&#x9012;&#x7684;&#x5B9E;&#x53C2;&#x88AB;&#x7528;&#x6765;&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#x7684;&#x5F62;&#x53C2;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5F62;&#x53C2;&#x7684;&#x7C7B;&#x578B;&#x4F7F;&#x7528;&#x4E86;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x5219;&#x4F1A;&#x91C7;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x521D;&#x59CB;&#x5316;&#x89C4;&#x5219;&#xFF0C;&#x53EA;&#x6709;&#x6709;&#x9650;&#x7684;&#x51E0;&#x79CD;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x5E94;&#x7528;&#x4E8E;&#x8FD9;&#x4E9B;&#x5B9E;&#x53C2;&#x3002;&#x7F16;&#x8BD1;&#x5668;&#x901A;&#x5E38;&#x4F1A;&#x751F;&#x6210;&#x65B0;&#x7684;&#x6A21;&#x677F;&#x5B9E;&#x4F8B;&#x800C;&#x4E0D;&#x662F;&#x5BF9;&#x5B9E;&#x53C2;&#x8FDB;&#x884C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;</p>
+<p>&#x6709;3&#x79CD;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x53EF;&#x4EE5;&#x5728;&#x8C03;&#x7528;&#x4E2D;&#x5E94;&#x7528;&#x4E8E;&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF1A;</p>
+<ul>
+<li>&#x9876;&#x5C42;<code>const</code>&#x4F1A;&#x88AB;&#x5FFD;&#x7565;&#x3002;</li>
+<li>&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;&#x975E;<code>const</code>&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x6216;&#x6307;&#x9488;&#x4F20;&#x9012;&#x7ED9;&#x4E00;&#x4E2A;<code>const</code>&#x5F15;&#x7528;&#x6216;&#x6307;&#x9488;&#x5F62;&#x53C2;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x51FD;&#x6570;&#x5F62;&#x53C2;&#x4E0D;&#x662F;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x5BF9;&#x6570;&#x7EC4;&#x6216;&#x51FD;&#x6570;&#x7C7B;&#x578B;&#x7684;&#x5B9E;&#x53C2;&#x5E94;&#x7528;&#x6B63;&#x5E38;&#x7684;&#x6307;&#x9488;&#x8F6C;&#x6362;&#x3002;&#x6570;&#x7EC4;&#x5B9E;&#x53C2;&#x53EF;&#x4EE5;&#x8F6C;&#x6362;&#x4E3A;&#x6307;&#x5411;&#x5176;&#x9996;&#x5143;&#x7D20;&#x7684;&#x6307;&#x9488;&#x3002;&#x51FD;&#x6570;&#x5B9E;&#x53C2;&#x53EF;&#x4EE5;&#x8F6C;&#x6362;&#x4E3A;&#x8BE5;&#x51FD;&#x6570;&#x7C7B;&#x578B;&#x7684;&#x6307;&#x9488;&#x3002;</li>
+</ul>
+<p>&#x5176;&#x4ED6;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x5982;&#x7B97;&#x672F;&#x8F6C;&#x6362;&#x3001;&#x6D3E;&#x751F;&#x7C7B;&#x5411;&#x57FA;&#x7C7B;&#x7684;&#x8F6C;&#x6362;&#x4EE5;&#x53CA;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x90FD;&#x4E0D;&#x80FD;&#x5E94;&#x7528;&#x4E8E;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x3002;</p>
+<p> &#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x591A;&#x4E2A;&#x51FD;&#x6570;&#x5F62;&#x53C2;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x7531;&#x4E8E;&#x5141;&#x8BB8;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x6709;&#x9650;&#xFF0C;&#x56E0;&#x6B64;&#x4F20;&#x9012;&#x7ED9;&#x8FD9;&#x4E9B;&#x5F62;&#x53C2;&#x7684;&#x5B9E;&#x53C2;&#x5FC5;&#x987B;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5426;&#x5219;&#x8C03;&#x7528;&#x5931;&#x8D25;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">long lng;
+compare(lng, 1024);   // error: cannot instantiate compare(long, int)
+</code></pre>
+<p>&#x5982;&#x679C;&#x60F3;&#x589E;&#x5F3A;&#x51FD;&#x6570;&#x7684;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// argument types can differ but must be compatible
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">A,</span> <span class="token attr-name">typename</span> <span class="token attr-name">B</span><span class="token punctuation">&gt;</span></span>
+int flexibleCompare(const A&amp; v1, const B&amp; v2)
+{
+    if (v1 &lt; v2) return -1;
+    if (v2 &lt; v1) return 1;
+    return 0;
+}
+
+long lng;
+flexibleCompare(lng, 1024);   // ok: calls flexibleCompare(long, int)
+</code></pre>
+<p>&#x51FD;&#x6570;&#x6A21;&#x677F;&#x4E2D;&#x4F7F;&#x7528;&#x666E;&#x901A;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x7684;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x6B63;&#x5E38;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+ostream &amp;print(ostream &amp;os, const T &amp;obj)
+{
+    return os &lt;&lt; obj;
+}
+
+print(cout, 42);   // instantiates print(ostream&amp;, int)
+ofstream f(&quot;output&quot;);
+print(f, 10);      // uses print(ostream&amp;, int); converts f to ostream&amp;
+</code></pre>
+<h3 id="&#x51FD;&#x6570;&#x6A21;&#x677F;&#x663E;&#x5F0F;&#x5B9E;&#x53C2;&#xFF08;function-template-explicit-arguments&#xFF09;"><a name="&#x51FD;&#x6570;&#x6A21;&#x677F;&#x663E;&#x5F0F;&#x5B9E;&#x53C2;&#xFF08;function-template-explicit-arguments&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x6A21;&#x677F;&#x663E;&#x5F0F;&#x5B9E;&#x53C2;&#xFF08;function-template-explicit-arguments&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x6A21;&#x677F;&#x663E;&#x5F0F;&#x5B9E;&#x53C2;&#xFF08;Function-Template Explicit Arguments&#xFF09;</h3>
+<p>&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x65E0;&#x6CD5;&#x63A8;&#x65AD;&#x51FA;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// T1 cannot be deduced: it doesn&apos;t appear in the function parameter list
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T1,</span> <span class="token attr-name">typename</span> <span class="token attr-name">T2,</span> <span class="token attr-name">typename</span> <span class="token attr-name">T3</span><span class="token punctuation">&gt;</span></span>
+T1 sum(T2, T3);
+</code></pre>
+<p>&#x663E;&#x5F0F;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#xFF08;explicit template argument&#xFF09;&#x53EF;&#x4EE5;&#x8BA9;&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x63A7;&#x5236;&#x6A21;&#x677F;&#x7684;&#x5B9E;&#x4F8B;&#x5316;&#x3002;&#x63D0;&#x4F9B;&#x663E;&#x5F0F;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x7684;&#x65B9;&#x5F0F;&#x4E0E;&#x5B9A;&#x4E49;&#x7C7B;&#x6A21;&#x677F;&#x5B9E;&#x4F8B;&#x7684;&#x65B9;&#x5F0F;&#x76F8;&#x540C;&#x3002;&#x663E;&#x5F0F;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x5728;&#x5C16;&#x62EC;&#x53F7;<code>&lt;&gt;</code>&#x4E2D;&#x6307;&#x5B9A;&#xFF0C;&#x4F4D;&#x4E8E;&#x51FD;&#x6570;&#x540D;&#x4E4B;&#x540E;&#xFF0C;&#x5B9E;&#x53C2;&#x5217;&#x8868;&#x4E4B;&#x524D;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// T1 is explicitly specified; T2 and T3 are inferred from the argument types
+auto val3 = sum<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>long</span> <span class="token attr-name">long</span><span class="token punctuation">&gt;</span></span>(i, lng);   // long long sum(int, long)
+</code></pre>
+<p>&#x663E;&#x5F0F;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x6309;&#x7167;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x7684;&#x987A;&#x5E8F;&#x4E0E;&#x5BF9;&#x5E94;&#x7684;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5339;&#x914D;&#xFF0C;&#x53EA;&#x6709;&#x5C3E;&#x90E8;&#x53C2;&#x6570;&#x7684;&#x663E;&#x5F0F;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x624D;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#xFF0C;&#x800C;&#x4E14;&#x524D;&#x63D0;&#x662F;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x4ECE;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x63A8;&#x65AD;&#x51FA;&#x6765;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// poor design: users must explicitly specify all three template parameters
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T1,</span> <span class="token attr-name">typename</span> <span class="token attr-name">T2,</span> <span class="token attr-name">typename</span> <span class="token attr-name">T3</span><span class="token punctuation">&gt;</span></span>
+T3 alternative_sum(T2, T1);
+// error: can&apos;t infer initial template parameters
+auto val3 = alternative_sum<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>long</span> <span class="token attr-name">long</span><span class="token punctuation">&gt;</span></span>(i, lng);
+// ok: all three parameters are explicitly specified
+auto val2 = alternative_sum<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>long</span> <span class="token attr-name">long,</span> <span class="token attr-name">int,</span> <span class="token attr-name">long</span><span class="token punctuation">&gt;</span></span>(i, lng);
+</code></pre>
+<p>&#x5BF9;&#x4E8E;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5DF2;&#x7ECF;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x4E86;&#x7684;&#x51FD;&#x6570;&#x5B9E;&#x53C2;&#xFF0C;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x6B63;&#x5E38;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">long lng;
+compare(lng, 1024);         // error: template parameters don&apos;t match
+compare<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>long</span><span class="token punctuation">&gt;</span></span>(lng, 1024);   // ok: instantiates compare(long, long)
+compare<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>(lng, 1024);    // ok: instantiates compare(int, int)
+</code></pre>
+<h3 id="&#x5C3E;&#x7F6E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E0E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;trailing-return-types-and-type-transformation&#xFF09;"><a name="&#x5C3E;&#x7F6E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E0E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;trailing-return-types-and-type-transformation&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5C3E;&#x7F6E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E0E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;trailing-return-types-and-type-transformation&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C3E;&#x7F6E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E0E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;Trailing Return Types and Type Transformation&#xFF09;</h3>
+<p>&#x7531;&#x4E8E;&#x5C3E;&#x7F6E;&#x8FD4;&#x56DE;&#x51FA;&#x73B0;&#x5728;&#x51FD;&#x6570;&#x5217;&#x8868;&#x4E4B;&#x540E;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x6765;&#x58F0;&#x660E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// a trailing return lets us declare the return type after the parameter list is seen
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">It</span><span class="token punctuation">&gt;</span></span>
+auto fcn(It beg, It end) -&gt; decltype(*beg)
+{
+    // process the range
+    return *beg;   // return a reference to an element from the range
+}
+</code></pre>
+<p>&#x6807;&#x51C6;&#x5E93;&#x5728;&#x5934;&#x6587;&#x4EF6;<em>type_traits</em>&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x6A21;&#x677F;&#xFF0C;&#x8FD9;&#x4E9B;&#x6A21;&#x677F;&#x5E38;&#x7528;&#x4E8E;&#x6A21;&#x677F;&#x5143;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x3002;&#x5176;&#x4E2D;&#x6BCF;&#x4E2A;&#x6A21;&#x677F;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>type</code>&#x7684;&#x516C;&#x6709;&#x7C7B;&#x578B;&#x6210;&#x5458;&#xFF0C;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x3002;&#x6B64;&#x7C7B;&#x578B;&#x4E0E;&#x6A21;&#x677F;&#x81EA;&#x8EAB;&#x7684;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x76F8;&#x5173;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x53EF;&#x80FD;&#xFF08;&#x6216;&#x4E0D;&#x5FC5;&#x8981;&#xFF09;&#x8F6C;&#x6362;&#x6A21;&#x677F;&#x53C2;&#x6570;&#xFF0C;&#x5219;<code>type</code>&#x6210;&#x5458;&#x5C31;&#x662F;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x672C;&#x8EAB;&#x3002;</p>
+<p><img src="Images/16-1.png" alt="16-1"></p>
+<p>&#x4F7F;&#x7528;<code>remove_reference</code>&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x5F15;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#xFF0C;&#x5982;&#x679C;&#x7528;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x5B9E;&#x4F8B;&#x5316;<code>remove_reference</code>&#xFF0C;&#x5219;<code>type</code>&#x8868;&#x793A;&#x88AB;&#x5F15;&#x7528;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x56E0;&#x4E3A;<code>type</code>&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x7C7B;&#x578B;&#x6210;&#x5458;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;<code>typename</code>&#x6765;&#x544A;&#x77E5;&#x7F16;&#x8BD1;&#x5668;&#x5176;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// must use typename to use a type member of a template parameter
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">It</span><span class="token punctuation">&gt;</span></span>
+auto fcn2(It beg, It end) -&gt; typename remove_reference<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>decltype(*beg)</span><span class="token punctuation">&gt;</span></span>::type
+{
+    // process the range
+    return *beg;  // return a copy of an element from the range
+}
+</code></pre>
+<h3 id="&#x51FD;&#x6570;&#x6307;&#x9488;&#x548C;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#xFF08;function-pointers-and-argument-deduction&#xFF09;"><a name="&#x51FD;&#x6570;&#x6307;&#x9488;&#x548C;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#xFF08;function-pointers-and-argument-deduction&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x6307;&#x9488;&#x548C;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#xFF08;function-pointers-and-argument-deduction&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x6307;&#x9488;&#x548C;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#xFF08;Function Pointers and Argument Deduction&#xFF09;</h3>
+<p>&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#x6307;&#x9488;&#x6216;&#x4E3A;&#x51FD;&#x6570;&#x6307;&#x9488;&#x8D4B;&#x503C;&#x65F6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x7528;&#x6307;&#x9488;&#x7684;&#x7C7B;&#x578B;&#x6765;&#x63A8;&#x65AD;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> int compare(const T&amp;, const T&amp;);
+// pf1 points to the instantiation int compare(const int&amp;, const int&amp;)
+int (*pf1)(const int&amp;, const int&amp;) = compare;
+</code></pre>
+<p>&#x5982;&#x679C;&#x7F16;&#x8BD1;&#x5668;&#x4E0D;&#x80FD;&#x4ECE;&#x51FD;&#x6570;&#x6307;&#x9488;&#x7C7B;&#x578B;&#x786E;&#x5B9A;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#xFF0C;&#x5219;&#x4F1A;&#x4EA7;&#x751F;&#x9519;&#x8BEF;&#x3002;&#x4F7F;&#x7528;&#x663E;&#x5F0F;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x53EF;&#x4EE5;&#x6D88;&#x9664;&#x8C03;&#x7528;&#x6B67;&#x4E49;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// overloaded versions of func; each takes a different function pointer type
+void func(int(*)(const string&amp;, const string&amp;));
+void func(int(*)(const int&amp;, const int&amp;));
+func(compare);     // error: which instantiation of compare?
+// ok: explicitly specify which version of compare to instantiate
+func(compare<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>);    // passing compare(const int&amp;, const int&amp;)
+</code></pre>
+<h3 id="&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#x548C;&#x5F15;&#x7528;&#xFF08;template-argument-deduction-and-references&#xFF09;"><a name="&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#x548C;&#x5F15;&#x7528;&#xFF08;template-argument-deduction-and-references&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#x548C;&#x5F15;&#x7528;&#xFF08;template-argument-deduction-and-references&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#x548C;&#x5F15;&#x7528;&#xFF08;Template Argument Deduction and References&#xFF09;</h3>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x662F;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x666E;&#x901A;&#xFF08;&#x5DE6;&#x503C;&#xFF09;&#x5F15;&#x7528;&#xFF08;&#x5F62;&#x5982;<code>T&amp;</code>&#xFF09;&#x65F6;&#xFF0C;&#x53EA;&#x80FD;&#x4F20;&#x9012;&#x7ED9;&#x5B83;&#x4E00;&#x4E2A;&#x5DE6;&#x503C;&#xFF08;&#x5982;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x6216;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#xFF09;&#x3002;<em>T</em>&#x88AB;&#x63A8;&#x65AD;&#x4E3A;&#x5B9E;&#x53C2;&#x6240;&#x5F15;&#x7528;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5982;&#x679C;&#x5B9E;&#x53C2;&#x662F;<code>const</code>&#x7684;&#xFF0C;&#x5219;<em>T</em>&#x4E5F;&#x4E3A;<code>const</code>&#x7C7B;&#x578B;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> void f1(T&amp;);    // argument must be an lvalue
+// calls to f1 use the referred-to type of the argument as the template parameter type
+f1(i);     // i is an int; template parameter T is int
+f1(ci);    // ci is a const int; template parameter T is const int
+f1(5);     // error: argument to a &amp; parameter must be an lvalue
+</code></pre>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x662F;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x5E38;&#x91CF;&#x5F15;&#x7528;&#xFF08;&#x5F62;&#x5982;<code>const T&amp;</code>&#xFF09;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x7ED9;&#x5B83;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x5B9E;&#x53C2;&#x3002;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x672C;&#x8EAB;&#x662F;<code>const</code>&#x65F6;&#xFF0C;<em>T</em>&#x7684;&#x7C7B;&#x578B;&#x63A8;&#x65AD;&#x7ED3;&#x679C;&#x4E0D;&#x4F1A;&#x662F;<code>const</code>&#x7C7B;&#x578B;&#x3002;<code>const</code>&#x5DF2;&#x7ECF;&#x662F;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x4E86;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x4F1A;&#x518D;&#x662F;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> void f2(const T&amp;);    // can take an rvalue
+// parameter in f2 is const &amp;; const in the argument is irrelevant
+// in each of these three calls, f2&apos;s function parameter is inferred as const int&amp;
+f2(i);     // i is an int; template parameter T is int
+f2(ci);    // ci is a const int, but template parameter T is int
+f2(5);     // a const &amp; parameter can be bound to an rvalue; T is int
+</code></pre>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x662F;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x53F3;&#x503C;&#x5F15;&#x7528;&#xFF08;&#x5F62;&#x5982;<code>T&amp;&amp;</code>&#xFF09;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4F20;&#x9012;&#x7ED9;&#x5B83;&#x4E00;&#x4E2A;&#x53F3;&#x503C;&#xFF0C;&#x7C7B;&#x578B;&#x63A8;&#x65AD;&#x8FC7;&#x7A0B;&#x7C7B;&#x4F3C;&#x666E;&#x901A;&#x5DE6;&#x503C;&#x5F15;&#x7528;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x7684;&#x63A8;&#x65AD;&#x8FC7;&#x7A0B;&#xFF0C;&#x63A8;&#x65AD;&#x51FA;&#x7684;<em>T</em>&#x7C7B;&#x578B;&#x662F;&#x8BE5;&#x53F3;&#x503C;&#x5B9E;&#x53C2;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> void f3(T&amp;&amp;);
+f3(42);    // argument is an rvalue of type int; template parameter T is int
+</code></pre>
+<p>&#x6A21;&#x677F;&#x53C2;&#x6570;&#x7ED1;&#x5B9A;&#x7684;&#x4E24;&#x4E2A;&#x4F8B;&#x5916;&#x89C4;&#x5219;&#xFF1A;</p>
+<ul>
+<li><p>&#x5982;&#x679C;&#x5C06;&#x4E00;&#x4E2A;&#x5DE6;&#x503C;&#x4F20;&#x9012;&#x7ED9;&#x51FD;&#x6570;&#x7684;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x53C2;&#x6570;&#xFF0C;&#x4E14;&#x6B64;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x6307;&#x5411;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x63A8;&#x65AD;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x4E3A;&#x5B9E;&#x53C2;&#x7684;&#x5DE6;&#x503C;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x95F4;&#x63A5;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#x7684;&#x5F15;&#x7528;&#xFF08;&#x901A;&#x8FC7;&#x7C7B;&#x578B;&#x522B;&#x540D;&#x6216;&#x8005;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x95F4;&#x63A5;&#x5B9A;&#x4E49;&#xFF09;&#xFF0C;&#x5219;&#x8FD9;&#x4E9B;&#x5F15;&#x7528;&#x4F1A;&#x88AB;&#x201C;&#x6298;&#x53E0;&#x201D;&#x3002;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x7684;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x4F1A;&#x88AB;&#x6298;&#x53E0;&#x4E3A;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x3002;&#x5176;&#x4ED6;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5F15;&#x7528;&#x90FD;&#x88AB;&#x6298;&#x53E0;&#x4E3A;&#x666E;&#x901A;&#x5DE6;&#x503C;&#x5F15;&#x7528;&#x3002;</p>
+<p>|          &#x6298;&#x53E0;&#x524D;          | &#x6298;&#x53E0;&#x540E; |
+| :----------------------: | :----: |
+| <code>T&amp; &amp;</code>&#x3001;<code>T&amp; &amp;&amp;</code>&#x3001;<code>T&amp;&amp; &amp;</code> |  <code>T&amp;</code>  |
+|         <code>T&amp;&amp; &amp;&amp;</code>         | <code>T&amp;&amp;</code>  |</p>
+</li>
+</ul>
+<pre class="language-"><code class="lang-c++">f3(i);    // argument is an lvalue; template parameter T is int&amp;
+f3(ci);   // argument is an lvalue; template parameter T is const int&amp;
+
+// invalid code, for illustration purposes only
+void f3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int&amp;</span><span class="token punctuation">&gt;</span></span>(int&amp; &amp;&amp;);    // when T is int&amp;, function parameter is int&amp; &amp;&amp;
+void f3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int&amp;</span><span class="token punctuation">&gt;</span></span>(int&amp;);       // when T is int&amp;, function parameter collapses to int&amp;
+</code></pre>
+<p>&#x6A21;&#x677F;&#x53C2;&#x6570;&#x7ED1;&#x5B9A;&#x7684;&#x4E24;&#x4E2A;&#x4F8B;&#x5916;&#x89C4;&#x5219;&#x5BFC;&#x81F4;&#x4E86;&#x4E24;&#x4E2A;&#x7ED3;&#x679C;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x662F;&#x6307;&#x5411;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x53F3;&#x503C;&#x5F15;&#x7528;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x7ED9;&#x5B83;&#x4EFB;&#x610F;&#x7C7B;&#x578B;&#x7684;&#x5B9E;&#x53C2;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x5C06;&#x4E00;&#x4E2A;&#x5DE6;&#x503C;&#x4F20;&#x9012;&#x7ED9;&#x8FD9;&#x6837;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5219;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x4E3A;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x5DE6;&#x503C;&#x5F15;&#x7528;&#x3002;</li>
+</ul>
+<p>&#x5F53;&#x4EE3;&#x7801;&#x4E2D;&#x6D89;&#x53CA;&#x7684;&#x7C7B;&#x578B;&#x53EF;&#x80FD;&#x662F;&#x666E;&#x901A;&#xFF08;&#x975E;&#x5F15;&#x7528;&#xFF09;&#x7C7B;&#x578B;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x662F;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x7F16;&#x5199;&#x6B63;&#x786E;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x53D8;&#x5F97;&#x5F02;&#x5E38;&#x56F0;&#x96BE;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+void f3(T&amp;&amp; val)
+{
+    T t = val;     // copy or binding a reference?
+    t = fcn(t);    // does the assignment change only t or val and t?
+    if (val == t) { /* ... */ }    // always true if T is a reference type
+}
+</code></pre>
+<p>&#x5B9E;&#x9645;&#x7F16;&#x7A0B;&#x4E2D;&#xFF0C;&#x6A21;&#x677F;&#x7684;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x53C2;&#x6570;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;&#x6A21;&#x677F;&#x8F6C;&#x53D1;&#x5176;&#x5B9E;&#x53C2;&#x6216;&#x8005;&#x6A21;&#x677F;&#x88AB;&#x91CD;&#x8F7D;&#x3002;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x7684;&#x5E38;&#x7528;&#x91CD;&#x8F7D;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> void f(T&amp;&amp;);         // binds to nonconst rvalues
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> void f(const T&amp;);    // lvalues and const rvalues
+</code></pre>
+<h3 id="&#x7406;&#x89E3;stdmove&#xFF08;understanding-stdmove&#xFF09;"><a name="&#x7406;&#x89E3;stdmove&#xFF08;understanding-stdmove&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7406;&#x89E3;stdmove&#xFF08;understanding-stdmove&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7406;&#x89E3;std::move&#xFF08;Understanding std::move&#xFF09;</h3>
+<p><code>std::move</code>&#x7684;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+typename remove_reference<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>::type&amp;&amp; move(T&amp;&amp; t)
+{
+    return static_cast<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">remove_reference&lt;T</span><span class="token punctuation">&gt;</span></span>::type&amp;&amp;&gt;(t);
+}
+</code></pre>
+<p><code>std::move</code>&#x7684;&#x5DE5;&#x4F5C;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c++">string s1(&quot;hi!&quot;), s2;
+s2 = std::move(string(&quot;bye!&quot;));     // ok: moving from an rvalue
+s2 = std::move(s1);     // ok: but after the assigment s1 has indeterminate value
+</code></pre>
+<ul>
+<li><p>&#x5728;<code>std::move(string(&quot;bye!&quot;))</code>&#x4E2D;&#x4F20;&#x9012;&#x7684;&#x662F;&#x53F3;&#x503C;&#x3002;</p>
+</li>
+<li><ul>
+<li>&#x63A8;&#x65AD;&#x51FA;&#x7684;<em>T</em>&#x7C7B;&#x578B;&#x4E3A;<code>string</code>&#x3002;</li>
+<li><code>remove_reference</code>&#x7528;<code>string</code>&#x8FDB;&#x884C;&#x5B9E;&#x4F8B;&#x5316;&#x3002;</li>
+<li><code>remove_reference<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span></code>&#x7684;<code>type</code>&#x6210;&#x5458;&#x662F;<code>string</code>&#x3002;</li>
+<li><code>move</code>&#x7684;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x662F;<code>string&amp;&amp;</code>&#x3002;</li>
+<li><code>move</code>&#x7684;&#x51FD;&#x6570;&#x53C2;&#x6570;<em>t</em>&#x7684;&#x7C7B;&#x578B;&#x4E3A;<code>string&amp;&amp;</code>&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x5728;<code>std::move(s1)</code>&#x4E2D;&#x4F20;&#x9012;&#x7684;&#x662F;&#x5DE6;&#x503C;&#x3002;</p>
+</li>
+<li><ul>
+<li>&#x63A8;&#x65AD;&#x51FA;&#x7684;<em>T</em>&#x7C7B;&#x578B;&#x4E3A;<code>string&amp;</code>&#x3002;</li>
+<li><code>remove_reference</code>&#x7528;<code>string&amp;</code>&#x8FDB;&#x884C;&#x5B9E;&#x4F8B;&#x5316;&#x3002;</li>
+<li><code>remove_reference<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string&amp;</span><span class="token punctuation">&gt;</span></span></code>&#x7684;<code>type</code>&#x6210;&#x5458;&#x662F;<code>string</code>&#x3002;</li>
+<li><code>move</code>&#x7684;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x662F;<code>string&amp;&amp;</code>&#x3002;</li>
+<li><code>move</code>&#x7684;&#x51FD;&#x6570;&#x53C2;&#x6570;t&#x7684;&#x7C7B;&#x578B;&#x4E3A;<code>string&amp; &amp;&amp;</code>&#xFF0C;&#x4F1A;&#x6298;&#x53E0;&#x6210;<code>string&amp;</code>&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>static_cast</code>&#x663E;&#x5F0F;&#x5730;&#x5C06;&#x4E00;&#x4E2A;&#x5DE6;&#x503C;&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x3002;</p>
+<h3 id="&#x8F6C;&#x53D1;&#xFF08;forwarding&#xFF09;"><a name="&#x8F6C;&#x53D1;&#xFF08;forwarding&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x8F6C;&#x53D1;&#xFF08;forwarding&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8F6C;&#x53D1;&#xFF08;Forwarding&#xFF09;</h3>
+<p>&#x67D0;&#x4E9B;&#x51FD;&#x6570;&#x9700;&#x8981;&#x5C06;&#x5176;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5B9E;&#x53C2;&#x8FDE;&#x540C;&#x7C7B;&#x578B;&#x4E0D;&#x53D8;&#x5730;&#x8F6C;&#x53D1;&#x7ED9;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9700;&#x8981;&#x4FDD;&#x6301;&#x88AB;&#x8F6C;&#x53D1;&#x5B9E;&#x53C2;&#x7684;&#x6240;&#x6709;&#x6027;&#x8D28;&#xFF0C;&#x5305;&#x62EC;&#x5B9E;&#x53C2;&#x7684;<code>const</code>&#x5C5E;&#x6027;&#x4EE5;&#x53CA;&#x5DE6;&#x503C;/&#x53F3;&#x503C;&#x5C5E;&#x6027;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// template that takes a callable and two parameters
+// and calls the given callable with the parameters &apos;&apos;flipped&apos;&apos;
+// flip1 is an incomplete implementation: top-level const and references are lost
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">F,</span> <span class="token attr-name">typename</span> <span class="token attr-name">T1,</span> <span class="token attr-name">typename</span> <span class="token attr-name">T2</span><span class="token punctuation">&gt;</span></span>
+void flip1(F f, T1 t1, T2 t2)
+{
+    f(t2, t1);
+}
+
+void f(int v1, int &amp;v2)   // note v2 is a reference
+{
+    cout &lt;&lt; v1 &lt;&lt; &quot; &quot; &lt;&lt; ++v2 &lt;&lt; endl;
+}
+
+f(42, i);   // f changes its argument i
+flip1(f, j, 42);    // f called through flip1 leaves j unchanged
+                    // void flip1(void(*fcn)(int, int&amp;), int t1, int t2)
+</code></pre>
+<p>&#x4E0A;&#x4F8B;&#x4E2D;&#xFF0C;<em>j</em>&#x88AB;&#x4F20;&#x9012;&#x7ED9;<code>flip1</code>&#x7684;&#x53C2;&#x6570;<em>t1</em>&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#xFF08;&#x975E;&#x5F15;&#x7528;&#xFF09;&#x7C7B;&#x578B;<code>int</code>&#xFF0C;&#x800C;&#x975E;<code>int&amp;</code>&#xFF0C;&#x56E0;&#x6B64;<code>flip1(f, j, 42)</code>&#x8C03;&#x7528;&#x4F1A;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x4E3A;<code>void flip1(void(*fcn)(int, int&amp;), int t1, int t2)</code>&#x3002;<em>j</em>&#x7684;&#x503C;&#x88AB;&#x62F7;&#x8D1D;&#x81F3;<em>t1</em>&#x4E2D;&#xFF0C;<code>f</code>&#x4E2D;&#x7684;&#x5F15;&#x7528;&#x53C2;&#x6570;&#x88AB;&#x7ED1;&#x5B9A;&#x81F3;<em>t1</em>&#xFF0C;&#x800C;&#x975E;<em>j</em>&#xFF0C;&#x56E0;&#x6B64;<em>j</em>&#x4E0D;&#x4F1A;&#x88AB;&#x4FEE;&#x6539;&#x3002;</p>
+<p>&#x5C06;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x5B9A;&#x4E49;&#x4E3A;&#x6307;&#x5411;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x53F3;&#x503C;&#x5F15;&#x7528;&#xFF08;&#x5F62;&#x5982;<code>T&amp;&amp;</code>&#xFF09;&#xFF0C;&#x901A;&#x8FC7;&#x5F15;&#x7528;&#x6298;&#x53E0;&#xFF0C;&#x53EF;&#x4EE5;&#x4FDD;&#x6301;&#x7FFB;&#x8F6C;&#x5B9E;&#x53C2;&#x7684;&#x5DE6;&#x503C;/&#x53F3;&#x503C;&#x5C5E;&#x6027;&#x3002;&#x5E76;&#x4E14;&#x5F15;&#x7528;&#x53C2;&#x6570;&#xFF08;&#x65E0;&#x8BBA;&#x662F;&#x5DE6;&#x503C;&#x8FD8;&#x662F;&#x53F3;&#x503C;&#xFF09;&#x53EF;&#x4EE5;&#x4FDD;&#x6301;&#x5B9E;&#x53C2;&#x7684;<code>const</code>&#x5C5E;&#x6027;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x4E2D;&#x7684;<code>const</code>&#x662F;&#x5E95;&#x5C42;&#x7684;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">F,</span> <span class="token attr-name">typename</span> <span class="token attr-name">T1,</span> <span class="token attr-name">typename</span> <span class="token attr-name">T2</span><span class="token punctuation">&gt;</span></span>
+void flip2(F f, T1 &amp;&amp;t1, T2 &amp;&amp;t2)
+{
+    f(t2, t1);
+}
+</code></pre>
+<p>&#x5BF9;&#x4E8E;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x82E5;&#x8C03;&#x7528;<code>flip2(f, j, 42)</code>&#xFF0C;&#x4F1A;&#x4F20;&#x9012;&#x7ED9;&#x53C2;&#x6570;<em>t1</em>&#x4E00;&#x4E2A;&#x5DE6;&#x503C;<em>j</em>&#xFF0C;&#x4F46;&#x6B64;&#x65F6;&#x63A8;&#x65AD;&#x51FA;&#x7684;<em>T1</em>&#x7C7B;&#x578B;&#x4E3A;<code>int&amp;</code>&#xFF0C;<em>t1</em>&#x7684;&#x7C7B;&#x578B;&#x4F1A;&#x88AB;&#x6298;&#x53E0;&#x4E3A;<code>int&amp;</code>&#xFF0C;&#x4ECE;&#x800C;&#x89E3;&#x51B3;&#x4E86;<code>flip1</code>&#x7684;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x4F46;<code>flip2</code>&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x63A5;&#x53D7;&#x5DE6;&#x503C;&#x5F15;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4E0D;&#x80FD;&#x7528;&#x4E8E;&#x63A5;&#x53D7;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x7684;&#x51FD;&#x6570;&#x3002;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x4E0E;&#x5176;&#x4ED6;&#x53D8;&#x91CF;&#x4E00;&#x6837;&#xFF0C;&#x90FD;&#x662F;&#x5DE6;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x6240;&#x4EE5;&#x5373;&#x4F7F;&#x662F;&#x6307;&#x5411;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x7684;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x53C2;&#x6570;&#x4E5F;&#x53EA;&#x80FD;&#x4F20;&#x9012;&#x7ED9;&#x63A5;&#x53D7;&#x5DE6;&#x503C;&#x5F15;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4E0D;&#x80FD;&#x4F20;&#x9012;&#x7ED9;&#x63A5;&#x53D7;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">void g(int &amp;&amp;i, int&amp; j)
+{
+    cout &lt;&lt; i &lt;&lt; &quot; &quot; &lt;&lt; j &lt;&lt; endl;
+}
+
+// error: can&apos;t initialize int&amp;&amp; from an lvalue
+flip2(g, i, 42);  // flip2 passes an lvalue to g&#x2019;s rvalue reference parameter
+</code></pre>
+<p>C++11&#x5728;&#x5934;&#x6587;&#x4EF6;<em>utility</em>&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;<code>forward</code>&#x3002;&#x4E0E;<code>move</code>&#x4E0D;&#x540C;&#xFF0C;<code>forward</code>&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x663E;&#x5F0F;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x8C03;&#x7528;&#xFF0C;&#x8FD4;&#x56DE;&#x8BE5;&#x663E;&#x5F0F;&#x5B9E;&#x53C2;&#x7C7B;&#x578B;&#x7684;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x3002;&#x5373;<code>forward<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span></code>&#x8FD4;&#x56DE;&#x7C7B;&#x578B;<code>T&amp;&amp;</code>&#x3002;</p>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>forward</code>&#x4F20;&#x9012;&#x5B9A;&#x4E49;&#x4E3A;&#x6307;&#x5411;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x3002;&#x901A;&#x8FC7;&#x5176;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E0A;&#x7684;&#x5F15;&#x7528;&#x6298;&#x53E0;&#xFF0C;<code>forward</code>&#x53EF;&#x4EE5;&#x4FDD;&#x6301;&#x7ED9;&#x5B9A;&#x5B9E;&#x53C2;&#x7684;&#x5DE6;&#x503C;/&#x53F3;&#x503C;&#x5C5E;&#x6027;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">Type</span><span class="token punctuation">&gt;</span></span>
+intermediary(Type &amp;&amp;arg)
+{
+    finalFcn(std::forward<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Type</span><span class="token punctuation">&gt;</span></span>(arg));
+    // ...
+}
+</code></pre>
+<ul>
+<li>&#x5982;&#x679C;&#x5B9E;&#x53C2;&#x662F;&#x4E00;&#x4E2A;&#x53F3;&#x503C;&#xFF0C;&#x5219;<em>Type</em>&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#xFF08;&#x975E;&#x5F15;&#x7528;&#xFF09;&#x7C7B;&#x578B;&#xFF0C;<code>forward<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Type</span><span class="token punctuation">&gt;</span></span></code>&#x8FD4;&#x56DE;&#x7C7B;&#x578B;<code>Type&amp;&amp;</code>&#x3002;</li>
+<li>&#x5982;&#x679C;&#x5B9E;&#x53C2;&#x662F;&#x4E00;&#x4E2A;&#x5DE6;&#x503C;&#xFF0C;&#x5219;&#x901A;&#x8FC7;&#x5F15;&#x7528;&#x6298;&#x53E0;&#xFF0C;<em>Type</em>&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5DE6;&#x503C;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#xFF0C;<code>forward<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Type</span><span class="token punctuation">&gt;</span></span></code>&#x8FD4;&#x56DE;&#x7C7B;&#x578B;<code>Type&amp;&amp; &amp;</code>&#xFF0C;&#x5BF9;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x8FDB;&#x884C;&#x5F15;&#x7528;&#x6298;&#x53E0;&#xFF0C;&#x5F97;&#x5230;<code>Type&amp;</code>&#x3002;</li>
+</ul>
+<p>&#x4F7F;&#x7528;<code>forward</code>&#x7F16;&#x5199;&#x5B8C;&#x5584;&#x7684;&#x8F6C;&#x53D1;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">F,</span> <span class="token attr-name">typename</span> <span class="token attr-name">T1,</span> <span class="token attr-name">typename</span> <span class="token attr-name">T2</span><span class="token punctuation">&gt;</span></span>
+void flip(F f, T1 &amp;&amp;t1, T2 &amp;&amp;t2)
+{
+    f(std::forward<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T2</span><span class="token punctuation">&gt;</span></span>(t2), std::forward<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T1</span><span class="token punctuation">&gt;</span></span>(t1));
+}
+</code></pre>
+<p>&#x4E0E;<code>std::move</code>&#x4E00;&#x6837;&#xFF0C;&#x5BF9;<code>std::forward</code>&#x4E5F;&#x4E0D;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;<code>using</code>&#x58F0;&#x660E;&#x3002;</p>
+<h2 id="&#x91CD;&#x8F7D;&#x4E0E;&#x6A21;&#x677F;&#xFF08;overloading-and-templates&#xFF09;"><a name="&#x91CD;&#x8F7D;&#x4E0E;&#x6A21;&#x677F;&#xFF08;overloading-and-templates&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x8F7D;&#x4E0E;&#x6A21;&#x677F;&#xFF08;overloading-and-templates&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x91CD;&#x8F7D;&#x4E0E;&#x6A21;&#x677F;&#xFF08;Overloading and Templates&#xFF09;</h2>
+<p>&#x51FD;&#x6570;&#x6A21;&#x677F;&#x53EF;&#x4EE5;&#x88AB;&#x53E6;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x6216;&#x666E;&#x901A;&#x975E;&#x6A21;&#x677F;&#x51FD;&#x6570;&#x91CD;&#x8F7D;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x91CD;&#x8F7D;&#x6D89;&#x53CA;&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF0C;&#x5219;&#x51FD;&#x6570;&#x5339;&#x914D;&#x89C4;&#x5219;&#x4F1A;&#x53D7;&#x5230;&#x4E00;&#x4E9B;&#x5F71;&#x54CD;&#xFF1A;</p>
+<ul>
+<li>&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x8C03;&#x7528;&#xFF0C;&#x5176;&#x5019;&#x9009;&#x51FD;&#x6570;&#x5305;&#x62EC;&#x6240;&#x6709;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#x6210;&#x529F;&#x7684;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x5B9E;&#x4F8B;&#x3002;</li>
+<li>&#x5019;&#x9009;&#x7684;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x90FD;&#x662F;&#x53EF;&#x884C;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#x63A8;&#x65AD;&#x4F1A;&#x6392;&#x9664;&#x4EFB;&#x4F55;&#x4E0D;&#x53EF;&#x884C;&#x7684;&#x6A21;&#x677F;&#x3002;</li>
+<li>&#x548C;&#x5F80;&#x5E38;&#x4E00;&#x6837;&#xFF0C;&#x53EF;&#x884C;&#x51FD;&#x6570;&#xFF08;&#x6A21;&#x677F;&#x4E0E;&#x975E;&#x6A21;&#x677F;&#xFF09;&#x6309;&#x7167;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;&#x5982;&#x679C;&#x9700;&#x8981;&#x7684;&#x8BDD;&#xFF09;&#x6765;&#x6392;&#x5E8F;&#x3002;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x8C03;&#x7528;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x975E;&#x5E38;&#x6709;&#x9650;&#x3002;</li>
+<li>&#x548C;&#x5F80;&#x5E38;&#x4E00;&#x6837;&#xFF0C;&#x5982;&#x679C;&#x6070;&#x6709;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x63D0;&#x4F9B;&#x6BD4;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;&#x51FD;&#x6570;&#x90FD;&#x66F4;&#x597D;&#x7684;&#x5339;&#x914D;&#xFF0C;&#x5219;&#x9009;&#x62E9;&#x6B64;&#x51FD;&#x6570;&#x3002;&#x4F46;&#x662F;&#x5982;&#x679C;&#x591A;&#x4E2A;&#x51FD;&#x6570;&#x90FD;&#x63D0;&#x4F9B;&#x76F8;&#x540C;&#x7EA7;&#x522B;&#x7684;&#x5339;&#x914D;&#xFF0C;&#x5219;&#xFF1A;<ul>
+<li>&#x5982;&#x679C;&#x540C;&#x7EA7;&#x522B;&#x7684;&#x51FD;&#x6570;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x662F;&#x975E;&#x6A21;&#x677F;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x9009;&#x62E9;&#x6B64;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x540C;&#x7EA7;&#x522B;&#x7684;&#x51FD;&#x6570;&#x4E2D;&#x6CA1;&#x6709;&#x975E;&#x6A21;&#x677F;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x6709;&#x591A;&#x4E2A;&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF0C;&#x4E14;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x6BD4;&#x5176;&#x4ED6;&#x6A21;&#x677F;&#x66F4;&#x7279;&#x4F8B;&#x5316;&#xFF0C;&#x5219;&#x9009;&#x62E9;&#x6B64;&#x6A21;&#x677F;&#x3002;</li>
+<li>&#x5426;&#x5219;&#x8BE5;&#x8C03;&#x7528;&#x6709;&#x6B67;&#x4E49;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p>&#x901A;&#x5E38;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x6CA1;&#x6709;&#x58F0;&#x660E;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4EE3;&#x7801;&#x5C06;&#x65E0;&#x6CD5;&#x7F16;&#x8BD1;&#x3002;&#x4F46;&#x5BF9;&#x4E8E;&#x91CD;&#x8F7D;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x7684;&#x51FD;&#x6570;&#x800C;&#x8A00;&#xFF0C;&#x5982;&#x679C;&#x7F16;&#x8BD1;&#x5668;&#x53EF;&#x4EE5;&#x4ECE;&#x6A21;&#x677F;&#x5B9E;&#x4F8B;&#x5316;&#x51FA;&#x4E0E;&#x8C03;&#x7528;&#x5339;&#x914D;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x5219;&#x7F3A;&#x5C11;&#x7684;&#x58F0;&#x660E;&#x5C31;&#x4E0D;&#x518D;&#x91CD;&#x8981;&#x4E86;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> string debug_rep(const T &amp;t);
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> string debug_rep(T *p);
+// the following declaration must be in scope
+// for the definition of debug_rep(char*) to do the right thing
+string debug_rep(const string &amp;);
+string debug_rep(char *p)
+{
+    // if the declaration for the version that takes a const string&amp; is not in scope
+    // the return will call debug_rep(const T&amp;) with T instantiated to string
+    return debug_rep(string(p));
+}
+</code></pre>
+<p>&#x5728;&#x5B9A;&#x4E49;&#x4EFB;&#x4F55;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x5E94;&#x8BE5;&#x58F0;&#x660E;&#x6240;&#x6709;&#x91CD;&#x8F7D;&#x7684;&#x51FD;&#x6570;&#x7248;&#x672C;&#x3002;&#x8FD9;&#x6837;&#x7F16;&#x8BD1;&#x5668;&#x5C31;&#x4E0D;&#x4F1A;&#x56E0;&#x4E3A;&#x672A;&#x9047;&#x5230;&#x4F60;&#x5E0C;&#x671B;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#x800C;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x5E76;&#x975E;&#x4F60;&#x6240;&#x9700;&#x8981;&#x7684;&#x7248;&#x672C;&#x3002;</p>
+<h2 id="&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x6A21;&#x677F;&#xFF08;variadic-templates&#xFF09;"><a name="&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x6A21;&#x677F;&#xFF08;variadic-templates&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x6A21;&#x677F;&#xFF08;variadic-templates&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x6A21;&#x677F;&#xFF08;Variadic Templates&#xFF09;</h2>
+<p>&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x6A21;&#x677F;&#x6307;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x53EF;&#x53D8;&#x6570;&#x91CF;&#x53C2;&#x6570;&#x7684;&#x6A21;&#x677F;&#x51FD;&#x6570;&#x6216;&#x6A21;&#x677F;&#x7C7B;&#x3002;&#x53EF;&#x53D8;&#x6570;&#x91CF;&#x7684;&#x53C2;&#x6570;&#x88AB;&#x79F0;&#x4E3A;&#x53C2;&#x6570;&#x5305;&#xFF08;parameter pack&#xFF09;&#xFF0C;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#xFF1A;</p>
+<ul>
+<li>&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5305;&#xFF08;template parameter pack&#xFF09;&#xFF0C;&#x8868;&#x793A;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x53C2;&#x6570;&#x5305;&#xFF08;function parameter pack&#xFF09;&#xFF0C;&#x8868;&#x793A;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x3002;</li>
+</ul>
+<p>&#x7528;&#x4E00;&#x4E2A;&#x7701;&#x7565;&#x53F7;<code>&#x2026;</code>&#x6765;&#x6307;&#x51FA;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x6216;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x5305;&#x3002;&#x5728;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E2D;&#xFF0C;<code>class&#x2026;</code>&#x6216;<code>typename&#x2026;</code>&#x6307;&#x51FA;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x53C2;&#x6570;&#x8868;&#x793A;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x7C7B;&#x578B;&#x7684;&#x5217;&#x8868;&#xFF1B;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x540D;&#x540E;&#x9762;&#x8DDF;&#x4E00;&#x4E2A;&#x7701;&#x7565;&#x53F7;&#x8868;&#x793A;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x7ED9;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x975E;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5217;&#x8868;&#x3002;&#x5728;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B;&#x662F;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5305;&#xFF0C;&#x5219;&#x6B64;&#x53C2;&#x6570;&#x4E5F;&#x662F;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x5305;&#x3002;</p>
+<pre class="language-"><code class="lang-C++">// Args is a template parameter pack; rest is a function parameter pack
+// Args represents zero or more template type parameters
+// rest represents zero or more function parameters
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T,</span> <span class="token attr-name">typename...</span> <span class="token attr-name">Args</span><span class="token punctuation">&gt;</span></span>
+void foo(const T &amp;t, const Args&amp; ... rest);
+</code></pre>
+<p>&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x6A21;&#x677F;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x63A8;&#x65AD;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x548C;&#x53C2;&#x6570;&#x6570;&#x91CF;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>sizeof&#x2026;</code>&#x8FD0;&#x7B97;&#x7B26;&#x83B7;&#x53D6;&#x53C2;&#x6570;&#x5305;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x6570;&#x91CF;&#x3002;&#x7C7B;&#x4F3C;<code>sizeof</code>&#xFF0C;<code>sizeof&#x2026;</code>&#x4E5F;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x800C;&#x4E14;&#x4E0D;&#x4F1A;&#x5BF9;&#x5176;&#x5B9E;&#x53C2;&#x6C42;&#x503C;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">...</span> <span class="token attr-name">Args</span><span class="token punctuation">&gt;</span></span>
+void g(Args ... args)
+{
+    cout &lt;&lt; sizeof...(Args) &lt;&lt; endl;    // number of type parameters
+    cout &lt;&lt; sizeof...(args) &lt;&lt; endl;    // number of function parameters
+}
+</code></pre>
+<h3 id="&#x7F16;&#x5199;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;writing-a-variadic-function-template&#xFF09;"><a name="&#x7F16;&#x5199;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;writing-a-variadic-function-template&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7F16;&#x5199;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;writing-a-variadic-function-template&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F16;&#x5199;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;Writing a Variadic Function Template&#xFF09;</h3>
+<p>&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x51FD;&#x6570;&#x901A;&#x5E38;&#x662F;&#x9012;&#x5F52;&#x7684;&#xFF0C;&#x7B2C;&#x4E00;&#x6B65;&#x8C03;&#x7528;&#x53C2;&#x6570;&#x5305;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B9E;&#x53C2;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x5269;&#x4F59;&#x5B9E;&#x53C2;&#x8C03;&#x7528;&#x81EA;&#x8EAB;&#x3002;&#x4E3A;&#x4E86;&#x7EC8;&#x6B62;&#x9012;&#x5F52;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x975E;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// function to end the recursion and print the last element
+// this function must be declared before the variadic version of print is defined
+template<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+ostream &amp;print(ostream &amp;os, const T &amp;t)
+{
+    return os &lt;&lt; t;   // no separator after the last element in the pack
+}
+
+// this version of print will be called for all but the last element in the pack
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T,</span> <span class="token attr-name">typename...</span> <span class="token attr-name">Args</span><span class="token punctuation">&gt;</span></span>
+ostream &amp;print(ostream &amp;os, const T &amp;t, const Args&amp;... rest)
+{
+    os &lt;&lt; t &lt;&lt; &quot;, &quot;;    // print the first argument
+    return print(os, rest...);   // recursive call; print the other arguments
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Call</th>
+<th style="text-align:center">t</th>
+<th style="text-align:center">rest...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>print(cout, i, s, 42)</code></td>
+<td style="text-align:center">i</td>
+<td style="text-align:center">s, 42</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>print(cout, s, 42)</code></td>
+<td style="text-align:center">s</td>
+<td style="text-align:center">42</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>print(cout, 42)</code></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5305;&#x6269;&#x5C55;&#xFF08;pack-expansion&#xFF09;"><a name="&#x5305;&#x6269;&#x5C55;&#xFF08;pack-expansion&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5305;&#x6269;&#x5C55;&#xFF08;pack-expansion&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5305;&#x6269;&#x5C55;&#xFF08;Pack Expansion&#xFF09;</h3>
+<p>&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5305;&#xFF0C;&#x9664;&#x4E86;&#x83B7;&#x53D6;&#x5176;&#x5927;&#x5C0F;&#x5916;&#xFF0C;&#x552F;&#x4E00;&#x80FD;&#x5BF9;&#x5B83;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x5C31;&#x662F;&#x6269;&#x5C55;&#x3002;&#x5F53;&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x5305;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x7528;&#x4E8E;&#x6BCF;&#x4E2A;&#x6269;&#x5C55;&#x5143;&#x7D20;&#x7684;&#x6A21;&#x5F0F;&#xFF08;pattern&#xFF09;&#x3002;&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x5305;&#x5C31;&#x662F;&#x5C06;&#x5176;&#x5206;&#x89E3;&#x4E3A;&#x6784;&#x6210;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5BF9;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x5E94;&#x7528;&#x6A21;&#x5F0F;&#xFF0C;&#x83B7;&#x5F97;&#x6269;&#x5C55;&#x540E;&#x7684;&#x5217;&#x8868;&#x3002;&#x901A;&#x8FC7;&#x5728;&#x6A21;&#x5F0F;&#x53F3;&#x8FB9;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x7701;&#x7565;&#x53F7;<code>&#x2026;</code>&#x6765;&#x89E6;&#x53D1;&#x6269;&#x5C55;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5305;&#x6269;&#x5C55;&#x5DE5;&#x4F5C;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T,</span> <span class="token attr-name">typename...</span> <span class="token attr-name">Args</span><span class="token punctuation">&gt;</span></span>
+ostream&amp; print(ostream &amp;os, const T &amp;t, const Args&amp;... rest)   // expand Args
+{
+    os &lt;&lt; t &lt;&lt; &quot;, &quot;;
+    return print(os, rest...);   // expand rest
+}
+</code></pre>
+<ul>
+<li><p>&#x7B2C;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x64CD;&#x4F5C;&#x6269;&#x5C55;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5305;&#xFF0C;&#x4E3A;<code>print</code>&#x751F;&#x6210;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x5217;&#x8868;&#x3002;&#x7F16;&#x8BD1;&#x5668;&#x5C06;&#x6A21;&#x5F0F;<code>const Args&amp;</code>&#x5E94;&#x7528;&#x5230;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5305;<em>Args</em>&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x4E0A;&#x3002;&#x56E0;&#x6B64;&#x8BE5;&#x6A21;&#x5F0F;&#x7684;&#x6269;&#x5C55;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x7C7B;&#x578B;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x6BCF;&#x4E2A;&#x7C7B;&#x578B;&#x90FD;&#x5F62;&#x5982;<code>const type&amp;</code>&#x3002;</p>
+<pre class="language-"><code class="lang-c++">print(cout, i, s, 42);   // two parameters in the pack
+ostream&amp; print(ostream&amp;, const int&amp;, const string&amp;, const int&amp;);
+</code></pre>
+</li>
+<li><p>&#x7B2C;&#x4E8C;&#x4E2A;&#x6269;&#x5C55;&#x64CD;&#x4F5C;&#x6269;&#x5C55;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x5305;&#xFF0C;&#x6A21;&#x5F0F;&#x662F;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x5305;&#x7684;&#x540D;&#x5B57;&#x3002;&#x6269;&#x5C55;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x7531;&#x5305;&#x4E2D;&#x5143;&#x7D20;&#x7EC4;&#x6210;&#x3001;&#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x5217;&#x8868;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">print(os, s, 42);
+</code></pre>
+</li>
+</ul>
+<p>&#x6269;&#x5C55;&#x64CD;&#x4F5C;&#x4E2D;&#x7684;&#x6A21;&#x5F0F;&#x4F1A;&#x72EC;&#x7ACB;&#x5730;&#x5E94;&#x7528;&#x4E8E;&#x5305;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// call debug_rep on each argument in the call to print
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename...</span> <span class="token attr-name">Args</span><span class="token punctuation">&gt;</span></span>
+ostream &amp;errorMsg(ostream &amp;os, const Args&amp;... rest)
+{
+    // print(os, debug_rep(a1), debug_rep(a2), ..., debug_rep(an)
+    return print(os, debug_rep(rest)...);
+}
+
+// passes the pack to debug_rep; print(os, debug_rep(a1, a2, ..., an))
+print(os, debug_rep(rest...));   // error: no matching function to call
+</code></pre>
+<h3 id="&#x8F6C;&#x53D1;&#x53C2;&#x6570;&#x5305;&#xFF08;forwarding-parameter-packs&#xFF09;"><a name="&#x8F6C;&#x53D1;&#x53C2;&#x6570;&#x5305;&#xFF08;forwarding-parameter-packs&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x8F6C;&#x53D1;&#x53C2;&#x6570;&#x5305;&#xFF08;forwarding-parameter-packs&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8F6C;&#x53D1;&#x53C2;&#x6570;&#x5305;&#xFF08;Forwarding Parameter Packs&#xFF09;</h3>
+<p>&#x5728;C++11&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x7EC4;&#x5408;&#x4F7F;&#x7528;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x6A21;&#x677F;&#x548C;<code>forward</code>&#x673A;&#x5236;&#x6765;&#x7F16;&#x5199;&#x51FD;&#x6570;&#xFF0C;&#x5B9E;&#x73B0;&#x5C06;&#x5176;&#x5B9E;&#x53C2;&#x4E0D;&#x53D8;&#x5730;&#x4F20;&#x9012;&#x7ED9;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// fun has zero or more parameters each of which is
+// an rvalue reference to a template parameter type
+template<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename...</span> <span class="token attr-name">Args</span><span class="token punctuation">&gt;</span></span>
+void fun(Args&amp;&amp;... args)    // expands Args as a list of rvalue references
+{
+    // the argument to work expands both Args and args
+    work(std::forward<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Args</span><span class="token punctuation">&gt;</span></span>(args)...);
+}
+</code></pre>
+<h2 id="&#x6A21;&#x677F;&#x7279;&#x4F8B;&#x5316;&#xFF08;template-specializations&#xFF09;"><a name="&#x6A21;&#x677F;&#x7279;&#x4F8B;&#x5316;&#xFF08;template-specializations&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x677F;&#x7279;&#x4F8B;&#x5316;&#xFF08;template-specializations&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6A21;&#x677F;&#x7279;&#x4F8B;&#x5316;&#xFF08;Template Specializations&#xFF09;</h2>
+<p>&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x901A;&#x7528;&#x6A21;&#x677F;&#x7684;&#x5B9A;&#x4E49;&#x5BF9;&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x662F;&#x4E0D;&#x5408;&#x9002;&#x7684;&#xFF0C;&#x53EF;&#x80FD;&#x7F16;&#x8BD1;&#x5931;&#x8D25;&#x6216;&#x8005;&#x64CD;&#x4F5C;&#x4E0D;&#x6B63;&#x786E;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x5E0C;&#x671B;&#x6216;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x7248;&#x672C;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x7C7B;&#x6216;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x7684;&#x7279;&#x4F8B;&#x5316;&#x7248;&#x672C;&#x3002;&#x4E00;&#x4E2A;&#x7279;&#x4F8B;&#x5316;&#x7248;&#x672C;&#x5C31;&#x662F;&#x6A21;&#x677F;&#x7684;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x5B9A;&#x4E49;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x88AB;&#x6307;&#x5B9A;&#x4E3A;&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// first version; can compare any two types
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span> int compare(const T&amp;, const T&amp;);
+// second version to handle string literals
+template<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>size_t</span> <span class="token attr-name">N,</span> <span class="token attr-name">size_t</span> <span class="token attr-name">M</span><span class="token punctuation">&gt;</span></span>
+int compare(const char (&amp;)[N], const char (&amp;)[M]);
+
+const char *p1 = &quot;hi&quot;, *p2 = &quot;mom&quot;;
+compare(p1, p2);        // calls the first template
+compare(&quot;hi&quot;, &quot;mom&quot;);   // calls the template with two nontype parameters
+
+// special version of compare to handle pointers to character arrays
+template &lt;&gt;
+int compare(const char* const &amp;p1, const char* const &amp;p2)
+{
+    return strcmp(p1, p2);
+}
+</code></pre>
+<p>&#x7279;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x4E3A;&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x90FD;&#x63D0;&#x4F9B;&#x5B9E;&#x53C2;&#x3002;&#x4E3A;&#x4E86;&#x6307;&#x660E;&#x6211;&#x4EEC;&#x6B63;&#x5728;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#xFF0C;&#x5E94;&#x8BE5;&#x5728;&#x5173;&#x952E;&#x5B57;<code>template</code>&#x540E;&#x9762;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x7A7A;&#x5C16;&#x62EC;&#x53F7;&#x5BF9;<code>&lt;&gt;</code>&#x3002;</p>
+<p>&#x7279;&#x4F8B;&#x5316;&#x7248;&#x672C;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x4E0E;&#x4E00;&#x4E2A;&#x5148;&#x524D;&#x58F0;&#x660E;&#x7684;&#x6A21;&#x677F;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x578B;&#x76F8;&#x5339;&#x914D;&#x3002;</p>
+<p>&#x5B9A;&#x4E49;&#x7279;&#x4F8B;&#x5316;&#x51FD;&#x6570;&#x7248;&#x672C;&#x672C;&#x8D28;&#x4E0A;&#x662F;&#x63A5;&#x7BA1;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x4E3A;&#x6A21;&#x677F;&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x5B9E;&#x4F8B;&#x63D0;&#x4F9B;&#x4E86;&#x5B9A;&#x4E49;&#x3002;&#x7279;&#x4F8B;&#x5316;&#x5E76;&#x975E;&#x91CD;&#x8F7D;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x5F71;&#x54CD;&#x51FD;&#x6570;&#x5339;&#x914D;&#x3002;</p>
+<p>&#x5C06;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7248;&#x672C;&#x7684;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x4E3A;&#x7279;&#x4F8B;&#x5316;&#x6A21;&#x677F;&#x8FD8;&#x662F;&#x72EC;&#x7ACB;&#x7684;&#x975E;&#x6A21;&#x677F;&#x51FD;&#x6570;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x91CD;&#x8F7D;&#x51FD;&#x6570;&#x5339;&#x914D;&#x3002;</p>
+<p>&#x6A21;&#x677F;&#x7279;&#x4F8B;&#x5316;&#x9075;&#x5FAA;&#x666E;&#x901A;&#x4F5C;&#x7528;&#x57DF;&#x89C4;&#x5219;&#x3002;&#x4E3A;&#x4E86;&#x7279;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#xFF0C;&#x539F;&#x6A21;&#x677F;&#x7684;&#x58F0;&#x660E;&#x5FC5;&#x987B;&#x5728;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x3002;&#x800C;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x4E5F;&#x5FC5;&#x987B;&#x5148;&#x5305;&#x542B;&#x7279;&#x4F8B;&#x5316;&#x7248;&#x672C;&#x7684;&#x58F0;&#x660E;&#x3002;</p>
+<p>&#x901A;&#x5E38;&#xFF0C;&#x6A21;&#x677F;&#x53CA;&#x5176;&#x7279;&#x4F8B;&#x5316;&#x7248;&#x672C;&#x5E94;&#x8BE5;&#x58F0;&#x660E;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5934;&#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x6240;&#x6709;&#x540C;&#x540D;&#x6A21;&#x677F;&#x7684;&#x58F0;&#x660E;&#x653E;&#x5728;&#x6587;&#x4EF6;&#x5F00;&#x5934;&#xFF0C;&#x540E;&#x9762;&#x662F;&#x8FD9;&#x4E9B;&#x6A21;&#x677F;&#x7684;&#x7279;&#x4F8B;&#x5316;&#x7248;&#x672C;&#x3002;</p>
+<p>&#x7C7B;&#x6A21;&#x677F;&#x4E5F;&#x53EF;&#x4EE5;&#x7279;&#x4F8B;&#x5316;&#x3002;&#x4E0E;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x4E0D;&#x540C;&#xFF0C;&#x7C7B;&#x6A21;&#x677F;&#x7684;&#x7279;&#x4F8B;&#x5316;&#x4E0D;&#x5FC5;&#x4E3A;&#x6240;&#x6709;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x63D0;&#x4F9B;&#x5B9E;&#x53C2;&#xFF0C;&#x53EF;&#x4EE5;&#x53EA;&#x6307;&#x5B9A;&#x4E00;&#x90E8;&#x5206;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x3002;&#x4E00;&#x4E2A;&#x7C7B;&#x6A21;&#x677F;&#x7684;&#x90E8;&#x5206;&#x7279;&#x4F8B;&#x5316;&#xFF08;partial specialization&#xFF09;&#x7248;&#x672C;&#x672C;&#x8EAB;&#x8FD8;&#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#xFF0C;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x65F6;&#x5FC5;&#x987B;&#x4E3A;&#x90A3;&#x4E9B;&#x672A;&#x6307;&#x5B9A;&#x7684;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x63D0;&#x4F9B;&#x5B9E;&#x53C2;&#x3002;</p>
+<p>&#x53EA;&#x80FD;&#x90E8;&#x5206;&#x7279;&#x4F8B;&#x5316;&#x7C7B;&#x6A21;&#x677F;&#xFF0C;&#x4E0D;&#x80FD;&#x90E8;&#x5206;&#x7279;&#x4F8B;&#x5316;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x7C7B;&#x6A21;&#x677F;&#x7684;&#x90E8;&#x5206;&#x7279;&#x4F8B;&#x5316;&#x7248;&#x672C;&#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x672A;&#x5B8C;&#x5168;&#x786E;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x6A21;&#x677F;&#x53C2;&#x6570;&#xFF0C;&#x5728;&#x7279;&#x4F8B;&#x5316;&#x7248;&#x672C;&#x7684;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E2D;&#x90FD;&#x6709;&#x4E00;&#x9879;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#x3002;&#x5728;&#x7C7B;&#x540D;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x4E3A;&#x7279;&#x4F8B;&#x5316;&#x7684;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x5B9E;&#x53C2;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B9E;&#x53C2;&#x4F4D;&#x4E8E;&#x6A21;&#x677F;&#x540D;&#x4E4B;&#x540E;&#x7684;&#x5C16;&#x62EC;&#x53F7;&#x4E2D;&#xFF0C;&#x4E0E;&#x539F;&#x59CB;&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x6309;&#x4F4D;&#x7F6E;&#x76F8;&#x5BF9;&#x5E94;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// &#x901A;&#x7528;&#x7248;&#x672C;
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+struct remove_reference
+{
+    typedef T type;
+};
+
+// &#x90E8;&#x5206;&#x7279;&#x4F8B;&#x5316;&#x7248;&#x672C;
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+struct remove_reference<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span> <span class="token attr-name">&amp;</span><span class="token punctuation">&gt;</span></span>   // &#x5DE6;&#x503C;&#x5F15;&#x7528;
+{
+    typedef T type;
+};
+
+template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+struct remove_reference<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span> <span class="token attr-name">&amp;&amp;</span><span class="token punctuation">&gt;</span></span>  // &#x53F3;&#x503C;&#x5F15;&#x7528;
+{
+    typedef T type;
+};
+</code></pre>
+<p>&#x7C7B;&#x6A21;&#x677F;&#x90E8;&#x5206;&#x7279;&#x4F8B;&#x5316;&#x7248;&#x672C;&#x7684;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5217;&#x8868;&#x662F;&#x539F;&#x59CB;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5217;&#x8868;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x96C6;&#x6216;&#x7279;&#x4F8B;&#x5316;&#x7248;&#x672C;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x53EA;&#x7279;&#x4F8B;&#x5316;&#x7C7B;&#x6A21;&#x677F;&#x7684;&#x6307;&#x5B9A;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x7279;&#x4F8B;&#x5316;&#x6574;&#x4E2A;&#x6A21;&#x677F;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">template <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+struct Foo
+{
+    Foo(const T &amp;t = T()): mem(t) { }
+    void Bar() { /* ... */ }
+    T mem;
+    // other members of Foo
+};
+
+template&lt;&gt;      // we&apos;re specializing a template
+void Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>::Bar()    // we&apos;re specializing the Bar member of Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>
+{
+    // do whatever specialized processing that applies to ints
+}
+
+Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span> fs;     // instantiates Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span>::Foo()
+fs.Bar();    // instantiates Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span>::Bar()
+Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span> fi;    // instantiates Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>::Foo()
+fi.Bar();    // uses our specialization of Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>::Bar()
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; bookins.cn 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-07-17 09:10:04
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Chapter-15 Object-Oriented Programming/" class="navigation navigation-prev " aria-label="Previous page: Chapter 15 Object Oriented Programming">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter-17 Specialized Library Facilities/" class="navigation navigation-next " aria-label="Next page: Chapter 17 Specialized Library Facilities">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 16 Templates And Generic Programming","level":"1.17","depth":1,"next":{"title":"Chapter 17 Specialized Library Facilities","level":"1.18","depth":1,"path":"Chapter-17 Specialized Library Facilities/README.md","ref":"Chapter-17 Specialized Library Facilities/README.md","articles":[]},"previous":{"title":"Chapter 15 Object Oriented Programming","level":"1.16","depth":1,"path":"Chapter-15 Object-Oriented Programming/README.md","ref":"Chapter-15 Object-Oriented Programming/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","chapter-fold","splitter","-sharing","github-buttons","tbfed-pagefooter","baidu-tongji","anchor-navigation-ex","summary"],"styles":{"website":"./public-repertory/css/gitbook-configure.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy bookins.cn 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"shell":"bash"}},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"55e7dfe47f4dc1c018d4042fdfa62565"},"summary":{},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"yao-yue","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"yao-yue","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"yaoyue","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"yaoyue 的随笔","language":"zh-hans","gitbook":"*","description":"邀月的随笔，少即是多，简单"},"file":{"path":"Chapter-16 Templates and Generic Programming/README.md","mtime":"2021-07-17T09:10:04.597Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-07-17T09:10:44.336Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

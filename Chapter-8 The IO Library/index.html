@@ -1,0 +1,758 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 8 The IO Library · yaoyue 的随笔</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yaoyue">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter-9 Sequential Containers/" />
+    
+    
+    <link rel="prev" href="../Chapter-7 Classes/" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"yao-yue","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"yao-yue","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter-1 Getting Started/">
+            
+                <a href="../Chapter-1 Getting Started/">
+            
+                    
+                    Chapter 1 Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter-2 Variables and Basic Types/">
+            
+                <a href="../Chapter-2 Variables and Basic Types/">
+            
+                    
+                    Chapter 2 Variables And Basic Types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter-2 Variables and Basic Types/1-基本内置类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/1-基本内置类型.html">
+            
+                    
+                    基本内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter-2 Variables and Basic Types/2-变量.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/2-变量.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chapter-2 Variables and Basic Types/3-复合类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/3-复合类型.html">
+            
+                    
+                    复合类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Chapter-2 Variables and Basic Types/4-const限定符.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/4-const限定符.html">
+            
+                    
+                    Const限定符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Chapter-2 Variables and Basic Types/5-处理类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/5-处理类型.html">
+            
+                    
+                    处理类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Chapter-2 Variables and Basic Types/6-自定义数据结构.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/6-自定义数据结构.html">
+            
+                    
+                    自定义数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter-3 Strings, Vectors, and Arrays/">
+            
+                <a href="../Chapter-3 Strings, Vectors, and Arrays/">
+            
+                    
+                    Chapter 3 Strings, Vectors, And Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter-4 Expressions/">
+            
+                <a href="../Chapter-4 Expressions/">
+            
+                    
+                    Chapter 4 Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter-5 Statements/">
+            
+                <a href="../Chapter-5 Statements/">
+            
+                    
+                    Chapter 5 Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter-6 Functions/">
+            
+                <a href="../Chapter-6 Functions/">
+            
+                    
+                    Chapter 6 Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter-7 Classes/">
+            
+                <a href="../Chapter-7 Classes/">
+            
+                    
+                    Chapter 7 Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter 8 The IO Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Chapter-9 Sequential Containers/">
+            
+                <a href="../Chapter-9 Sequential Containers/">
+            
+                    
+                    Chapter 9 Sequential Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Chapter-10 Generic Algorithms/">
+            
+                <a href="../Chapter-10 Generic Algorithms/">
+            
+                    
+                    Chapter 10 Generic Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Chapter-11 Associative Containers/">
+            
+                <a href="../Chapter-11 Associative Containers/">
+            
+                    
+                    Chapter 11 Associative Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Chapter-12 Dynamic Memory/">
+            
+                <a href="../Chapter-12 Dynamic Memory/">
+            
+                    
+                    Chapter 12 Dynamic Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Chapter-13 Copy Control/">
+            
+                <a href="../Chapter-13 Copy Control/">
+            
+                    
+                    Chapter 13 Copy Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Chapter-14 Overloaded Operations and Conversions/">
+            
+                <a href="../Chapter-14 Overloaded Operations and Conversions/">
+            
+                    
+                    Chapter 14 Overloaded Operations And Conversions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Chapter-15 Object-Oriented Programming/">
+            
+                <a href="../Chapter-15 Object-Oriented Programming/">
+            
+                    
+                    Chapter 15 Object Oriented Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Chapter-16 Templates and Generic Programming/">
+            
+                <a href="../Chapter-16 Templates and Generic Programming/">
+            
+                    
+                    Chapter 16 Templates And Generic Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../Chapter-17 Specialized Library Facilities/">
+            
+                <a href="../Chapter-17 Specialized Library Facilities/">
+            
+                    
+                    Chapter 17 Specialized Library Facilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../Chapter-18 Tools for Large Programs/">
+            
+                <a href="../Chapter-18 Tools for Large Programs/">
+            
+                    
+                    Chapter 18 Tools For Large Programs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../Chapter-19 Specialized Tools and Techniques/">
+            
+                <a href="../Chapter-19 Specialized Tools and Techniques/">
+            
+                    
+                    Chapter 19 Specialized Tools And Techniques
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Chapter 8 The IO Library</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;8&#x7AE0;-io&#x5E93;"><b></b>&#x7B2C;8&#x7AE0; IO&#x5E93;</a></li><ul><li><span class="title-icon "></span><a href="#io&#x7C7B;&#xFF08;the-io-classes&#xFF09;"><b></b>IO&#x7C7B;&#xFF08;The IO Classes&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#io&#x8C61;&#x65E0;&#x62F7;&#x8D1D;&#x6216;&#x8D4B;&#x503C;&#xFF08;no-copy-or-assign-for-io-objects&#xFF09;"><b></b>IO&#x8C61;&#x65E0;&#x62F7;&#x8D1D;&#x6216;&#x8D4B;&#x503C;&#xFF08;No Copy or Assign for IO Objects&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x6761;&#x4EF6;&#x72B6;&#x6001;&#xFF08;condition-states&#xFF09;"><b></b>&#x6761;&#x4EF6;&#x72B6;&#x6001;&#xFF08;Condition States&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x7BA1;&#x7406;&#x8F93;&#x51FA;&#x7F13;&#x51B2;&#xFF08;managing-the-output-buffer&#xFF09;"><b></b>&#x7BA1;&#x7406;&#x8F93;&#x51FA;&#x7F13;&#x51B2;&#xFF08;Managing the Output Buffer&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6587;&#x4EF6;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#xFF08;file-input-and-output&#xFF09;"><b></b>&#x6587;&#x4EF6;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#xFF08;File Input and Output&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x6D41;&#x5BF9;&#x8C61;&#xFF08;using-file-stream-objects&#xFF09;"><b></b>&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x6D41;&#x5BF9;&#x8C61;&#xFF08;Using File Stream Objects&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x6587;&#x4EF6;&#x6A21;&#x5F0F;&#xFF08;file-modes&#xFF09;"><b></b>&#x6587;&#x4EF6;&#x6A21;&#x5F0F;&#xFF08;File Modes&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#string&#x6D41;&#xFF08;string-streams&#xFF09;"><b></b>string&#x6D41;&#xFF08;string Streams&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;istringstream&#xFF08;using-an-istringstream&#xFF09;"><b></b>&#x4F7F;&#x7528;istringstream&#xFF08;Using an istringstream&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;ostringstream&#xFF08;using-ostringstreams&#xFF09;"><b></b>&#x4F7F;&#x7528;ostringstream&#xFF08;Using ostringstreams&#xFF09;</a></li></ul></ul></ul></div><a href="#&#x7B2C;8&#x7AE0;-io&#x5E93;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;8&#x7AE0;-io&#x5E93;"><a name="&#x7B2C;8&#x7AE0;-io&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;8&#x7AE0;-io&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;8&#x7AE0; IO&#x5E93;</h1>
+<p>&#x90E8;&#x5206;IO&#x5E93;&#x8BBE;&#x65BD;&#xFF1A;</p>
+<ul>
+<li><code>istream</code>&#xFF1A;&#x8F93;&#x5165;&#x6D41;&#x7C7B;&#x578B;&#xFF0C;&#x63D0;&#x4F9B;&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#x3002;</li>
+<li><code>ostream</code>&#xFF1A;&#x8F93;&#x51FA;&#x6D41;&#x7C7B;&#x578B;&#xFF0C;&#x63D0;&#x4F9B;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x3002;</li>
+<li><code>cin</code>&#xFF1A;<code>istream</code>&#x5BF9;&#x8C61;&#xFF0C;&#x4ECE;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x3002;</li>
+<li><code>cout</code>&#xFF1A;<code>ostream</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5411;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x5199;&#x5165;&#x6570;&#x636E;&#x3002;</li>
+<li><code>cerr</code>&#xFF1A;<code>ostream</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5411;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#x5199;&#x5165;&#x6570;&#x636E;&#x3002;</li>
+<li><code>&gt;&gt;</code>&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;&#x4ECE;<code>istream</code>&#x5BF9;&#x8C61;&#x8BFB;&#x53D6;&#x8F93;&#x5165;&#x6570;&#x636E;&#x3002;</li>
+<li><code>&lt;&lt;</code>&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;&#x5411;<code>ostream</code>&#x5BF9;&#x8C61;&#x5199;&#x5165;&#x8F93;&#x51FA;&#x6570;&#x636E;&#x3002;</li>
+<li><code>getline</code>&#x51FD;&#x6570;&#xFF1A;&#x4ECE;<code>istream</code>&#x5BF9;&#x8C61;&#x8BFB;&#x53D6;&#x4E00;&#x884C;&#x6570;&#x636E;&#xFF0C;&#x5199;&#x5165;<code>string</code>&#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<h2 id="io&#x7C7B;&#xFF08;the-io-classes&#xFF09;"><a name="io&#x7C7B;&#xFF08;the-io-classes&#xFF09;" class="anchor-navigation-ex-anchor" href="#io&#x7C7B;&#xFF08;the-io-classes&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>IO&#x7C7B;&#xFF08;The IO Classes&#xFF09;</h2>
+<p>&#x5934;&#x6587;&#x4EF6;<em>iostream</em>&#x5B9A;&#x4E49;&#x4E86;&#x7528;&#x4E8E;&#x8BFB;&#x5199;&#x6D41;&#x7684;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#xFF0C;<em>fstream</em>&#x5B9A;&#x4E49;&#x4E86;&#x8BFB;&#x5199;&#x547D;&#x540D;&#x6587;&#x4EF6;&#x7684;&#x7C7B;&#x578B;&#xFF0C;<em>sstream</em>&#x5B9A;&#x4E49;&#x4E86;&#x8BFB;&#x5199;&#x5185;&#x5B58;&#x4E2D;<code>string</code>&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p><img src="Images/8-1.png" alt="8-1"></p>
+<p>&#x5BBD;&#x5B57;&#x7B26;&#x7248;&#x672C;&#x7684;IO&#x7C7B;&#x578B;&#x548C;&#x51FD;&#x6570;&#x7684;&#x540D;&#x5B57;&#x4EE5;<code>w</code>&#x5F00;&#x59CB;&#xFF0C;&#x5982;<code>wcin</code>&#x3001;<code>wcout</code>&#x548C;<code>wcerr</code>&#x5206;&#x522B;&#x5BF9;&#x5E94;<code>cin</code>&#x3001;<code>cout</code>&#x548C;<code>cerr</code>&#x3002;&#x5B83;&#x4EEC;&#x4E0E;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x666E;&#x901A;<code>char</code>&#x7248;&#x672C;&#x90FD;&#x5B9A;&#x4E49;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5934;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5982;&#x5934;&#x6587;&#x4EF6;<em>fstream</em>&#x5B9A;&#x4E49;&#x4E86;<code>ifstream</code>&#x548C;<code>wifstream</code>&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x5C06;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x5F53;&#x4F5C;&#x5176;&#x57FA;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x4F7F;&#x7528;&#x3002;</p>
+<h3 id="io&#x8C61;&#x65E0;&#x62F7;&#x8D1D;&#x6216;&#x8D4B;&#x503C;&#xFF08;no-copy-or-assign-for-io-objects&#xFF09;"><a name="io&#x8C61;&#x65E0;&#x62F7;&#x8D1D;&#x6216;&#x8D4B;&#x503C;&#xFF08;no-copy-or-assign-for-io-objects&#xFF09;" class="anchor-navigation-ex-anchor" href="#io&#x8C61;&#x65E0;&#x62F7;&#x8D1D;&#x6216;&#x8D4B;&#x503C;&#xFF08;no-copy-or-assign-for-io-objects&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>IO&#x8C61;&#x65E0;&#x62F7;&#x8D1D;&#x6216;&#x8D4B;&#x503C;&#xFF08;No Copy or Assign for IO Objects&#xFF09;</h3>
+<p>&#x4E0D;&#x80FD;&#x62F7;&#x8D1D;&#x6216;&#x5BF9;IO&#x5BF9;&#x8C61;&#x8D4B;&#x503C;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">ofstream out1, out2;
+out1 = out2;    // error: cannot assign stream objects
+ofstream print(ofstream);   // error: can&apos;t initialize the ofstream parameter
+out2 = print(out2);     // error: cannot copy stream objects
+</code></pre>
+<p>&#x7531;&#x4E8E;IO&#x5BF9;&#x8C61;&#x4E0D;&#x80FD;&#x62F7;&#x8D1D;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x80FD;&#x5C06;&#x51FD;&#x6570;&#x5F62;&#x53C2;&#x6216;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x4E3A;&#x6D41;&#x7C7B;&#x578B;&#x3002;&#x8FDB;&#x884C;IO&#x64CD;&#x4F5C;&#x7684;&#x51FD;&#x6570;&#x901A;&#x5E38;&#x4EE5;&#x5F15;&#x7528;&#x65B9;&#x5F0F;&#x4F20;&#x9012;&#x548C;&#x8FD4;&#x56DE;&#x6D41;&#x3002;&#x8BFB;&#x5199;&#x4E00;&#x4E2A;IO&#x5BF9;&#x8C61;&#x4F1A;&#x6539;&#x53D8;&#x5176;&#x72B6;&#x6001;&#xFF0C;&#x56E0;&#x6B64;&#x4F20;&#x9012;&#x548C;&#x8FD4;&#x56DE;&#x7684;&#x5F15;&#x7528;&#x4E0D;&#x80FD;&#x662F;<code>const</code>&#x7684;&#x3002;</p>
+<h3 id="&#x6761;&#x4EF6;&#x72B6;&#x6001;&#xFF08;condition-states&#xFF09;"><a name="&#x6761;&#x4EF6;&#x72B6;&#x6001;&#xFF08;condition-states&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6761;&#x4EF6;&#x72B6;&#x6001;&#xFF08;condition-states&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6761;&#x4EF6;&#x72B6;&#x6001;&#xFF08;Condition States&#xFF09;</h3>
+<p>IO&#x5E93;&#x6761;&#x4EF6;&#x72B6;&#x6001;&#xFF1A;</p>
+<p><img src="Images/8-2.png" alt="8-2"></p>
+<p><code>badbit</code>&#x8868;&#x793A;&#x7CFB;&#x7EDF;&#x7EA7;&#x9519;&#x8BEF;&#xFF0C;&#x5982;&#x4E0D;&#x53EF;&#x6062;&#x590D;&#x7684;&#x8BFB;&#x5199;&#x9519;&#x8BEF;&#x3002;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E00;&#x65E6;<code>badbit</code>&#x88AB;&#x7F6E;&#x4F4D;&#xFF0C;&#x6D41;&#x5C31;&#x65E0;&#x6CD5;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;&#x4E86;&#x3002;&#x5728;&#x53D1;&#x751F;&#x53EF;&#x6062;&#x590D;&#x9519;&#x8BEF;&#x540E;&#xFF0C;<code>failbit</code>&#x4F1A;&#x88AB;&#x7F6E;&#x4F4D;&#xFF0C;&#x5982;&#x671F;&#x671B;&#x8BFB;&#x53D6;&#x6570;&#x503C;&#x5374;&#x8BFB;&#x51FA;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x3002;&#x5982;&#x679C;&#x5230;&#x8FBE;&#x6587;&#x4EF6;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#xFF0C;<code>eofbit</code>&#x548C;<code>failbit</code>&#x90FD;&#x4F1A;&#x88AB;&#x7F6E;&#x4F4D;&#x3002;&#x5982;&#x679C;&#x6D41;&#x672A;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#xFF0C;&#x5219;<code>goodbit</code>&#x7684;&#x503C;&#x4E3A;0&#x3002;&#x5982;&#x679C;<code>badbit</code>&#x3001;<code>failbit</code>&#x548C;<code>eofbit</code>&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x88AB;&#x7F6E;&#x4F4D;&#xFF0C;&#x68C0;&#x6D4B;&#x6D41;&#x72B6;&#x6001;&#x7684;&#x6761;&#x4EF6;&#x90FD;&#x4F1A;&#x5931;&#x8D25;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">while (cin &gt;&gt; word)
+    // ok: read operation successful...
+</code></pre>
+<p><code>good</code>&#x51FD;&#x6570;&#x5728;&#x6240;&#x6709;&#x9519;&#x8BEF;&#x5747;&#x672A;&#x7F6E;&#x4F4D;&#x65F6;&#x8FD4;&#x56DE;<code>true</code>&#x3002;&#x800C;<code>bad</code>&#x3001;<code>fail</code>&#x548C;<code>eof</code>&#x51FD;&#x6570;&#x5728;&#x5BF9;&#x5E94;&#x9519;&#x8BEF;&#x4F4D;&#x88AB;&#x7F6E;&#x4F4D;&#x65F6;&#x8FD4;&#x56DE;<code>true</code>&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5728;<code>badbit</code>&#x88AB;&#x7F6E;&#x4F4D;&#x65F6;&#xFF0C;<code>fail</code>&#x51FD;&#x6570;&#x4E5F;&#x4F1A;&#x8FD4;&#x56DE;<code>true</code>&#x3002;&#x56E0;&#x6B64;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;<code>good</code>&#x6216;<code>fail</code>&#x51FD;&#x6570;&#x786E;&#x5B9A;&#x6D41;&#x7684;&#x603B;&#x4F53;&#x72B6;&#x6001;&#xFF0C;<code>eof</code>&#x548C;<code>bad</code>&#x53EA;&#x80FD;&#x68C0;&#x6D4B;&#x7279;&#x5B9A;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x6D41;&#x5BF9;&#x8C61;&#x7684;<code>rdstate</code>&#x6210;&#x5458;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>iostate</code>&#x503C;&#xFF0C;&#x8868;&#x793A;&#x6D41;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x3002;<code>setstate</code>&#x6210;&#x5458;&#x7528;&#x4E8E;&#x5C06;&#x6307;&#x5B9A;&#x6761;&#x4EF6;&#x7F6E;&#x4F4D;&#xFF08;&#x53E0;&#x52A0;&#x539F;&#x59CB;&#x6D41;&#x72B6;&#x6001;&#xFF09;&#x3002;<code>clear</code>&#x6210;&#x5458;&#x7684;&#x65E0;&#x53C2;&#x7248;&#x672C;&#x6E05;&#x9664;&#x6240;&#x6709;&#x9519;&#x8BEF;&#x6807;&#x5FD7;&#xFF1B;&#x542B;&#x53C2;&#x7248;&#x672C;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;<code>iostate</code>&#x503C;&#xFF0C;&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x6D41;&#x7684;&#x65B0;&#x72B6;&#x6001;&#xFF08;&#x8986;&#x76D6;&#x539F;&#x59CB;&#x6D41;&#x72B6;&#x6001;&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// remember the current state of cin
+auto old_state = cin.rdstate();     // remember the current state of cin
+cin.clear();    // make cin valid
+process_input(cin);     // use cin
+cin.setstate(old_state);    // now reset cin to its old state
+</code></pre>
+<h3 id="&#x7BA1;&#x7406;&#x8F93;&#x51FA;&#x7F13;&#x51B2;&#xFF08;managing-the-output-buffer&#xFF09;"><a name="&#x7BA1;&#x7406;&#x8F93;&#x51FA;&#x7F13;&#x51B2;&#xFF08;managing-the-output-buffer&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7BA1;&#x7406;&#x8F93;&#x51FA;&#x7F13;&#x51B2;&#xFF08;managing-the-output-buffer&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7BA1;&#x7406;&#x8F93;&#x51FA;&#x7F13;&#x51B2;&#xFF08;Managing the Output Buffer&#xFF09;</h3>
+<p>&#x6BCF;&#x4E2A;&#x8F93;&#x51FA;&#x6D41;&#x90FD;&#x7BA1;&#x7406;&#x4E00;&#x4E2A;&#x7F13;&#x51B2;&#x533A;&#xFF0C;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x7A0B;&#x5E8F;&#x8BFB;&#x5199;&#x7684;&#x6570;&#x636E;&#x3002;&#x5BFC;&#x81F4;&#x7F13;&#x51B2;&#x5237;&#x65B0;&#xFF08;&#x5373;&#x6570;&#x636E;&#x771F;&#x6B63;&#x5199;&#x5165;&#x8F93;&#x51FA;&#x8BBE;&#x5907;&#x6216;&#x6587;&#x4EF6;&#xFF09;&#x7684;&#x539F;&#x56E0;&#x6709;&#x5F88;&#x591A;&#xFF1A;</p>
+<ul>
+<li>&#x7A0B;&#x5E8F;&#x6B63;&#x5E38;&#x7ED3;&#x675F;&#x3002;</li>
+<li>&#x7F13;&#x51B2;&#x533A;&#x5DF2;&#x6EE1;&#x3002;</li>
+<li>&#x4F7F;&#x7528;&#x64CD;&#x7EB5;&#x7B26;&#xFF08;&#x5982;<code>endl</code>&#xFF09;&#x663E;&#x5F0F;&#x5237;&#x65B0;&#x7F13;&#x51B2;&#x533A;&#x3002;</li>
+<li>&#x5728;&#x6BCF;&#x4E2A;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;<code>unitbuf</code>&#x64CD;&#x7EB5;&#x7B26;&#x8BBE;&#x7F6E;&#x6D41;&#x7684;&#x5185;&#x90E8;&#x72B6;&#x6001;&#xFF0C;&#x4ECE;&#x800C;&#x6E05;&#x7A7A;&#x7F13;&#x51B2;&#x533A;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5BF9;<code>cerr</code>&#x662F;&#x8BBE;&#x7F6E;<code>unitbuf</code>&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x5199;&#x5230;<code>cerr</code>&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x662F;&#x7ACB;&#x5373;&#x5237;&#x65B0;&#x7684;&#x3002;</li>
+<li>&#x4E00;&#x4E2A;&#x8F93;&#x51FA;&#x6D41;&#x53EF;&#x4EE5;&#x88AB;&#x5173;&#x8054;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6D41;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5F53;&#x8BFB;&#x5199;&#x88AB;&#x5173;&#x8054;&#x7684;&#x6D41;&#x65F6;&#xFF0C;&#x5173;&#x8054;&#x5230;&#x7684;&#x6D41;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x4F1A;&#x88AB;&#x5237;&#x65B0;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>cin</code>&#x548C;<code>cerr</code>&#x90FD;&#x5173;&#x8054;&#x5230;<code>cout</code>&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x8BFB;<code>cin</code>&#x6216;&#x5199;<code>cerr</code>&#x90FD;&#x4F1A;&#x5237;&#x65B0;<code>cout</code>&#x7684;&#x7F13;&#x51B2;&#x533A;&#x3002;</li>
+</ul>
+<p><code>flush</code>&#x64CD;&#x7EB5;&#x7B26;&#x5237;&#x65B0;&#x7F13;&#x51B2;&#x533A;&#xFF0C;&#x4F46;&#x4E0D;&#x8F93;&#x51FA;&#x4EFB;&#x4F55;&#x989D;&#x5916;&#x5B57;&#x7B26;&#x3002;<code>ends</code>&#x5411;&#x7F13;&#x51B2;&#x533A;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x7A7A;&#x5B57;&#x7B26;&#xFF0C;&#x7136;&#x540E;&#x5237;&#x65B0;&#x7F13;&#x51B2;&#x533A;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">cout &lt;&lt; &quot;hi!&quot; &lt;&lt; endl;   // writes hi and a newline, then flushes the buffer
+cout &lt;&lt; &quot;hi!&quot; &lt;&lt; flush;  // writes hi, then flushes the buffer; adds no data
+cout &lt;&lt; &quot;hi!&quot; &lt;&lt; ends;   // writes hi and a null, then flushes the buffer
+</code></pre>
+<p>&#x5982;&#x679C;&#x60F3;&#x5728;&#x6BCF;&#x6B21;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x540E;&#x90FD;&#x5237;&#x65B0;&#x7F13;&#x51B2;&#x533A;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>unitbuf</code>&#x64CD;&#x7EB5;&#x7B26;&#x3002;&#x5B83;&#x4EE4;&#x6D41;&#x5728;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x6BCF;&#x6B21;&#x5199;&#x64CD;&#x4F5C;&#x540E;&#x90FD;&#x8FDB;&#x884C;&#x4E00;&#x6B21;<code>flush</code>&#x64CD;&#x4F5C;&#x3002;&#x800C;<code>nounitbuf</code>&#x64CD;&#x7EB5;&#x7B26;&#x5219;&#x4F7F;&#x6D41;&#x6062;&#x590D;&#x4F7F;&#x7528;&#x6B63;&#x5E38;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x5237;&#x65B0;&#x673A;&#x5236;&#x3002;</p>
+<pre class="language-"><code class="lang-C++">cout &lt;&lt; unitbuf;    // all writes will be flushed immediately
+// any output is flushed immediately, no buffering
+cout &lt;&lt; nounitbuf;  // returns to normal buffering
+</code></pre>
+<p>&#x5982;&#x679C;&#x7A0B;&#x5E8F;&#x5F02;&#x5E38;&#x7EC8;&#x6B62;&#xFF0C;&#x8F93;&#x51FA;&#x7F13;&#x51B2;&#x533A;&#x4E0D;&#x4F1A;&#x88AB;&#x5237;&#x65B0;&#x3002;</p>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x6D41;&#x88AB;&#x5173;&#x8054;&#x5230;&#x4E00;&#x4E2A;&#x8F93;&#x51FA;&#x6D41;&#x65F6;&#xFF0C;&#x4EFB;&#x4F55;&#x8BD5;&#x56FE;&#x4ECE;&#x8F93;&#x5165;&#x6D41;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x7684;&#x64CD;&#x4F5C;&#x90FD;&#x4F1A;&#x5148;&#x5237;&#x65B0;&#x5173;&#x8054;&#x7684;&#x8F93;&#x51FA;&#x6D41;&#x3002;&#x6807;&#x51C6;&#x5E93;&#x5C06;<code>cout</code>&#x548C;<code>cin</code>&#x5173;&#x8054;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x56E0;&#x6B64;&#x4E0B;&#x9762;&#x7684;&#x8BED;&#x53E5;&#x4F1A;&#x5BFC;&#x81F4;<code>cout</code>&#x7684;&#x7F13;&#x51B2;&#x533A;&#x88AB;&#x5237;&#x65B0;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c++">cin &gt;&gt; ival;
+</code></pre>
+<p>&#x4EA4;&#x4E92;&#x5F0F;&#x7CFB;&#x7EDF;&#x901A;&#x5E38;&#x5E94;&#x8BE5;&#x5173;&#x8054;&#x8F93;&#x5165;&#x6D41;&#x548C;&#x8F93;&#x51FA;&#x6D41;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5305;&#x62EC;&#x7528;&#x6237;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#x5728;&#x5185;&#x7684;&#x6240;&#x6709;&#x8F93;&#x51FA;&#xFF0C;&#x90FD;&#x4F1A;&#x5728;&#x8BFB;&#x64CD;&#x4F5C;&#x4E4B;&#x524D;&#x88AB;&#x6253;&#x5370;&#x51FA;&#x6765;&#x3002;</p>
+<p>&#x4F7F;&#x7528;<code>tie</code>&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5173;&#x8054;&#x4E24;&#x4E2A;&#x6D41;&#x3002;&#x5B83;&#x6709;&#x4E24;&#x4E2A;&#x91CD;&#x8F7D;&#x7248;&#x672C;&#xFF1A;&#x65E0;&#x53C2;&#x7248;&#x672C;&#x8FD4;&#x56DE;&#x6307;&#x5411;&#x8F93;&#x51FA;&#x6D41;&#x7684;&#x6307;&#x9488;&#x3002;&#x5982;&#x679C;&#x672C;&#x5BF9;&#x8C61;&#x5DF2;&#x5173;&#x8054;&#x5230;&#x4E00;&#x4E2A;&#x8F93;&#x51FA;&#x6D41;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7684;&#x5C31;&#x662F;&#x6307;&#x5411;&#x8FD9;&#x4E2A;&#x6D41;&#x7684;&#x6307;&#x9488;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x7A7A;&#x6307;&#x9488;&#x3002;<code>tie</code>&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x7248;&#x672C;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x6307;&#x5411;<code>ostream</code>&#x7684;&#x6307;&#x9488;&#xFF0C;&#x5C06;&#x672C;&#x5BF9;&#x8C61;&#x5173;&#x8054;&#x5230;&#x6B64;<code>ostream</code>&#x3002;</p>
+<pre class="language-"><code class="lang-c++">cin.tie(&amp;cout);     // illustration only: the library ties cin and cout for us
+// old_tie points to the stream (if any) currently tied to cin
+ostream *old_tie = cin.tie(nullptr); // cin is no longer tied
+// ties cin and cerr; not a good idea because cin should be tied to cout
+cin.tie(&amp;cerr);     // reading cin flushes cerr, not cout
+cin.tie(old_tie);   // reestablish normal tie between cin and cout
+</code></pre>
+<p>&#x6BCF;&#x4E2A;&#x6D41;&#x540C;&#x65F6;&#x6700;&#x591A;&#x5173;&#x8054;&#x4E00;&#x4E2A;&#x6D41;&#xFF0C;&#x4F46;&#x591A;&#x4E2A;&#x6D41;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5173;&#x8054;&#x540C;&#x4E00;&#x4E2A;<code>ostream</code>&#x3002;&#x5411;<code>tie</code>&#x4F20;&#x9012;&#x7A7A;&#x6307;&#x9488;&#x53EF;&#x4EE5;&#x89E3;&#x5F00;&#x6D41;&#x7684;&#x5173;&#x8054;&#x3002;</p>
+<h2 id="&#x6587;&#x4EF6;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#xFF08;file-input-and-output&#xFF09;"><a name="&#x6587;&#x4EF6;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#xFF08;file-input-and-output&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x4EF6;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#xFF08;file-input-and-output&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6587;&#x4EF6;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#xFF08;File Input and Output&#xFF09;</h2>
+<p>&#x5934;&#x6587;&#x4EF6;<em>fstream</em>&#x5B9A;&#x4E49;&#x4E86;&#x4E09;&#x4E2A;&#x7C7B;&#x578B;&#x6765;&#x652F;&#x6301;&#x6587;&#x4EF6;IO&#xFF1A;<code>ifstream</code>&#x4ECE;&#x7ED9;&#x5B9A;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C;<code>ofstream</code>&#x5411;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x5199;&#x5165;&#x6570;&#x636E;&#xFF0C;<code>fstream</code>&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8BFB;&#x5199;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x3002;</p>
+<p><img src="Images/8-3.png" alt="8-3"></p>
+<h3 id="&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x6D41;&#x5BF9;&#x8C61;&#xFF08;using-file-stream-objects&#xFF09;"><a name="&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x6D41;&#x5BF9;&#x8C61;&#xFF08;using-file-stream-objects&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x6D41;&#x5BF9;&#x8C61;&#xFF08;using-file-stream-objects&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x6D41;&#x5BF9;&#x8C61;&#xFF08;Using File Stream Objects&#xFF09;</h3>
+<p>&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x6D41;&#x7C7B;&#x578B;&#x90FD;&#x5B9A;&#x4E49;&#x4E86;<code>open</code>&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x5B8C;&#x6210;&#x4E00;&#x4E9B;&#x7CFB;&#x7EDF;&#x64CD;&#x4F5C;&#xFF0C;&#x5B9A;&#x4F4D;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x89C6;&#x60C5;&#x51B5;&#x6253;&#x5F00;&#x4E3A;&#x8BFB;&#x6216;&#x5199;&#x6A21;&#x5F0F;&#x3002;</p>
+<p>&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x6D41;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x4E86;&#x6587;&#x4EF6;&#x540D;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#xFF0C;<code>open</code>&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;</p>
+<pre class="language-"><code class="lang-C++">ifstream in(ifile);   // construct an ifstream and open the given file
+ofstream out;   // output file stream that is not associated with any file
+</code></pre>
+<p>&#x5728;C++11&#x4E2D;&#xFF0C;&#x6587;&#x4EF6;&#x6D41;&#x5BF9;&#x8C61;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x53EF;&#x4EE5;&#x662F;<code>string</code>&#x5BF9;&#x8C61;&#x6216;C&#x98CE;&#x683C;&#x5B57;&#x7B26;&#x6570;&#x7EC4;&#x3002;&#x65E7;&#x7248;&#x672C;&#x7684;&#x6807;&#x51C6;&#x5E93;&#x53EA;&#x652F;&#x6301;C&#x98CE;&#x683C;&#x5B57;&#x7B26;&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x5728;&#x8981;&#x6C42;&#x4F7F;&#x7528;&#x57FA;&#x7C7B;&#x5BF9;&#x8C61;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x7EE7;&#x627F;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x4EE3;&#x66FF;&#x3002;&#x56E0;&#x6B64;&#x4E00;&#x4E2A;&#x63A5;&#x53D7;<code>iostream</code>&#x7C7B;&#x578B;&#x5F15;&#x7528;&#x6216;&#x6307;&#x9488;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5BF9;&#x5E94;&#x7684;<code>fstream</code>&#x7C7B;&#x578B;&#x6765;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x5148;&#x5B9A;&#x4E49;&#x7A7A;&#x6587;&#x4EF6;&#x6D41;&#x5BF9;&#x8C61;&#xFF0C;&#x518D;&#x8C03;&#x7528;<code>open</code>&#x51FD;&#x6570;&#x5C06;&#x5176;&#x4E0E;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x5173;&#x8054;&#x3002;&#x5982;&#x679C;<code>open</code>&#x8C03;&#x7528;&#x5931;&#x8D25;&#xFF0C;<code>failbit</code>&#x4F1A;&#x88AB;&#x7F6E;&#x4F4D;&#x3002;</p>
+<p>&#x5BF9;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x6D41;&#x8C03;&#x7528;<code>open</code>&#x4F1A;&#x5931;&#x8D25;&#xFF0C;&#x5E76;&#x5BFC;&#x81F4;<code>failbit</code>&#x88AB;&#x7F6E;&#x4F4D;&#x3002;&#x968F;&#x540E;&#x8BD5;&#x56FE;&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x6D41;&#x7684;&#x64CD;&#x4F5C;&#x90FD;&#x4F1A;&#x5931;&#x8D25;&#x3002;&#x5982;&#x679C;&#x60F3;&#x5C06;&#x6587;&#x4EF6;&#x6D41;&#x5173;&#x8054;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x8C03;&#x7528;<code>close</code>&#x5173;&#x95ED;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#xFF0C;&#x518D;&#x8C03;&#x7528;<code>clear</code>&#x91CD;&#x7F6E;&#x6D41;&#x7684;&#x6761;&#x4EF6;&#x72B6;&#x6001;&#xFF08;<code>close</code>&#x4E0D;&#x4F1A;&#x91CD;&#x7F6E;&#x6D41;&#x7684;&#x6761;&#x4EF6;&#x72B6;&#x6001;&#xFF09;&#x3002;</p>
+<p>&#x5F53;<code>fstream</code>&#x5BF9;&#x8C61;&#x88AB;&#x9500;&#x6BC1;&#x65F6;&#xFF0C;<code>close</code>&#x4F1A;&#x81EA;&#x52A8;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<h3 id="&#x6587;&#x4EF6;&#x6A21;&#x5F0F;&#xFF08;file-modes&#xFF09;"><a name="&#x6587;&#x4EF6;&#x6A21;&#x5F0F;&#xFF08;file-modes&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x4EF6;&#x6A21;&#x5F0F;&#xFF08;file-modes&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6587;&#x4EF6;&#x6A21;&#x5F0F;&#xFF08;File Modes&#xFF09;</h3>
+<p>&#x6BCF;&#x4E2A;&#x6D41;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x5173;&#x8054;&#x7684;&#x6587;&#x4EF6;&#x6A21;&#x5F0F;&#xFF0C;&#x7528;&#x6765;&#x6307;&#x51FA;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x3002;</p>
+<p><img src="Images/8-4.png" alt="8-4"></p>
+<ul>
+<li>&#x53EA;&#x80FD;&#x5BF9;<code>ofstream</code>&#x6216;<code>fstream</code>&#x5BF9;&#x8C61;&#x8BBE;&#x5B9A;<code>out</code>&#x6A21;&#x5F0F;&#x3002;</li>
+<li>&#x53EA;&#x80FD;&#x5BF9;<code>ifstream</code>&#x6216;<code>fstream</code>&#x5BF9;&#x8C61;&#x8BBE;&#x5B9A;<code>in</code>&#x6A21;&#x5F0F;&#x3002;</li>
+<li>&#x53EA;&#x6709;&#x5F53;<code>out</code>&#x88AB;&#x8BBE;&#x5B9A;&#x65F6;&#x624D;&#x80FD;&#x8BBE;&#x5B9A;<code>trunc</code>&#x6A21;&#x5F0F;&#x3002;</li>
+<li>&#x53EA;&#x8981;<code>trunc</code>&#x6CA1;&#x88AB;&#x8BBE;&#x5B9A;&#xFF0C;&#x5C31;&#x80FD;&#x8BBE;&#x5B9A;<code>app</code>&#x6A21;&#x5F0F;&#x3002;&#x5728;<code>app</code>&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x5373;&#x4F7F;&#x6CA1;&#x6709;&#x8BBE;&#x5B9A;<code>out</code>&#x6A21;&#x5F0F;&#xFF0C;&#x6587;&#x4EF6;&#x4E5F;&#x662F;&#x4EE5;&#x8F93;&#x51FA;&#x65B9;&#x5F0F;&#x6253;&#x5F00;&#x3002;</li>
+<li>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5373;&#x4F7F;&#x6CA1;&#x6709;&#x8BBE;&#x5B9A;<code>trunc</code>&#xFF0C;&#x4EE5;<code>out</code>&#x6A21;&#x5F0F;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x4E5F;&#x4F1A;&#x88AB;&#x622A;&#x65AD;&#x3002;&#x5982;&#x679C;&#x60F3;&#x4FDD;&#x7559;&#x4EE5;<code>out</code>&#x6A21;&#x5F0F;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x540C;&#x65F6;&#x8BBE;&#x5B9A;<code>app</code>&#x6A21;&#x5F0F;&#xFF0C;&#x8FD9;&#x4F1A;&#x5C06;&#x6570;&#x636E;&#x8FFD;&#x52A0;&#x5199;&#x5230;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF1B;&#x6216;&#x8005;&#x540C;&#x65F6;&#x8BBE;&#x5B9A;<code>in</code>&#x6A21;&#x5F0F;&#xFF0C;&#x5373;&#x540C;&#x65F6;&#x8FDB;&#x884C;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#x3002;</li>
+<li><code>ate</code>&#x548C;<code>binary</code>&#x6A21;&#x5F0F;&#x53EF;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x6587;&#x4EF6;&#x6D41;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x548C;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;&#x6A21;&#x5F0F;&#x7EC4;&#x5408;&#x4F7F;&#x7528;&#x3002;</li>
+<li>&#x4E0E;<code>ifstream</code>&#x5BF9;&#x8C61;&#x5173;&#x8054;&#x7684;&#x6587;&#x4EF6;&#x9ED8;&#x8BA4;&#x4EE5;<code>in</code>&#x6A21;&#x5F0F;&#x6253;&#x5F00;&#xFF0C;&#x4E0E;<code>ofstream</code>&#x5BF9;&#x8C61;&#x5173;&#x8054;&#x7684;&#x6587;&#x4EF6;&#x9ED8;&#x8BA4;&#x4EE5;<code>out</code>&#x6A21;&#x5F0F;&#x6253;&#x5F00;&#xFF0C;&#x4E0E;<code>fstream</code>&#x5BF9;&#x8C61;&#x5173;&#x8054;&#x7684;&#x6587;&#x4EF6;&#x9ED8;&#x8BA4;&#x4EE5;<code>in</code>&#x548C;<code>out</code>&#x6A21;&#x5F0F;&#x6253;&#x5F00;&#x3002;</li>
+</ul>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6253;&#x5F00;<code>ofstream</code>&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x4F1A;&#x88AB;&#x4E22;&#x5F03;&#xFF0C;&#x963B;&#x6B62;&#x6587;&#x4EF6;&#x6E05;&#x7A7A;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x540C;&#x65F6;&#x6307;&#x5B9A;<code>app</code>&#x6216;<code>in</code>&#x6A21;&#x5F0F;&#x3002;</p>
+<p>&#x6D41;&#x5BF9;&#x8C61;&#x6BCF;&#x6B21;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x65F6;&#x90FD;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x5176;&#x6587;&#x4EF6;&#x6A21;&#x5F0F;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">ofstream out;   // no file mode is set
+out.open(&quot;scratchpad&quot;);    // mode implicitly out and trunc
+out.close();    // close out so we can use it for a different file
+out.open(&quot;precious&quot;, ofstream::app);   // mode is out and app
+out.close();
+</code></pre>
+<h2 id="string&#x6D41;&#xFF08;string-streams&#xFF09;"><a name="string&#x6D41;&#xFF08;string-streams&#xFF09;" class="anchor-navigation-ex-anchor" href="#string&#x6D41;&#xFF08;string-streams&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>string&#x6D41;&#xFF08;string Streams&#xFF09;</h2>
+<p>&#x5934;&#x6587;&#x4EF6;<em>sstream</em>&#x5B9A;&#x4E49;&#x4E86;&#x4E09;&#x4E2A;&#x7C7B;&#x578B;&#x6765;&#x652F;&#x6301;&#x5185;&#x5B58;IO&#xFF1A;<code>istringstream</code>&#x4ECE;<code>string</code>&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C;<code>ostringstream</code>&#x5411;<code>string</code>&#x5199;&#x5165;&#x6570;&#x636E;&#xFF0C;<code>stringstream</code>&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8BFB;&#x5199;<code>string</code>&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p><img src="Images/8-5.png" alt="8-5"></p>
+<h3 id="&#x4F7F;&#x7528;istringstream&#xFF08;using-an-istringstream&#xFF09;"><a name="&#x4F7F;&#x7528;istringstream&#xFF08;using-an-istringstream&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;istringstream&#xFF08;using-an-istringstream&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;istringstream&#xFF08;Using an istringstream&#xFF09;</h3>
+<pre class="language-"><code class="lang-c++">// members are public by default
+struct PersonInfo
+{
+    string name;
+    vector<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span> phones;
+};
+
+string line, word;   // will hold a line and word from input, respectively
+vector<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>PersonInfo</span><span class="token punctuation">&gt;</span></span> people;    // will hold all the records from the input
+// read the input a line at a time until cin hits end-of-file (or another error)
+while (getline(cin, line))
+{
+    PersonInfo info;    // create an object to hold this record&apos;s data
+    istringstream record(line);    // bind record to the line we just read
+    record &gt;&gt; info.name;    // read the name
+    while (record &gt;&gt; word)  // read the phone numbers
+        info.phones.push_back(word);   // and store them
+    people.push_back(info);    // append this record to people
+}
+</code></pre>
+<h3 id="&#x4F7F;&#x7528;ostringstream&#xFF08;using-ostringstreams&#xFF09;"><a name="&#x4F7F;&#x7528;ostringstream&#xFF08;using-ostringstreams&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;ostringstream&#xFF08;using-ostringstreams&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;ostringstream&#xFF08;Using ostringstreams&#xFF09;</h3>
+<pre class="language-"><code class="lang-C++">for (const auto &amp;entry : people)
+{ // for each entry in people
+    ostringstream formatted, badNums;   // objects created on each loop
+    for (const auto &amp;nums : entry.phones)
+    { // for each number
+        if (!valid(nums))
+        {
+            badNums &lt;&lt; &quot; &quot; &lt;&lt; nums;  // string in badNums
+        }
+        else
+            // &apos;&apos;writes&apos;&apos; to formatted&apos;s string
+            formatted &lt;&lt; &quot; &quot; &lt;&lt; format(nums);
+    }
+
+    if (badNums.str().empty())   // there were no bad numbers
+        os &lt;&lt; entry.name &lt;&lt; &quot; &quot;  // print the name
+            &lt;&lt; formatted.str() &lt;&lt; endl;   // and reformatted numbers
+    else  // otherwise, print the name and bad numbers
+        cerr &lt;&lt; &quot;input error: &quot; &lt;&lt; entry.name
+            &lt;&lt; &quot; invalid number(s) &quot; &lt;&lt; badNums.str() &lt;&lt; endl;
+}
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; bookins.cn 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-07-17 09:10:04
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Chapter-7 Classes/" class="navigation navigation-prev " aria-label="Previous page: Chapter 7 Classes">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter-9 Sequential Containers/" class="navigation navigation-next " aria-label="Next page: Chapter 9 Sequential Containers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 8 The IO Library","level":"1.9","depth":1,"next":{"title":"Chapter 9 Sequential Containers","level":"1.10","depth":1,"path":"Chapter-9 Sequential Containers/README.md","ref":"Chapter-9 Sequential Containers/README.md","articles":[]},"previous":{"title":"Chapter 7 Classes","level":"1.8","depth":1,"path":"Chapter-7 Classes/README.md","ref":"Chapter-7 Classes/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","chapter-fold","splitter","-sharing","github-buttons","tbfed-pagefooter","baidu-tongji","anchor-navigation-ex","summary"],"styles":{"website":"./public-repertory/css/gitbook-configure.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy bookins.cn 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"shell":"bash"}},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"55e7dfe47f4dc1c018d4042fdfa62565"},"summary":{},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"yao-yue","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"yao-yue","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"yaoyue","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"yaoyue 的随笔","language":"zh-hans","gitbook":"*","description":"邀月的随笔，少即是多，简单"},"file":{"path":"Chapter-8 The IO Library/README.md","mtime":"2021-07-17T09:10:04.609Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-07-17T09:10:44.336Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

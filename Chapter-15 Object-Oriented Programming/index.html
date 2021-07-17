@@ -1,0 +1,945 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 15 Object Oriented Programming · yaoyue 的随笔</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yaoyue">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter-16 Templates and Generic Programming/" />
+    
+    
+    <link rel="prev" href="../Chapter-14 Overloaded Operations and Conversions/" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"yao-yue","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"yao-yue","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter-1 Getting Started/">
+            
+                <a href="../Chapter-1 Getting Started/">
+            
+                    
+                    Chapter 1 Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter-2 Variables and Basic Types/">
+            
+                <a href="../Chapter-2 Variables and Basic Types/">
+            
+                    
+                    Chapter 2 Variables And Basic Types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter-2 Variables and Basic Types/1-基本内置类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/1-基本内置类型.html">
+            
+                    
+                    基本内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter-2 Variables and Basic Types/2-变量.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/2-变量.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chapter-2 Variables and Basic Types/3-复合类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/3-复合类型.html">
+            
+                    
+                    复合类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Chapter-2 Variables and Basic Types/4-const限定符.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/4-const限定符.html">
+            
+                    
+                    Const限定符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Chapter-2 Variables and Basic Types/5-处理类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/5-处理类型.html">
+            
+                    
+                    处理类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Chapter-2 Variables and Basic Types/6-自定义数据结构.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/6-自定义数据结构.html">
+            
+                    
+                    自定义数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter-3 Strings, Vectors, and Arrays/">
+            
+                <a href="../Chapter-3 Strings, Vectors, and Arrays/">
+            
+                    
+                    Chapter 3 Strings, Vectors, And Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter-4 Expressions/">
+            
+                <a href="../Chapter-4 Expressions/">
+            
+                    
+                    Chapter 4 Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter-5 Statements/">
+            
+                <a href="../Chapter-5 Statements/">
+            
+                    
+                    Chapter 5 Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter-6 Functions/">
+            
+                <a href="../Chapter-6 Functions/">
+            
+                    
+                    Chapter 6 Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter-7 Classes/">
+            
+                <a href="../Chapter-7 Classes/">
+            
+                    
+                    Chapter 7 Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Chapter-8 The IO Library/">
+            
+                <a href="../Chapter-8 The IO Library/">
+            
+                    
+                    Chapter 8 The IO Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Chapter-9 Sequential Containers/">
+            
+                <a href="../Chapter-9 Sequential Containers/">
+            
+                    
+                    Chapter 9 Sequential Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Chapter-10 Generic Algorithms/">
+            
+                <a href="../Chapter-10 Generic Algorithms/">
+            
+                    
+                    Chapter 10 Generic Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Chapter-11 Associative Containers/">
+            
+                <a href="../Chapter-11 Associative Containers/">
+            
+                    
+                    Chapter 11 Associative Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Chapter-12 Dynamic Memory/">
+            
+                <a href="../Chapter-12 Dynamic Memory/">
+            
+                    
+                    Chapter 12 Dynamic Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Chapter-13 Copy Control/">
+            
+                <a href="../Chapter-13 Copy Control/">
+            
+                    
+                    Chapter 13 Copy Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Chapter-14 Overloaded Operations and Conversions/">
+            
+                <a href="../Chapter-14 Overloaded Operations and Conversions/">
+            
+                    
+                    Chapter 14 Overloaded Operations And Conversions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter 15 Object Oriented Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Chapter-16 Templates and Generic Programming/">
+            
+                <a href="../Chapter-16 Templates and Generic Programming/">
+            
+                    
+                    Chapter 16 Templates And Generic Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../Chapter-17 Specialized Library Facilities/">
+            
+                <a href="../Chapter-17 Specialized Library Facilities/">
+            
+                    
+                    Chapter 17 Specialized Library Facilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../Chapter-18 Tools for Large Programs/">
+            
+                <a href="../Chapter-18 Tools for Large Programs/">
+            
+                    
+                    Chapter 18 Tools For Large Programs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../Chapter-19 Specialized Tools and Techniques/">
+            
+                <a href="../Chapter-19 Specialized Tools and Techniques/">
+            
+                    
+                    Chapter 19 Specialized Tools And Techniques
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Chapter 15 Object Oriented Programming</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;15&#x7AE0;-&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;"><b></b>&#x7B2C;15&#x7AE0; &#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;</a></li><ul><li><span class="title-icon "></span><a href="#oop&#xFF1A;&#x6982;&#x8FF0;&#xFF08;oop&#xFF1A;an-overview&#xFF09;"><b></b>OOP&#xFF1A;&#x6982;&#x8FF0;&#xFF08;OOP&#xFF1A;An Overview&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;&#x548C;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;defining-base-and-derived-classes&#xFF09;"><b></b>&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;&#x548C;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;Defining Base and Derived Classes&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;&#xFF08;defining-a-base-class&#xFF09;"><b></b>&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;&#xFF08;Defining a Base Class&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;defining-a-derived-class&#xFF09;"><b></b>&#x5B9A;&#x4E49;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;Defining a Derived Class&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;conversions-and-inheritance&#xFF09;"><b></b>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;Conversions and Inheritance&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x865A;&#x51FD;&#x6570;&#xFF08;virtual-functions&#xFF09;"><b></b>&#x865A;&#x51FD;&#x6570;&#xFF08;Virtual Functions&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#xFF08;abstract-base-classes&#xFF09;"><b></b>&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#xFF08;Abstract Base Classes&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;access-control-and-inheritance&#xFF09;"><b></b>&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;Access Control and Inheritance&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x7EE7;&#x627F;&#x4E2D;&#x7684;&#x7C7B;&#x4F5C;&#x7528;&#x57DF;&#xFF08;class-scope-under-inheritance&#xFF09;"><b></b>&#x7EE7;&#x627F;&#x4E2D;&#x7684;&#x7C7B;&#x4F5C;&#x7528;&#x57DF;&#xFF08;Class Scope under Inheritance&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0E;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#xFF08;constructors-and-copy-control&#xFF09;"><b></b>&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0E;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#xFF08;Constructors and Copy Control&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF08;virtual-destructors&#xFF09;"><b></b>&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF08;Virtual Destructors&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5408;&#x6210;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;synthesized-copy-control-and-inheritance&#xFF09;"><b></b>&#x5408;&#x6210;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;Synthesized Copy Control and Inheritance&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#x6210;&#x5458;&#xFF08;derived-class-copy-control-members&#xFF09;"><b></b>&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#x6210;&#x5458;&#xFF08;Derived-Class Copy-Control Members&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x7EE7;&#x627F;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;inherited-constructors&#xFF09;"><b></b>&#x7EE7;&#x627F;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;Inherited Constructors&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5BB9;&#x5668;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;containers-and-inheritance&#xFF09;"><b></b>&#x5BB9;&#x5668;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;Containers and Inheritance&#xFF09;</a></li></ul></ul></div><a href="#&#x7B2C;15&#x7AE0;-&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;15&#x7AE0;-&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;"><a name="&#x7B2C;15&#x7AE0;-&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;15&#x7AE0;-&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;15&#x7AE0; &#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;</h1>
+<h2 id="oop&#xFF1A;&#x6982;&#x8FF0;&#xFF08;oop&#xFF1A;an-overview&#xFF09;"><a name="oop&#xFF1A;&#x6982;&#x8FF0;&#xFF08;oop&#xFF1A;an-overview&#xFF09;" class="anchor-navigation-ex-anchor" href="#oop&#xFF1A;&#x6982;&#x8FF0;&#xFF08;oop&#xFF1A;an-overview&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>OOP&#xFF1A;&#x6982;&#x8FF0;&#xFF08;OOP&#xFF1A;An Overview&#xFF09;</h2>
+<p>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#xFF08;object-oriented programming&#xFF09;&#x7684;&#x6838;&#x5FC3;&#x601D;&#x60F3;&#x662F;&#x6570;&#x636E;&#x62BD;&#x8C61;&#xFF08;&#x5C01;&#x88C5;&#xFF09;&#x3001;&#x7EE7;&#x627F;&#x548C;&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#xFF08;&#x591A;&#x6001;&#xFF09;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x7EE7;&#x627F;&#xFF08;inheritance&#xFF09;&#x8054;&#x7CFB;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x7C7B;&#x6784;&#x6210;&#x4E00;&#x79CD;&#x5C42;&#x6B21;&#x5173;&#x7CFB;&#x3002;&#x901A;&#x5E38;&#x5728;&#x5C42;&#x6B21;&#x5173;&#x7CFB;&#x7684;&#x6839;&#x90E8;&#x6709;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#xFF08;base class&#xFF09;&#xFF0C;&#x5176;&#x4ED6;&#x7C7B;&#x5219;&#x76F4;&#x63A5;&#x6216;&#x95F4;&#x63A5;&#x5730;&#x4ECE;&#x57FA;&#x7C7B;&#x7EE7;&#x627F;&#x800C;&#x6765;&#xFF0C;&#x8FD9;&#x4E9B;&#x7EE7;&#x627F;&#x5F97;&#x5230;&#x7684;&#x7C7B;&#x53EB;&#x505A;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;derived class&#xFF09;&#x3002;&#x57FA;&#x7C7B;&#x8D1F;&#x8D23;&#x5B9A;&#x4E49;&#x5728;&#x5C42;&#x6B21;&#x5173;&#x7CFB;&#x4E2D;&#x6240;&#x6709;&#x7C7B;&#x5171;&#x540C;&#x62E5;&#x6709;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x800C;&#x6BCF;&#x4E2A;&#x6D3E;&#x751F;&#x7C7B;&#x5B9A;&#x4E49;&#x5404;&#x81EA;&#x7279;&#x6709;&#x7684;&#x6210;&#x5458;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x67D0;&#x4E9B;&#x51FD;&#x6570;&#xFF0C;&#x57FA;&#x7C7B;&#x5E0C;&#x671B;&#x5B83;&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#x5404;&#x81EA;&#x5B9A;&#x4E49;&#x9002;&#x5408;&#x81EA;&#x8EAB;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x6B64;&#x65F6;&#x57FA;&#x7C7B;&#x5E94;&#x8BE5;&#x5C06;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E3A;&#x865A;&#x51FD;&#x6570;&#xFF08;virtual function&#xFF09;&#x3002;&#x65B9;&#x6CD5;&#x662F;&#x5728;&#x51FD;&#x6570;&#x540D;&#x79F0;&#x524D;&#x6DFB;&#x52A0;<code>virtual</code>&#x5173;&#x952E;&#x5B57;&#x3002;</p>
+<pre class="language-"><code class="lang-C++">class Quote
+{
+public:
+    std::string isbn() const;
+    virtual double net_price(std::size_t n) const;
+};
+</code></pre>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x7C7B;&#x6D3E;&#x751F;&#x5217;&#x8868;&#xFF08;class derivation list&#xFF09;&#x660E;&#x786E;&#x6307;&#x51FA;&#x5B83;&#x662F;&#x4ECE;&#x54EA;&#x4E2A;&#x6216;&#x54EA;&#x4E9B;&#x57FA;&#x7C7B;&#x7EE7;&#x627F;&#x800C;&#x6765;&#x7684;&#x3002;&#x7C7B;&#x6D3E;&#x751F;&#x5217;&#x8868;&#x7684;&#x5F62;&#x5F0F;&#x9996;&#x5148;&#x662F;&#x4E00;&#x4E2A;&#x5192;&#x53F7;&#xFF0C;&#x540E;&#x9762;&#x7D27;&#x8DDF;&#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x57FA;&#x7C7B;&#x5217;&#x8868;&#xFF0C;&#x5176;&#x4E2D;&#x6BCF;&#x4E2A;&#x57FA;&#x7C7B;&#x524D;&#x9762;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x8BBF;&#x95EE;&#x8BF4;&#x660E;&#x7B26;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Bulk_quote : public Quote
+{ // Bulk_quote inherits from Quote
+public:
+    double net_price(std::size_t) const override;
+};
+</code></pre>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x5FC5;&#x987B;&#x5728;&#x5176;&#x5185;&#x90E8;&#x5BF9;&#x6240;&#x6709;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#x7684;&#x865A;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x58F0;&#x660E;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x57FA;&#x7C7B;&#x7684;&#x5F15;&#x7528;&#x6216;&#x6307;&#x9488;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x865A;&#x51FD;&#x6570;&#x65F6;&#x5C06;&#x53D1;&#x751F;&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#xFF08;dynamic binding&#xFF09;&#xFF0C;&#x4E5F;&#x53EB;&#x8FD0;&#x884C;&#x65F6;&#x7ED1;&#x5B9A;&#xFF08;run-time binding&#xFF09;&#x3002;&#x51FD;&#x6570;&#x7684;&#x8FD0;&#x884C;&#x7248;&#x672C;&#x5C06;&#x7531;&#x5B9E;&#x53C2;&#x51B3;&#x5B9A;&#x3002;</p>
+<h2 id="&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;&#x548C;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;defining-base-and-derived-classes&#xFF09;"><a name="&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;&#x548C;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;defining-base-and-derived-classes&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;&#x548C;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;defining-base-and-derived-classes&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;&#x548C;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;Defining Base and Derived Classes&#xFF09;</h2>
+<h3 id="&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;&#xFF08;defining-a-base-class&#xFF09;"><a name="&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;&#xFF08;defining-a-base-class&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;&#xFF08;defining-a-base-class&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;&#xFF08;Defining a Base Class&#xFF09;</h3>
+<p>&#x57FA;&#x7C7B;&#x901A;&#x5E38;&#x90FD;&#x5E94;&#x8BE5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF0C;&#x5373;&#x4F7F;&#x8BE5;&#x51FD;&#x6570;&#x4E0D;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x5B9E;&#x9645;&#x64CD;&#x4F5C;&#x4E5F;&#x662F;&#x5982;&#x6B64;&#x3002;</p>
+<p>&#x9664;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E4B;&#x5916;&#x7684;&#x4EFB;&#x4F55;&#x975E;&#x9759;&#x6001;&#x51FD;&#x6570;&#x90FD;&#x80FD;&#x5B9A;&#x4E49;&#x4E3A;&#x865A;&#x51FD;&#x6570;&#x3002;<code>virtual</code>&#x5173;&#x952E;&#x5B57;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x5728;&#x7C7B;&#x5185;&#x90E8;&#x7684;&#x58F0;&#x660E;&#x8BED;&#x53E5;&#x4E4B;&#x524D;&#x800C;&#x4E0D;&#x80FD;&#x7528;&#x4E8E;&#x7C7B;&#x5916;&#x90E8;&#x7684;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x3002;&#x5982;&#x679C;&#x57FA;&#x7C7B;&#x628A;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E3A;&#x865A;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x8BE5;&#x51FD;&#x6570;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x9690;&#x5F0F;&#x5730;&#x4E5F;&#x662F;&#x865A;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x6210;&#x5458;&#x51FD;&#x6570;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x88AB;&#x58F0;&#x660E;&#x4E3A;&#x865A;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x5176;&#x89E3;&#x6790;&#x8FC7;&#x7A0B;&#x53D1;&#x751F;&#x5728;&#x7F16;&#x8BD1;&#x9636;&#x6BB5;&#x800C;&#x975E;&#x8FD0;&#x884C;&#x9636;&#x6BB5;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x80FD;&#x8BBF;&#x95EE;&#x57FA;&#x7C7B;&#x7684;&#x516C;&#x6709;&#x6210;&#x5458;&#xFF0C;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#x79C1;&#x6709;&#x6210;&#x5458;&#x3002;&#x5982;&#x679C;&#x57FA;&#x7C7B;&#x5E0C;&#x671B;&#x5B9A;&#x4E49;&#x5916;&#x90E8;&#x4EE3;&#x7801;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#xFF0C;&#x4F46;&#x662F;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x53D7;&#x4FDD;&#x62A4;&#x7684;&#xFF08;protected&#xFF09;&#x8BBF;&#x95EE;&#x8FD0;&#x7B97;&#x7B26;&#x8FDB;&#x884C;&#x8BF4;&#x660E;&#x3002;</p>
+<h3 id="&#x5B9A;&#x4E49;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;defining-a-derived-class&#xFF09;"><a name="&#x5B9A;&#x4E49;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;defining-a-derived-class&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;defining-a-derived-class&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9A;&#x4E49;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;Defining a Derived Class&#xFF09;</h3>
+<p>&#x7C7B;&#x6D3E;&#x751F;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x8BBF;&#x95EE;&#x8BF4;&#x660E;&#x7B26;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x6D3E;&#x751F;&#x7C7B;&#x4ECE;&#x57FA;&#x7C7B;&#x7EE7;&#x627F;&#x800C;&#x6765;&#x7684;&#x6210;&#x5458;&#x662F;&#x5426;&#x5BF9;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x7528;&#x6237;&#x53EF;&#x89C1;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6D3E;&#x751F;&#x7C7B;&#x6CA1;&#x6709;&#x8986;&#x76D6;&#x5176;&#x57FA;&#x7C7B;&#x7684;&#x67D0;&#x4E2A;&#x865A;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x8BE5;&#x865A;&#x51FD;&#x6570;&#x7684;&#x884C;&#x4E3A;&#x7C7B;&#x4F3C;&#x4E8E;&#x5176;&#x4ED6;&#x7684;&#x666E;&#x901A;&#x51FD;&#x6570;&#xFF0C;&#x6D3E;&#x751F;&#x7C7B;&#x4F1A;&#x76F4;&#x63A5;&#x7EE7;&#x627F;&#x5176;&#x5728;&#x57FA;&#x7C7B;&#x4E2D;&#x7684;&#x7248;&#x672C;&#x3002;</p>
+<p>C++&#x6807;&#x51C6;&#x5E76;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x89C4;&#x5B9A;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5982;&#x4F55;&#x5206;&#x5E03;&#xFF0C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#x7EE7;&#x627F;&#x81EA;&#x57FA;&#x7C7B;&#x7684;&#x90E8;&#x5206;&#x548C;&#x6D3E;&#x751F;&#x7C7B;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x90E8;&#x5206;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x8FDE;&#x7EED;&#x5B58;&#x50A8;&#x7684;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x4E2D;&#x542B;&#x6709;&#x4E0E;&#x5176;&#x57FA;&#x7C7B;&#x5BF9;&#x5E94;&#x7684;&#x7EC4;&#x6210;&#x90E8;&#x5206;&#xFF0C;&#x6240;&#x4EE5;&#x80FD;&#x628A;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x5F53;&#x4F5C;&#x57FA;&#x7C7B;&#x5BF9;&#x8C61;&#x6765;&#x4F7F;&#x7528;&#xFF0C;&#x4E5F;&#x80FD;&#x5C06;&#x57FA;&#x7C7B;&#x7684;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#x7ED1;&#x5B9A;&#x5230;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x57FA;&#x7C7B;&#x90E8;&#x5206;&#x4E0A;&#x3002;&#x8FD9;&#x79CD;&#x8F6C;&#x6362;&#x901A;&#x5E38;&#x79F0;&#x4E3A;&#x6D3E;&#x751F;&#x7C7B;&#x5230;&#x57FA;&#x7C7B;&#x7684;&#xFF08;derived-to-base&#xFF09;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x9690;&#x5F0F;&#x6267;&#x884C;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">Quote item;         // object of base type
+Bulk_quote bulk;    // object of derived type
+Quote *p = <span class="token entity named-entity" title="&amp;item;">&amp;item;</span>   // p points to a Quote object
+p = <span class="token entity named-entity" title="&amp;bulk;">&amp;bulk;</span>          // p points to the Quote part of bulk
+Quote &amp;r = bulk;    // r bound to the Quote part of bulk
+</code></pre>
+<p>&#x6BCF;&#x4E2A;&#x7C7B;&#x63A7;&#x5236;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x6210;&#x5458;&#x521D;&#x59CB;&#x5316;&#x8FC7;&#x7A0B;&#xFF0C;&#x6D3E;&#x751F;&#x7C7B;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x57FA;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6765;&#x521D;&#x59CB;&#x5316;&#x5B83;&#x7684;&#x57FA;&#x7C7B;&#x90E8;&#x5206;&#x3002;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;&#x6765;&#x5C06;&#x5B9E;&#x53C2;&#x4F20;&#x9012;&#x7ED9;&#x57FA;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">Bulk_quote(const std::string&amp; book, double p, 
+            std::size_t qty, double disc) :
+    Quote(book, p), min_qty(qty), discount(disc) { }
+</code></pre>
+<p>&#x9664;&#x975E;&#x7279;&#x522B;&#x6307;&#x51FA;&#xFF0C;&#x5426;&#x5219;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x7684;&#x57FA;&#x7C7B;&#x90E8;&#x5206;&#x4F1A;&#x50CF;&#x6570;&#x636E;&#x6210;&#x5458;&#x4E00;&#x6837;&#x6267;&#x884C;&#x9ED8;&#x8BA4;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x9996;&#x5148;&#x521D;&#x59CB;&#x5316;&#x57FA;&#x7C7B;&#x90E8;&#x5206;&#xFF0C;&#x7136;&#x540E;&#x6309;&#x7167;&#x58F0;&#x660E;&#x7684;&#x987A;&#x5E8F;&#x4F9D;&#x6B21;&#x521D;&#x59CB;&#x5316;&#x6D3E;&#x751F;&#x7C7B;&#x6210;&#x5458;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x57FA;&#x7C7B;&#x7684;&#x516C;&#x6709;&#x6210;&#x5458;&#x548C;&#x53D7;&#x4FDD;&#x62A4;&#x6210;&#x5458;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x57FA;&#x7C7B;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x6210;&#x5458;&#xFF0C;&#x5219;&#x5728;&#x6574;&#x4E2A;&#x7EE7;&#x627F;&#x4F53;&#x7CFB;&#x4E2D;&#x53EA;&#x5B58;&#x5728;&#x8BE5;&#x6210;&#x5458;&#x7684;&#x552F;&#x4E00;&#x5B9A;&#x4E49;&#x3002;&#x5982;&#x679C;&#x67D0;&#x9759;&#x6001;&#x6210;&#x5458;&#x662F;&#x53EF;&#x8BBF;&#x95EE;&#x7684;&#xFF0C;&#x5219;&#x65E2;&#x80FD;&#x901A;&#x8FC7;&#x57FA;&#x7C7B;&#x4E5F;&#x80FD;&#x901A;&#x8FC7;&#x6D3E;&#x751F;&#x7C7B;&#x4F7F;&#x7528;&#x5B83;&#x3002;</p>
+<p>&#x5DF2;&#x7ECF;&#x5B8C;&#x6574;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x624D;&#x80FD;&#x88AB;&#x7528;&#x4F5C;&#x57FA;&#x7C7B;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Base { /* ... */ } ;
+class D1: public Base { /* ... */ };
+class D2: public D1 { /* ... */ };
+</code></pre>
+<p><em>Base</em>&#x662F;<em>D1</em>&#x7684;&#x76F4;&#x63A5;&#x57FA;&#x7C7B;&#xFF08;direct base&#xFF09;&#xFF0C;&#x662F;<em>D2</em>&#x7684;&#x95F4;&#x63A5;&#x57FA;&#x7C7B;&#xFF08;indirect base&#xFF09;&#x3002;&#x6700;&#x7EC8;&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#x5C06;&#x5305;&#x542B;&#x5B83;&#x76F4;&#x63A5;&#x57FA;&#x7C7B;&#x7684;&#x5B50;&#x5BF9;&#x8C61;&#x4EE5;&#x53CA;&#x6BCF;&#x4E2A;&#x95F4;&#x63A5;&#x57FA;&#x7C7B;&#x7684;&#x5B50;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>C++11&#x4E2D;&#xFF0C;&#x5728;&#x7C7B;&#x540D;&#x540E;&#x9762;&#x6DFB;&#x52A0;<code>final</code>&#x5173;&#x952E;&#x5B57;&#x53EF;&#x4EE5;&#x7981;&#x6B62;&#x5176;&#x4ED6;&#x7C7B;&#x7EE7;&#x627F;&#x5B83;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class NoDerived final { /* */ };    // NoDerived can&apos;t be a base class
+class Base { /* */ };
+// Last is final; we cannot inherit from Last
+class Last final : Base { /* */ };  // Last can&apos;t be a base class
+class Bad : NoDerived { /* */ };    // error: NoDerived is final
+class Bad2 : Last { /* */ };        // error: Last is final
+</code></pre>
+<h3 id="&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;conversions-and-inheritance&#xFF09;"><a name="&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;conversions-and-inheritance&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;conversions-and-inheritance&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;Conversions and Inheritance&#xFF09;</h3>
+<p>&#x548C;&#x5185;&#x7F6E;&#x6307;&#x9488;&#x4E00;&#x6837;&#xFF0C;&#x667A;&#x80FD;&#x6307;&#x9488;&#x7C7B;&#x4E5F;&#x652F;&#x6301;&#x6D3E;&#x751F;&#x7C7B;&#x5230;&#x57FA;&#x7C7B;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x7684;&#x6307;&#x9488;&#x5B58;&#x50A8;&#x5728;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x7684;&#x667A;&#x80FD;&#x6307;&#x9488;&#x5185;&#x3002;</p>
+<p>&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x9759;&#x6001;&#x7C7B;&#x578B;&#xFF08;static type&#xFF09;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x603B;&#x662F;&#x5DF2;&#x77E5;&#x7684;&#xFF0C;&#x5B83;&#x662F;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x65F6;&#x7684;&#x7C7B;&#x578B;&#x6216;&#x8868;&#x8FBE;&#x5F0F;&#x751F;&#x6210;&#x7684;&#x7C7B;&#x578B;&#xFF1B;&#x52A8;&#x6001;&#x7C7B;&#x578B;&#xFF08;dynamic type&#xFF09;&#x5219;&#x662F;&#x53D8;&#x91CF;&#x6216;&#x8868;&#x8FBE;&#x5F0F;&#x8868;&#x793A;&#x7684;&#x5185;&#x5B58;&#x4E2D;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x53EA;&#x6709;&#x8FD0;&#x884C;&#x65F6;&#x624D;&#x53EF;&#x77E5;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8868;&#x8FBE;&#x5F0F;&#x65E2;&#x4E0D;&#x662F;&#x5F15;&#x7528;&#x4E5F;&#x4E0D;&#x662F;&#x6307;&#x9488;&#xFF0C;&#x5219;&#x5B83;&#x7684;&#x52A8;&#x6001;&#x7C7B;&#x578B;&#x6C38;&#x8FDC;&#x4E0E;&#x9759;&#x6001;&#x7C7B;&#x578B;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x4E0D;&#x5B58;&#x5728;&#x4ECE;&#x57FA;&#x7C7B;&#x5230;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x9690;&#x5F0F;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x5373;&#x4F7F;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#x7ED1;&#x5B9A;&#x5728;&#x4E00;&#x4E2A;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x4E0A;&#x4E5F;&#x4E0D;&#x884C;&#xFF0C;&#x56E0;&#x4E3A;&#x7F16;&#x8BD1;&#x5668;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x68C0;&#x67E5;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#x7684;&#x9759;&#x6001;&#x7C7B;&#x578B;&#x6765;&#x5224;&#x65AD;&#x8F6C;&#x6362;&#x662F;&#x5426;&#x5408;&#x6CD5;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">Quote base;
+Bulk_quote* bulkP = <span class="token entity named-entity" title="&amp;base;">&amp;base;</span>   // error: can&apos;t convert base to derived
+Bulk_quote&amp; bulkRef = base;  // error: can&apos;t convert base to derived
+</code></pre>
+<p>&#x5982;&#x679C;&#x5728;&#x57FA;&#x7C7B;&#x4E2D;&#x542B;&#x6709;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x865A;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>dynamic_cast</code>&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x7528;&#x4E8E;&#x5C06;&#x57FA;&#x7C7B;&#x7684;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#x5B89;&#x5168;&#x5730;&#x8F6C;&#x6362;&#x6210;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#xFF0C;&#x8BE5;&#x8F6C;&#x6362;&#x7684;&#x5B89;&#x5168;&#x68C0;&#x67E5;&#x5C06;&#x5728;&#x8FD0;&#x884C;&#x671F;&#x95F4;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5DF2;&#x77E5;&#x67D0;&#x4E2A;&#x57FA;&#x7C7B;&#x5230;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x8F6C;&#x6362;&#x662F;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>static_cast</code>&#x5F3A;&#x5236;&#x8986;&#x76D6;&#x6389;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x68C0;&#x67E5;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x5230;&#x57FA;&#x7C7B;&#x7684;&#x81EA;&#x52A8;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x53EA;&#x5BF9;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#x6709;&#x6548;&#xFF0C;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x7C7B;&#x578B;&#x548C;&#x57FA;&#x7C7B;&#x7C7B;&#x578B;&#x4E4B;&#x95F4;&#x4E0D;&#x5B58;&#x5728;&#x8FD9;&#x79CD;&#x8F6C;&#x6362;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x5230;&#x57FA;&#x7C7B;&#x7684;&#x8F6C;&#x6362;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x7ED9;&#x57FA;&#x7C7B;&#x7684;&#x62F7;&#x8D1D;/&#x79FB;&#x52A8;&#x64CD;&#x4F5C;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x662F;&#x57FA;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x53EA;&#x4F1A;&#x5904;&#x7406;&#x57FA;&#x7C7B;&#x81EA;&#x5DF1;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x90E8;&#x5206;&#x88AB;&#x5207;&#x6389;&#xFF08;sliced down&#xFF09;&#x4E86;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">Bulk_quote bulk;    // object of derived type
+Quote item(bulk);   // uses the Quote::Quote(const Quote&amp;) constructor
+item = bulk;        // calls Quote::operator=(const Quote&amp;)
+</code></pre>
+<p>&#x7528;&#x4E00;&#x4E2A;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x4E3A;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x5BF9;&#x8C61;&#x521D;&#x59CB;&#x5316;&#x6216;&#x8D4B;&#x503C;&#x65F6;&#xFF0C;&#x53EA;&#x6709;&#x8BE5;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x57FA;&#x7C7B;&#x90E8;&#x5206;&#x4F1A;&#x88AB;&#x62F7;&#x8D1D;&#x3001;&#x79FB;&#x52A8;&#x6216;&#x8D4B;&#x503C;&#xFF0C;&#x5B83;&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#x90E8;&#x5206;&#x4F1A;&#x88AB;&#x5FFD;&#x7565;&#x6389;&#x3002;</p>
+<h2 id="&#x865A;&#x51FD;&#x6570;&#xFF08;virtual-functions&#xFF09;"><a name="&#x865A;&#x51FD;&#x6570;&#xFF08;virtual-functions&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x865A;&#x51FD;&#x6570;&#xFF08;virtual-functions&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x865A;&#x51FD;&#x6570;&#xFF08;Virtual Functions&#xFF09;</h2>
+<p>&#x5F53;&#x4E14;&#x4EC5;&#x5F53;&#x901A;&#x8FC7;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#x8C03;&#x7528;&#x865A;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x624D;&#x4F1A;&#x5728;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x89E3;&#x6790;&#x8BE5;&#x8C03;&#x7528;&#xFF0C;&#x4E5F;&#x53EA;&#x6709;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x5BF9;&#x8C61;&#x7684;&#x52A8;&#x6001;&#x7C7B;&#x578B;&#x6709;&#x53EF;&#x80FD;&#x4E0E;&#x9759;&#x6001;&#x7C7B;&#x578B;&#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x8986;&#x76D6;&#x67D0;&#x4E2A;&#x865A;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x518D;&#x6B21;&#x4F7F;&#x7528;<code>virtual</code>&#x5173;&#x952E;&#x5B57;&#x8BF4;&#x660E;&#x51FD;&#x6570;&#x6027;&#x8D28;&#xFF0C;&#x4F46;&#x8FD9;&#x5E76;&#x975E;&#x5F3A;&#x5236;&#x8981;&#x6C42;&#x3002;&#x56E0;&#x4E3A;&#x4E00;&#x65E6;&#x67D0;&#x4E2A;&#x51FD;&#x6570;&#x88AB;&#x58F0;&#x660E;&#x4E3A;&#x865A;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x5728;&#x6240;&#x6709;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x5B83;&#x90FD;&#x662F;&#x865A;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x8986;&#x76D6;&#x67D0;&#x4E2A;&#x865A;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x5728;&#x57FA;&#x7C7B;&#x4E2D;&#x7684;&#x5F62;&#x53C2;&#x5FC5;&#x987B;&#x4E0E;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x7684;&#x5F62;&#x53C2;&#x4E25;&#x683C;&#x5339;&#x914D;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x4E0E;&#x57FA;&#x7C7B;&#x4E2D;&#x7684;&#x865A;&#x51FD;&#x6570;&#x540D;&#x5B57;&#x76F8;&#x540C;&#x4F46;&#x5F62;&#x53C2;&#x5217;&#x8868;&#x4E0D;&#x540C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x8BA4;&#x4E3A;&#x8BE5;&#x51FD;&#x6570;&#x4E0E;&#x57FA;&#x7C7B;&#x4E2D;&#x539F;&#x6709;&#x7684;&#x51FD;&#x6570;&#x662F;&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x6B64;&#x65F6;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x51FD;&#x6570;&#x5E76;&#x6CA1;&#x6709;&#x8986;&#x76D6;&#x6389;&#x57FA;&#x7C7B;&#x4E2D;&#x7684;&#x7248;&#x672C;&#x3002;</p>
+<p>C++11&#x5141;&#x8BB8;&#x6D3E;&#x751F;&#x7C7B;&#x4F7F;&#x7528;<code>override</code>&#x5173;&#x952E;&#x5B57;&#x663E;&#x5F0F;&#x5730;&#x6CE8;&#x660E;&#x865A;&#x51FD;&#x6570;&#x3002;&#x5982;&#x679C;<code>override</code>&#x6807;&#x8BB0;&#x4E86;&#x67D0;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x8BE5;&#x51FD;&#x6570;&#x5E76;&#x6CA1;&#x6709;&#x8986;&#x76D6;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x865A;&#x51FD;&#x6570;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x5C06;&#x62A5;&#x544A;&#x9519;&#x8BEF;&#x3002;<code>override</code>&#x4F4D;&#x4E8E;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E4B;&#x540E;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">struct B
+{
+    virtual void f1(int) const;
+    virtual void f2();
+    void f3();
+};
+
+struct D1 : B 
+{
+    void f1(int) const override;    // ok: f1 matches f1 in the base
+    void f2(int) override;      // error: B has no f2(int) function
+    void f3() override;     // error: f3 not virtual
+    void f4() override;     // error: B doesn&apos;t have a function named f4
+}
+</code></pre>
+<p>&#x4E0E;&#x7981;&#x6B62;&#x7C7B;&#x7EE7;&#x627F;&#x7C7B;&#x4F3C;&#xFF0C;&#x51FD;&#x6570;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6DFB;&#x52A0;<code>final</code>&#x5173;&#x952E;&#x5B57;&#x6765;&#x7981;&#x6B62;&#x8986;&#x76D6;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">struct D2 : B
+{
+    // inherits f2() and f3() from B and overrides f1(int)
+    void f1(int) const final;   // subsequent classes can&apos;t override f1(int)
+};
+</code></pre>
+<p><code>final</code>&#x548C;<code>override</code>&#x5173;&#x952E;&#x5B57;&#x51FA;&#x73B0;&#x5728;&#x5F62;&#x53C2;&#x5217;&#x8868;&#xFF08;&#x5305;&#x62EC;&#x4EFB;&#x4F55;<code>const</code>&#x6216;&#x5F15;&#x7528;&#x4FEE;&#x9970;&#x7B26;&#xFF09;&#x4EE5;&#x53CA;&#x5C3E;&#x7F6E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E4B;&#x540E;&#x3002;</p>
+<p>&#x865A;&#x51FD;&#x6570;&#x4E5F;&#x53EF;&#x4EE5;&#x6709;&#x9ED8;&#x8BA4;&#x5B9E;&#x53C2;&#xFF0C;&#x6BCF;&#x6B21;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x53C2;&#x503C;&#x7531;&#x672C;&#x6B21;&#x8C03;&#x7528;&#x7684;&#x9759;&#x6001;&#x7C7B;&#x578B;&#x51B3;&#x5B9A;&#x3002;&#x5982;&#x679C;&#x901A;&#x8FC7;&#x57FA;&#x7C7B;&#x7684;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#x8C03;&#x7528;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x57FA;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x53C2;&#xFF0C;&#x5373;&#x4F7F;&#x5B9E;&#x9645;&#x8FD0;&#x884C;&#x7684;&#x662F;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x7248;&#x672C;&#x4E5F;&#x662F;&#x5982;&#x6B64;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x865A;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x5B9E;&#x53C2;&#xFF0C;&#x5219;&#x57FA;&#x7C7B;&#x548C;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x53C2;&#x503C;&#x6700;&#x597D;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x4F5C;&#x7528;&#x57DF;&#x8FD0;&#x7B97;&#x7B26;<code>::</code>&#x53EF;&#x4EE5;&#x5F3A;&#x5236;&#x6267;&#x884C;&#x865A;&#x51FD;&#x6570;&#x7684;&#x67D0;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x4E0D;&#x8FDB;&#x884C;&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// calls the version from the base class regardless of the dynamic type of baseP
+double undiscounted = baseP-&gt;Quote::net_price(42);
+</code></pre>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EA;&#x6709;&#x6210;&#x5458;&#x51FD;&#x6570;&#x6216;&#x53CB;&#x5143;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x624D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4F5C;&#x7528;&#x57DF;&#x8FD0;&#x7B97;&#x7B26;&#x6765;&#x56DE;&#x907F;&#x865A;&#x51FD;&#x6570;&#x7684;&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x673A;&#x5236;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6D3E;&#x751F;&#x7C7B;&#x865A;&#x51FD;&#x6570;&#x9700;&#x8981;&#x8C03;&#x7528;&#x5B83;&#x7684;&#x57FA;&#x7C7B;&#x7248;&#x672C;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x4F5C;&#x7528;&#x57DF;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5219;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x8BE5;&#x8C03;&#x7528;&#x4F1A;&#x88AB;&#x89E3;&#x6790;&#x4E3A;&#x5BF9;&#x6D3E;&#x751F;&#x7C7B;&#x7248;&#x672C;&#x81EA;&#x8EAB;&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x65E0;&#x9650;&#x9012;&#x5F52;&#x3002;</p>
+<h2 id="&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#xFF08;abstract-base-classes&#xFF09;"><a name="&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#xFF08;abstract-base-classes&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#xFF08;abstract-base-classes&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#xFF08;Abstract Base Classes&#xFF09;</h2>
+<p>&#x5728;&#x7C7B;&#x5185;&#x90E8;&#x865A;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x8BED;&#x53E5;&#x7684;&#x5206;&#x53F7;&#x524D;&#x6DFB;&#x52A0;<code>=0</code>&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;&#x865A;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E3A;&#x7EAF;&#x865A;&#xFF08;pure virtual&#xFF09;&#x51FD;&#x6570;&#x3002;&#x4E00;&#x4E2A;&#x7EAF;&#x865A;&#x51FD;&#x6570;&#x65E0;&#x987B;&#x5B9A;&#x4E49;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">double net_price(std::size_t) const = 0;
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x4E3A;&#x7EAF;&#x865A;&#x51FD;&#x6570;&#x63D0;&#x4F9B;&#x5B9A;&#x4E49;&#xFF0C;&#x4F46;&#x51FD;&#x6570;&#x4F53;&#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#x5728;&#x7C7B;&#x7684;&#x5916;&#x90E8;&#x3002;</p>
+<p>&#x542B;&#x6709;&#xFF08;&#x6216;&#x672A;&#x7ECF;&#x8986;&#x76D6;&#x76F4;&#x63A5;&#x7EE7;&#x627F;&#xFF09;&#x7EAF;&#x865A;&#x51FD;&#x6570;&#x7684;&#x7C7B;&#x662F;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#x3002;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#x8D1F;&#x8D23;&#x5B9A;&#x4E49;&#x63A5;&#x53E3;&#xFF0C;&#x800C;&#x540E;&#x7EED;&#x7684;&#x5176;&#x4ED6;&#x7C7B;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x8BE5;&#x63A5;&#x53E3;&#x3002;</p>
+<p>&#x4E0D;&#x80FD;&#x521B;&#x5EFA;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x53EA;&#x521D;&#x59CB;&#x5316;&#x5B83;&#x7684;&#x76F4;&#x63A5;&#x57FA;&#x7C7B;&#x3002;</p>
+<p>&#x91CD;&#x6784;&#xFF08;refactoring&#xFF09;&#x8D1F;&#x8D23;&#x91CD;&#x65B0;&#x8BBE;&#x8BA1;&#x7C7B;&#x7684;&#x4F53;&#x7CFB;&#x4EE5;&#x4FBF;&#x5C06;&#x64CD;&#x4F5C;&#x6216;&#x6570;&#x636E;&#x4ECE;&#x4E00;&#x4E2A;&#x7C7B;&#x79FB;&#x52A8;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x7C7B;&#x4E2D;&#x3002;</p>
+<h2 id="&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;access-control-and-inheritance&#xFF09;"><a name="&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;access-control-and-inheritance&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;access-control-and-inheritance&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;Access Control and Inheritance&#xFF09;</h2>
+<p>&#x4E00;&#x4E2A;&#x7C7B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>protected</code>&#x5173;&#x952E;&#x5B57;&#x6765;&#x58F0;&#x660E;&#x5916;&#x90E8;&#x4EE3;&#x7801;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#xFF0C;&#x4F46;&#x662F;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x7684;&#x6210;&#x5458;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x6216;&#x53CB;&#x5143;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x6765;&#x8BBF;&#x95EE;&#x57FA;&#x7C7B;&#x7684;<code>protected</code>&#x6210;&#x5458;&#x3002;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;<code>protected</code>&#x6210;&#x5458;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Base
+{
+protected:
+    int prot_mem;   // protected member
+};
+
+class Sneaky : public Base
+{
+    friend void clobber(Sneaky&amp;);   // can access Sneaky::prot_mem
+    friend void clobber(Base&amp;);     // can&apos;t access Base::prot_mem
+    int j;   // j is private by default
+};
+
+// ok: clobber can access the private and protected members in Sneaky objects
+void clobber(Sneaky &amp;s) { s.j = s.prot_mem = 0; }
+// error: clobber can&apos;t access the protected members in Base
+void clobber(Base &amp;b) { b.prot_mem = 0; }
+</code></pre>
+<p>&#x57FA;&#x7C7B;&#x4E2D;&#x6210;&#x5458;&#x7684;&#x8BBF;&#x95EE;&#x8BF4;&#x660E;&#x7B26;&#x548C;&#x6D3E;&#x751F;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x8BBF;&#x95EE;&#x8BF4;&#x660E;&#x7B26;&#x90FD;&#x4F1A;&#x5F71;&#x54CD;&#x67D0;&#x4E2A;&#x7C7B;&#x5BF9;&#x5176;&#x7EE7;&#x627F;&#x6210;&#x5458;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x8BBF;&#x95EE;&#x8BF4;&#x660E;&#x7B26;&#x5BF9;&#x4E8E;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x53CA;&#x53CB;&#x5143;&#x80FD;&#x5426;&#x8BBF;&#x95EE;&#x5176;&#x76F4;&#x63A5;&#x57FA;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x6CA1;&#x6709;&#x5F71;&#x54CD;&#xFF0C;&#x5BF9;&#x57FA;&#x7C7B;&#x6210;&#x5458;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x53EA;&#x4E0E;&#x57FA;&#x7C7B;&#x4E2D;&#x7684;&#x8BBF;&#x95EE;&#x8BF4;&#x660E;&#x7B26;&#x6709;&#x5173;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x8BBF;&#x95EE;&#x8BF4;&#x660E;&#x7B26;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x63A7;&#x5236;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;&#x5305;&#x62EC;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#xFF09;&#x7528;&#x6237;&#x5BF9;&#x4E8E;&#x57FA;&#x7C7B;&#x6210;&#x5458;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x3002;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x516C;&#x6709;&#x7EE7;&#x627F;&#xFF0C;&#x5219;&#x57FA;&#x7C7B;&#x7684;&#x516C;&#x6709;&#x6210;&#x5458;&#x548C;&#x53D7;&#x4FDD;&#x62A4;&#x6210;&#x5458;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x5C5E;&#x6027;&#x4E0D;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x53D7;&#x4FDD;&#x62A4;&#x7EE7;&#x627F;&#xFF0C;&#x5219;&#x57FA;&#x7C7B;&#x7684;&#x516C;&#x6709;&#x6210;&#x5458;&#x548C;&#x53D7;&#x4FDD;&#x62A4;&#x6210;&#x5458;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x53D8;&#x4E3A;&#x53D7;&#x4FDD;&#x62A4;&#x6210;&#x5458;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x79C1;&#x6709;&#x7EE7;&#x627F;&#xFF0C;&#x5219;&#x57FA;&#x7C7B;&#x7684;&#x516C;&#x6709;&#x6210;&#x5458;&#x548C;&#x53D7;&#x4FDD;&#x62A4;&#x6210;&#x5458;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x53D8;&#x4E3A;&#x79C1;&#x6709;&#x6210;&#x5458;&#x3002;</li>
+</ul>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x5230;&#x57FA;&#x7C7B;&#x8F6C;&#x6362;&#x7684;&#x53EF;&#x8BBF;&#x95EE;&#x6027;&#xFF08;&#x5047;&#x5B9A;<em>D</em>&#x7EE7;&#x627F;&#x81EA;<em>B</em>&#xFF09;&#xFF1A;</p>
+<ul>
+<li>&#x53EA;&#x6709;&#x5F53;<em>D</em>&#x516C;&#x6709;&#x5730;&#x7EE7;&#x627F;<em>B</em>&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x4EE3;&#x7801;&#x624D;&#x80FD;&#x4F7F;&#x7528;&#x6D3E;&#x751F;&#x7C7B;&#x5230;&#x57FA;&#x7C7B;&#x7684;&#x8F6C;&#x6362;&#x3002;</li>
+<li>&#x4E0D;&#x8BBA;<em>D</em>&#x4EE5;&#x4EC0;&#x4E48;&#x65B9;&#x5F0F;&#x7EE7;&#x627F;<em>B</em>&#xFF0C;<em>D</em>&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x548C;&#x53CB;&#x5143;&#x90FD;&#x80FD;&#x4F7F;&#x7528;&#x6D3E;&#x751F;&#x7C7B;&#x5230;&#x57FA;&#x7C7B;&#x7684;&#x8F6C;&#x6362;&#x3002;</li>
+<li>&#x5982;&#x679C;<em>D</em>&#x7EE7;&#x627F;<em>B</em>&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x516C;&#x6709;&#x7684;&#x6216;&#x8005;&#x53D7;&#x4FDD;&#x62A4;&#x7684;&#xFF0C;&#x5219;<em>D</em>&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x548C;&#x53CB;&#x5143;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<em>D</em>&#x5230;<em>B</em>&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF1B;&#x53CD;&#x4E4B;&#xFF0C;&#x5982;&#x679C;<em>D</em>&#x7EE7;&#x627F;<em>B</em>&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x5219;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x3002;</li>
+</ul>
+<p>&#x5BF9;&#x4E8E;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x7ED9;&#x5B9A;&#x8282;&#x70B9;&#x6765;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x57FA;&#x7C7B;&#x7684;&#x516C;&#x6709;&#x6210;&#x5458;&#x662F;&#x53EF;&#x8BBF;&#x95EE;&#x7684;&#xFF0C;&#x5219;&#x6D3E;&#x751F;&#x7C7B;&#x5230;&#x57FA;&#x7C7B;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E5F;&#x662F;&#x53EF;&#x8BBF;&#x95EE;&#x7684;&#x3002;</p>
+<p>&#x53CB;&#x5143;&#x5BF9;&#x57FA;&#x7C7B;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x7531;&#x57FA;&#x7C7B;&#x81EA;&#x8EAB;&#x63A7;&#x5236;&#xFF0C;&#x5373;&#x4F7F;&#x5BF9;&#x4E8E;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x7684;&#x57FA;&#x7C7B;&#x90E8;&#x5206;&#x4E5F;&#x662F;&#x5982;&#x6B64;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Base
+{
+    // added friend declaration; other members as before
+    friend class Pal;   // Pal has no access to classes derived from Base
+};
+
+class Pal
+{
+public:
+    int f(Base b) { return b.prot_mem; }     // ok: Pal is a friend of Base
+    int f2(Sneaky s) { return s.j; }         // error: Pal not friend of Sneaky
+    // access to a base class is controlled by the base class, even inside a derived object
+    int f3(Sneaky s) { return s.prot_mem; }  // ok: Pal is a friend
+};
+</code></pre>
+<p>&#x53CB;&#x5143;&#x5173;&#x7CFB;&#x4E0D;&#x80FD;&#x7EE7;&#x627F;&#xFF0C;&#x6BCF;&#x4E2A;&#x7C7B;&#x8D1F;&#x8D23;&#x63A7;&#x5236;&#x5404;&#x81EA;&#x6210;&#x5458;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x3002;</p>
+<p>&#x4F7F;&#x7528;<code>using</code>&#x58F0;&#x660E;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x6D3E;&#x751F;&#x7C7B;&#x7EE7;&#x627F;&#x7684;&#x67D0;&#x4E2A;&#x540D;&#x5B57;&#x7684;&#x8BBF;&#x95EE;&#x7EA7;&#x522B;&#x3002;&#x65B0;&#x7684;&#x8BBF;&#x95EE;&#x7EA7;&#x522B;&#x7531;&#x8BE5;<code>using</code>&#x58F0;&#x660E;&#x4E4B;&#x524D;&#x7684;&#x8BBF;&#x95EE;&#x8BF4;&#x660E;&#x7B26;&#x51B3;&#x5B9A;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Base
+{
+public:
+    std::size_t size() const { return n; }
+protected:
+    std::size_t n;
+};
+
+class Derived : private Base
+{ // note: private inheritance
+public:
+    // maintain access levels for members related to the size of the object
+    using Base::size;
+protected:
+    using Base::n;
+};
+</code></pre>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x53EA;&#x80FD;&#x4E3A;&#x90A3;&#x4E9B;&#x5B83;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x7684;&#x540D;&#x5B57;&#x63D0;&#x4F9B;<code>using</code>&#x58F0;&#x660E;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;<code>class</code>&#x5173;&#x952E;&#x5B57;&#x5B9A;&#x4E49;&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#x662F;&#x79C1;&#x6709;&#x7EE7;&#x627F;&#x7684;&#xFF0C;&#x800C;&#x4F7F;&#x7528;<code>struct</code>&#x5173;&#x952E;&#x5B57;&#x5B9A;&#x4E49;&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#x662F;&#x516C;&#x6709;&#x7EE7;&#x627F;&#x7684;&#x3002;</p>
+<p>&#x5EFA;&#x8BAE;&#x663E;&#x5F0F;&#x5730;&#x58F0;&#x660E;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;&#xFF0C;&#x4E0D;&#x8981;&#x4EC5;&#x4EC5;&#x4F9D;&#x8D56;&#x4E8E;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x3002;</p>
+<h2 id="&#x7EE7;&#x627F;&#x4E2D;&#x7684;&#x7C7B;&#x4F5C;&#x7528;&#x57DF;&#xFF08;class-scope-under-inheritance&#xFF09;"><a name="&#x7EE7;&#x627F;&#x4E2D;&#x7684;&#x7C7B;&#x4F5C;&#x7528;&#x57DF;&#xFF08;class-scope-under-inheritance&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7EE7;&#x627F;&#x4E2D;&#x7684;&#x7C7B;&#x4F5C;&#x7528;&#x57DF;&#xFF08;class-scope-under-inheritance&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EE7;&#x627F;&#x4E2D;&#x7684;&#x7C7B;&#x4F5C;&#x7528;&#x57DF;&#xFF08;Class Scope under Inheritance&#xFF09;</h2>
+<p>&#x5F53;&#x5B58;&#x5728;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x65F6;&#xFF0C;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5D4C;&#x5957;&#x5728;&#x5176;&#x57FA;&#x7C7B;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E4B;&#x5185;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3001;&#x5F15;&#x7528;&#x6216;&#x6307;&#x9488;&#x7684;&#x9759;&#x6001;&#x7C7B;&#x578B;&#x51B3;&#x5B9A;&#x4E86;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x54EA;&#x4E9B;&#x6210;&#x5458;&#x662F;&#x53EF;&#x89C1;&#x7684;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x6210;&#x5458;&#x4F1A;&#x9690;&#x85CF;&#x540C;&#x540D;&#x7684;&#x57FA;&#x7C7B;&#x6210;&#x5458;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">struct Base
+{
+protected:
+    int mem;
+};
+
+struct Derived : Base
+{
+    int get_mem() { return mem; }   // returns Derived::mem  
+protected:
+    int mem;    // hides mem in the base
+};
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F5C;&#x7528;&#x57DF;&#x8FD0;&#x7B97;&#x7B26;<code>::</code>&#x6765;&#x4F7F;&#x7528;&#x88AB;&#x9690;&#x85CF;&#x7684;&#x57FA;&#x7C7B;&#x6210;&#x5458;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">struct Derived : Base
+{
+    int get_base_mem() { return Base::mem; }
+    // ...
+};
+</code></pre>
+<p>&#x9664;&#x4E86;&#x8986;&#x76D6;&#x7EE7;&#x627F;&#x800C;&#x6765;&#x7684;&#x865A;&#x51FD;&#x6570;&#x4E4B;&#x5916;&#xFF0C;&#x6D3E;&#x751F;&#x7C7B;&#x6700;&#x597D;&#x4E0D;&#x8981;&#x91CD;&#x7528;&#x5176;&#x4ED6;&#x5B9A;&#x4E49;&#x5728;&#x57FA;&#x7C7B;&#x4E2D;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+<p>&#x548C;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x4E00;&#x6837;&#xFF0C;&#x6210;&#x5458;&#x51FD;&#x6570;&#x65E0;&#x8BBA;&#x662F;&#x5426;&#x662F;&#x865A;&#x51FD;&#x6570;&#x90FD;&#x80FD;&#x88AB;&#x91CD;&#x8F7D;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x91CD;&#x8F7D;&#x51FD;&#x6570;&#x7684;0&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;&#x5982;&#x679C;&#x6D3E;&#x751F;&#x7C7B;&#x5E0C;&#x671B;&#x6240;&#x6709;&#x7684;&#x91CD;&#x8F7D;&#x7248;&#x672C;&#x5BF9;&#x5B83;&#x6765;&#x8BF4;&#x90FD;&#x662F;&#x53EF;&#x89C1;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C31;&#x9700;&#x8981;&#x8986;&#x76D6;&#x6240;&#x6709;&#x7248;&#x672C;&#xFF0C;&#x6216;&#x8005;&#x4E00;&#x4E2A;&#x4E5F;&#x4E0D;&#x8986;&#x76D6;&#x3002;</p>
+<p>&#x6709;&#x65F6;&#x4E00;&#x4E2A;&#x7C7B;&#x4EC5;&#x9700;&#x8986;&#x76D6;&#x91CD;&#x8F7D;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x800C;&#x975E;&#x5168;&#x90E8;&#x51FD;&#x6570;&#xFF0C;&#x6B64;&#x65F6;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4E0D;&#x5F97;&#x4E0D;&#x8986;&#x76D6;&#x57FA;&#x7C7B;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x8BDD;&#xFF0C;&#x64CD;&#x4F5C;&#x4F1A;&#x6781;&#x5176;&#x7E41;&#x7410;&#x3002;&#x4E3A;&#x4E86;&#x7B80;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x91CD;&#x8F7D;&#x6210;&#x5458;&#x63D0;&#x4F9B;<code>using</code>&#x58F0;&#x660E;&#x3002;<code>using</code>&#x58F0;&#x660E;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x540D;&#x5B57;&#x4F46;&#x4E0D;&#x6307;&#x5B9A;&#x5F62;&#x53C2;&#x5217;&#x8868;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x6761;&#x57FA;&#x7C7B;&#x6210;&#x5458;&#x51FD;&#x6570;&#x7684;<code>using</code>&#x58F0;&#x660E;&#x8BED;&#x53E5;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x8BE5;&#x51FD;&#x6570;&#x7684;&#x6240;&#x6709;&#x91CD;&#x8F7D;&#x5B9E;&#x4F8B;&#x6DFB;&#x52A0;&#x5230;&#x6D3E;&#x751F;&#x7C7B;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Base
+{
+private:
+    int x;
+
+public:
+    virtual void mf1() = 0;
+    virtual void mf1(int);
+    virtual void mf2();
+    void fm3();
+    void fm3(double);
+};
+
+class Derived : public Base
+{
+public:
+    // &#x8BA9;Base&#x5185;&#x540D;&#x4E3A;mf1&#x548C;mf3&#x7684;&#x6240;&#x6709;&#x5B9A;&#x4E49;
+    // &#x5728;Derived&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x53EF;&#x89C1;
+    using Base::mf1;
+    using Base::mf3;
+    virtual void mf1();
+    void fm3();
+    void fm4();
+};
+</code></pre>
+<p><img src="Images/15-1.png" alt="15-1"></p>
+<p>&#x7C7B;&#x5185;&#x4F7F;&#x7528;<code>using</code>&#x58F0;&#x660E;&#x6539;&#x53D8;&#x8BBF;&#x95EE;&#x7EA7;&#x522B;&#x7684;&#x89C4;&#x5219;&#x540C;&#x6837;&#x9002;&#x7528;&#x4E8E;&#x91CD;&#x8F7D;&#x51FD;&#x6570;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+<h2 id="&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0E;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#xFF08;constructors-and-copy-control&#xFF09;"><a name="&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0E;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#xFF08;constructors-and-copy-control&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0E;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#xFF08;constructors-and-copy-control&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0E;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#xFF08;Constructors and Copy Control&#xFF09;</h2>
+<h3 id="&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF08;virtual-destructors&#xFF09;"><a name="&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF08;virtual-destructors&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF08;virtual-destructors&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF08;Virtual Destructors&#xFF09;</h3>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7C7B;&#x9700;&#x8981;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x4E5F;&#x9700;&#x8981;&#x62F7;&#x8D1D;&#x548C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x3002;&#x4F46;&#x57FA;&#x7C7B;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x4E0D;&#x9075;&#x5FAA;&#x8BE5;&#x89C4;&#x5219;&#x3002;</p>
+<p>&#x57FA;&#x7C7B;&#x901A;&#x5E38;&#x5E94;&#x8BE5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Quote
+{
+public:
+    // virtual destructor needed if a base pointer pointing to a derived object is deleted
+    virtual ~Quote() = default;   // dynamic binding for the destructor
+};
+</code></pre>
+<p>&#x5982;&#x679C;&#x57FA;&#x7C7B;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x4E0D;&#x662F;&#x865A;&#x51FD;&#x6570;&#xFF0C;&#x5219;<code>delete</code>&#x4E00;&#x4E2A;&#x6307;&#x5411;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x7684;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x4F1A;&#x4EA7;&#x751F;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">Quote *itemP = new Quote;   // same static and dynamic type
+delete itemP;     // destructor for Quote called
+itemP = new Bulk_quote;     // static and dynamic types differ
+delete itemP;     // destructor for Bulk_quote called
+</code></pre>
+<p>&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;&#x4F1A;&#x963B;&#x6B62;&#x7F16;&#x8BD1;&#x5668;&#x4E3A;&#x7C7B;&#x5408;&#x6210;&#x79FB;&#x52A8;&#x64CD;&#x4F5C;&#x3002;</p>
+<h3 id="&#x5408;&#x6210;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;synthesized-copy-control-and-inheritance&#xFF09;"><a name="&#x5408;&#x6210;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;synthesized-copy-control-and-inheritance&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5408;&#x6210;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;synthesized-copy-control-and-inheritance&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5408;&#x6210;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;Synthesized Copy Control and Inheritance&#xFF09;</h3>
+<p>&#x5BF9;&#x4E8E;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x9664;&#x4E86;&#x9500;&#x6BC1;&#x6D3E;&#x751F;&#x7C7B;&#x81EA;&#x5DF1;&#x7684;&#x6210;&#x5458;&#x5916;&#xFF0C;&#x8FD8;&#x8D1F;&#x8D23;&#x9500;&#x6BC1;&#x6D3E;&#x751F;&#x7C7B;&#x76F4;&#x63A5;&#x57FA;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x5220;&#x9664;&#x7684;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#x4E0E;&#x57FA;&#x7C7B;&#x7684;&#x5173;&#x7CFB;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x57FA;&#x7C7B;&#x4E2D;&#x7684;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3001;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3001;&#x62F7;&#x8D1D;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x6216;&#x6790;&#x6784;&#x51FD;&#x6570;&#x662F;&#x88AB;&#x5220;&#x9664;&#x7684;&#x6216;&#x8005;&#x4E0D;&#x53EF;&#x8BBF;&#x95EE;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x6210;&#x5458;&#x4E5F;&#x4F1A;&#x662F;&#x88AB;&#x5220;&#x9664;&#x7684;&#x3002;&#x56E0;&#x4E3A;&#x7F16;&#x8BD1;&#x5668;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x57FA;&#x7C7B;&#x6210;&#x5458;&#x6765;&#x6267;&#x884C;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x4E2D;&#x57FA;&#x7C7B;&#x90E8;&#x5206;&#x7684;&#x6784;&#x9020;&#x3001;&#x8D4B;&#x503C;&#x6216;&#x9500;&#x6BC1;&#x64CD;&#x4F5C;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x57FA;&#x7C7B;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x662F;&#x88AB;&#x5220;&#x9664;&#x7684;&#x6216;&#x8005;&#x4E0D;&#x53EF;&#x8BBF;&#x95EE;&#x7684;&#xFF0C;&#x5219;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x5408;&#x6210;&#x7684;&#x9ED8;&#x8BA4;&#x548C;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E5F;&#x4F1A;&#x662F;&#x88AB;&#x5220;&#x9664;&#x7684;&#x3002;&#x56E0;&#x4E3A;&#x7F16;&#x8BD1;&#x5668;&#x65E0;&#x6CD5;&#x9500;&#x6BC1;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x57FA;&#x7C7B;&#x90E8;&#x5206;&#x3002;</li>
+<li>&#x7F16;&#x8BD1;&#x5668;&#x4E0D;&#x4F1A;&#x5408;&#x6210;&#x4E00;&#x4E2A;&#x88AB;&#x5220;&#x9664;&#x7684;&#x79FB;&#x52A8;&#x64CD;&#x4F5C;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528;<code>=default</code>&#x8BF7;&#x6C42;&#x4E00;&#x4E2A;&#x79FB;&#x52A8;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x57FA;&#x7C7B;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x88AB;&#x5220;&#x9664;&#x7684;&#x6216;&#x8005;&#x4E0D;&#x53EF;&#x8BBF;&#x95EE;&#x7684;&#xFF0C;&#x5219;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x7684;&#x64CD;&#x4F5C;&#x4E5F;&#x4F1A;&#x662F;&#x88AB;&#x5220;&#x9664;&#x7684;&#x3002;&#x56E0;&#x4E3A;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x57FA;&#x7C7B;&#x90E8;&#x5206;&#x4E0D;&#x80FD;&#x79FB;&#x52A8;&#x3002;&#x540C;&#x6837;&#xFF0C;&#x5982;&#x679C;&#x57FA;&#x7C7B;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x662F;&#x88AB;&#x5220;&#x9664;&#x7684;&#x6216;&#x8005;&#x4E0D;&#x53EF;&#x8BBF;&#x95EE;&#x7684;&#xFF0C;&#x5219;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E5F;&#x4F1A;&#x662F;&#x88AB;&#x5220;&#x9664;&#x7684;&#x3002;</li>
+</ul>
+<p>&#x5728;&#x5B9E;&#x9645;&#x7F16;&#x7A0B;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x57FA;&#x7C7B;&#x6CA1;&#x6709;&#x9ED8;&#x8BA4;&#x3001;&#x62F7;&#x8D1D;&#x6216;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x6D3E;&#x751F;&#x7C7B;&#x4E5F;&#x4E0D;&#x4F1A;&#x5B9A;&#x4E49;&#x76F8;&#x5E94;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x57FA;&#x7C7B;&#x7F3A;&#x5C11;&#x79FB;&#x52A8;&#x64CD;&#x4F5C;&#x4F1A;&#x963B;&#x6B62;&#x7F16;&#x8BD1;&#x5668;&#x4E3A;&#x6D3E;&#x751F;&#x7C7B;&#x5408;&#x6210;&#x81EA;&#x5DF1;&#x7684;&#x79FB;&#x52A8;&#x64CD;&#x4F5C;&#xFF0C;&#x6240;&#x4EE5;&#x5F53;&#x6211;&#x4EEC;&#x786E;&#x5B9E;&#x9700;&#x8981;&#x6267;&#x884C;&#x79FB;&#x52A8;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x5E94;&#x8BE5;&#x9996;&#x5148;&#x5728;&#x57FA;&#x7C7B;&#x4E2D;&#x8FDB;&#x884C;&#x5B9A;&#x4E49;&#x3002;</p>
+<h3 id="&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#x6210;&#x5458;&#xFF08;derived-class-copy-control-members&#xFF09;"><a name="&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#x6210;&#x5458;&#xFF08;derived-class-copy-control-members&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#x6210;&#x5458;&#xFF08;derived-class-copy-control-members&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x62F7;&#x8D1D;&#x63A7;&#x5236;&#x6210;&#x5458;&#xFF08;Derived-Class Copy-Control Members&#xFF09;</h3>
+<p>&#x5F53;&#x6D3E;&#x751F;&#x7C7B;&#x5B9A;&#x4E49;&#x4E86;&#x62F7;&#x8D1D;&#x6216;&#x79FB;&#x52A8;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x8BE5;&#x64CD;&#x4F5C;&#x8D1F;&#x8D23;&#x62F7;&#x8D1D;&#x6216;&#x79FB;&#x52A8;&#x5305;&#x62EC;&#x57FA;&#x7C7B;&#x6210;&#x5458;&#x5728;&#x5185;&#x7684;&#x6574;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x5F53;&#x4E3A;&#x6D3E;&#x751F;&#x7C7B;&#x5B9A;&#x4E49;&#x62F7;&#x8D1D;&#x6216;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x57FA;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x5316;&#x5BF9;&#x8C61;&#x7684;&#x57FA;&#x7C7B;&#x90E8;&#x5206;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Base { /* ... */ } ;
+class D: public Base
+{
+public:
+    // by default, the base class default constructor initializes the base part of an object
+    // to use the copy or move constructor, we must explicitly call that
+    // constructor in the constructor initializer list
+    D(const D&amp; d): Base(d)   // copy the base members
+    /* initializers for members of D */ { /* ... */ }
+    D(D&amp;&amp; d): Base(std::move(d))    // move the base members
+    /* initializers for members of D */ { /* ... */ }
+};
+
+// probably incorrect definition of the D copy constructor
+// base-class part is default initialized, not copied
+D(const D&amp; d)   /* member initializers, but no base-class initializer */
+{ /* ... */ }
+</code></pre>
+<p>&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x57FA;&#x7C7B;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x5316;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x7684;&#x57FA;&#x7C7B;&#x90E8;&#x5206;&#x3002;&#x5982;&#x679C;&#x60F3;&#x62F7;&#x8D1D;&#x6216;&#x79FB;&#x52A8;&#x57FA;&#x7C7B;&#x90E8;&#x5206;&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;&#x4E2D;&#x663E;&#x5F0F;&#x5730;&#x4F7F;&#x7528;&#x57FA;&#x7C7B;&#x7684;&#x62F7;&#x8D1D;&#x6216;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x5FC5;&#x987B;&#x663E;&#x5F0F;&#x5730;&#x4E3A;&#x5176;&#x57FA;&#x7C7B;&#x90E8;&#x5206;&#x8D4B;&#x503C;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// Base::operator=(const Base&amp;) is not invoked automatically
+D &amp;D::operator=(const D &amp;rhs)
+{
+    Base::operator=(rhs);   // assigns the base part
+    // assign the members in the derived class, as usual,
+    // handling self-assignment and freeing existing resources as appropriate
+    return *this;
+}
+</code></pre>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x53EA;&#x8D1F;&#x8D23;&#x9500;&#x6BC1;&#x6D3E;&#x751F;&#x7C7B;&#x81EA;&#x5DF1;&#x5206;&#x914D;&#x7684;&#x8D44;&#x6E90;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class D: public Base
+{
+public:
+    // Base::~Base invoked automatically
+    ~D() { /* do what it takes to clean up derived members */ }
+};
+</code></pre>
+<p>&#x5982;&#x679C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6216;&#x6790;&#x6784;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x4E86;&#x67D0;&#x4E2A;&#x865A;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x5E94;&#x8BE5;&#x6267;&#x884C;&#x4E0E;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6216;&#x6790;&#x6784;&#x51FD;&#x6570;&#x6240;&#x5C5E;&#x7C7B;&#x578B;&#x76F8;&#x5BF9;&#x5E94;&#x7684;&#x865A;&#x51FD;&#x6570;&#x7248;&#x672C;&#x3002;</p>
+<h3 id="&#x7EE7;&#x627F;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;inherited-constructors&#xFF09;"><a name="&#x7EE7;&#x627F;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;inherited-constructors&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7EE7;&#x627F;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;inherited-constructors&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EE7;&#x627F;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;Inherited Constructors&#xFF09;</h3>
+<p>C++11&#x65B0;&#x6807;&#x51C6;&#x5141;&#x8BB8;&#x6D3E;&#x751F;&#x7C7B;&#x91CD;&#x7528;&#xFF08;&#x975E;&#x5E38;&#x89C4;&#x65B9;&#x5F0F;&#x7EE7;&#x627F;&#xFF09;&#x5176;&#x76F4;&#x63A5;&#x57FA;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;&#x662F;&#x63D0;&#x4F9B;&#x4E00;&#x6761;&#x6CE8;&#x660E;&#x4E86;&#x76F4;&#x63A5;&#x57FA;&#x7C7B;&#x540D;&#x7684;<code>using</code>&#x58F0;&#x660E;&#x8BED;&#x53E5;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Bulk_quote : public Disc_quote
+{
+public:
+    using Disc_quote::Disc_quote;   // inherit Disc_quote&apos;s constructors
+    double net_price(std::size_t) const;
+};
+</code></pre>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>using</code>&#x58F0;&#x660E;&#x8BED;&#x53E5;&#x53EA;&#x662F;&#x4EE4;&#x67D0;&#x4E2A;&#x540D;&#x5B57;&#x5728;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x53EF;&#x89C1;&#x3002;&#x800C;&#x4F5C;&#x7528;&#x4E8E;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65F6;&#xFF0C;<code>using</code>&#x58F0;&#x660E;&#x5C06;&#x4EE4;&#x7F16;&#x8BD1;&#x5668;&#x4EA7;&#x751F;&#x4EE3;&#x7801;&#x3002;&#x5BF9;&#x4E8E;&#x57FA;&#x7C7B;&#x7684;&#x6BCF;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x90FD;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x4E0E;&#x5176;&#x5F62;&#x53C2;&#x5217;&#x8868;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x5982;&#x679C;&#x6D3E;&#x751F;&#x7C7B;&#x542B;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x5219;&#x8FD9;&#x4E9B;&#x6210;&#x5458;&#x4F1A;&#x88AB;&#x9ED8;&#x8BA4;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;<code>using</code>&#x58F0;&#x660E;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x8BE5;&#x51FD;&#x6570;&#x7684;&#x8BBF;&#x95EE;&#x7EA7;&#x522B;&#xFF0C;&#x4E0D;&#x80FD;&#x6307;&#x5B9A;<code>explicit</code>&#x6216;<code>constexpr</code>&#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x5B9A;&#x4E49;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4F1A;&#x66FF;&#x6362;&#x7EE7;&#x627F;&#x800C;&#x6765;&#x7684;&#x5177;&#x6709;&#x76F8;&#x540C;&#x5F62;&#x53C2;&#x5217;&#x8868;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x4E0D;&#x80FD;&#x7EE7;&#x627F;&#x9ED8;&#x8BA4;&#x3001;&#x62F7;&#x8D1D;&#x548C;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x5982;&#x679C;&#x6D3E;&#x751F;&#x7C7B;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x5B9A;&#x4E49;&#x8FD9;&#x4E9B;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x4E3A;&#x5176;&#x5408;&#x6210;&#x5B83;&#x4EEC;&#x3002;</p>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x542B;&#x6709;&#x9ED8;&#x8BA4;&#x5B9E;&#x53C2;&#x65F6;&#xFF0C;&#x8FD9;&#x4E9B;&#x9ED8;&#x8BA4;&#x503C;&#x4E0D;&#x4F1A;&#x88AB;&#x7EE7;&#x627F;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x6D3E;&#x751F;&#x7C7B;&#x4F1A;&#x83B7;&#x5F97;&#x591A;&#x4E2A;&#x7EE7;&#x627F;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5176;&#x4E2D;&#x6BCF;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5206;&#x522B;&#x7701;&#x7565;&#x6389;&#x4E00;&#x4E2A;&#x542B;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#x7684;&#x5F62;&#x53C2;&#x3002;</p>
+<h2 id="&#x5BB9;&#x5668;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;containers-and-inheritance&#xFF09;"><a name="&#x5BB9;&#x5668;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;containers-and-inheritance&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5BB9;&#x5668;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;containers-and-inheritance&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BB9;&#x5668;&#x4E0E;&#x7EE7;&#x627F;&#xFF08;Containers and Inheritance&#xFF09;</h2>
+<p>&#x56E0;&#x4E3A;&#x5BB9;&#x5668;&#x4E2D;&#x4E0D;&#x80FD;&#x4FDD;&#x5B58;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x628A;&#x5177;&#x6709;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x7684;&#x591A;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x76F4;&#x63A5;&#x5B58;&#x50A8;&#x5728;&#x5BB9;&#x5668;&#x4E2D;&#x3002;</p>
+<p>&#x5BB9;&#x5668;&#x4E0D;&#x80FD;&#x548C;&#x5B58;&#x5728;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x7684;&#x7C7B;&#x578B;&#x517C;&#x5BB9;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60F3;&#x5728;&#x5BB9;&#x5668;&#x4E2D;&#x5B58;&#x50A8;&#x5177;&#x6709;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x5E94;&#x8BE5;&#x5B58;&#x653E;&#x57FA;&#x7C7B;&#x7684;&#x6307;&#x9488;&#x3002; </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; bookins.cn 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-07-17 09:10:04
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Chapter-14 Overloaded Operations and Conversions/" class="navigation navigation-prev " aria-label="Previous page: Chapter 14 Overloaded Operations And Conversions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter-16 Templates and Generic Programming/" class="navigation navigation-next " aria-label="Next page: Chapter 16 Templates And Generic Programming">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 15 Object Oriented Programming","level":"1.16","depth":1,"next":{"title":"Chapter 16 Templates And Generic Programming","level":"1.17","depth":1,"path":"Chapter-16 Templates and Generic Programming/README.md","ref":"Chapter-16 Templates and Generic Programming/README.md","articles":[]},"previous":{"title":"Chapter 14 Overloaded Operations And Conversions","level":"1.15","depth":1,"path":"Chapter-14 Overloaded Operations and Conversions/README.md","ref":"Chapter-14 Overloaded Operations and Conversions/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","chapter-fold","splitter","-sharing","github-buttons","tbfed-pagefooter","baidu-tongji","anchor-navigation-ex","summary"],"styles":{"website":"./public-repertory/css/gitbook-configure.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy bookins.cn 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"shell":"bash"}},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"55e7dfe47f4dc1c018d4042fdfa62565"},"summary":{},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"yao-yue","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"yao-yue","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"yaoyue","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"yaoyue 的随笔","language":"zh-hans","gitbook":"*","description":"邀月的随笔，少即是多，简单"},"file":{"path":"Chapter-15 Object-Oriented Programming/README.md","mtime":"2021-07-17T09:10:04.597Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-07-17T09:10:44.336Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

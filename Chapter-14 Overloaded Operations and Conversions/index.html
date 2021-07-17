@@ -1,0 +1,1040 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 14 Overloaded Operations And Conversions · yaoyue 的随笔</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yaoyue">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter-15 Object-Oriented Programming/" />
+    
+    
+    <link rel="prev" href="../Chapter-13 Copy Control/" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"yao-yue","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"yao-yue","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter-1 Getting Started/">
+            
+                <a href="../Chapter-1 Getting Started/">
+            
+                    
+                    Chapter 1 Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter-2 Variables and Basic Types/">
+            
+                <a href="../Chapter-2 Variables and Basic Types/">
+            
+                    
+                    Chapter 2 Variables And Basic Types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter-2 Variables and Basic Types/1-基本内置类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/1-基本内置类型.html">
+            
+                    
+                    基本内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter-2 Variables and Basic Types/2-变量.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/2-变量.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chapter-2 Variables and Basic Types/3-复合类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/3-复合类型.html">
+            
+                    
+                    复合类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Chapter-2 Variables and Basic Types/4-const限定符.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/4-const限定符.html">
+            
+                    
+                    Const限定符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Chapter-2 Variables and Basic Types/5-处理类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/5-处理类型.html">
+            
+                    
+                    处理类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Chapter-2 Variables and Basic Types/6-自定义数据结构.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/6-自定义数据结构.html">
+            
+                    
+                    自定义数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter-3 Strings, Vectors, and Arrays/">
+            
+                <a href="../Chapter-3 Strings, Vectors, and Arrays/">
+            
+                    
+                    Chapter 3 Strings, Vectors, And Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter-4 Expressions/">
+            
+                <a href="../Chapter-4 Expressions/">
+            
+                    
+                    Chapter 4 Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter-5 Statements/">
+            
+                <a href="../Chapter-5 Statements/">
+            
+                    
+                    Chapter 5 Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter-6 Functions/">
+            
+                <a href="../Chapter-6 Functions/">
+            
+                    
+                    Chapter 6 Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter-7 Classes/">
+            
+                <a href="../Chapter-7 Classes/">
+            
+                    
+                    Chapter 7 Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Chapter-8 The IO Library/">
+            
+                <a href="../Chapter-8 The IO Library/">
+            
+                    
+                    Chapter 8 The IO Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Chapter-9 Sequential Containers/">
+            
+                <a href="../Chapter-9 Sequential Containers/">
+            
+                    
+                    Chapter 9 Sequential Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Chapter-10 Generic Algorithms/">
+            
+                <a href="../Chapter-10 Generic Algorithms/">
+            
+                    
+                    Chapter 10 Generic Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Chapter-11 Associative Containers/">
+            
+                <a href="../Chapter-11 Associative Containers/">
+            
+                    
+                    Chapter 11 Associative Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Chapter-12 Dynamic Memory/">
+            
+                <a href="../Chapter-12 Dynamic Memory/">
+            
+                    
+                    Chapter 12 Dynamic Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Chapter-13 Copy Control/">
+            
+                <a href="../Chapter-13 Copy Control/">
+            
+                    
+                    Chapter 13 Copy Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter 14 Overloaded Operations And Conversions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Chapter-15 Object-Oriented Programming/">
+            
+                <a href="../Chapter-15 Object-Oriented Programming/">
+            
+                    
+                    Chapter 15 Object Oriented Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Chapter-16 Templates and Generic Programming/">
+            
+                <a href="../Chapter-16 Templates and Generic Programming/">
+            
+                    
+                    Chapter 16 Templates And Generic Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../Chapter-17 Specialized Library Facilities/">
+            
+                <a href="../Chapter-17 Specialized Library Facilities/">
+            
+                    
+                    Chapter 17 Specialized Library Facilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../Chapter-18 Tools for Large Programs/">
+            
+                <a href="../Chapter-18 Tools for Large Programs/">
+            
+                    
+                    Chapter 18 Tools For Large Programs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../Chapter-19 Specialized Tools and Techniques/">
+            
+                <a href="../Chapter-19 Specialized Tools and Techniques/">
+            
+                    
+                    Chapter 19 Specialized Tools And Techniques
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Chapter 14 Overloaded Operations And Conversions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;14&#x7AE0;-&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x4E0E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;"><b></b>&#x7B2C;14&#x7AE0; &#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x4E0E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</a></li><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x672C;&#x6982;&#x5FF5;&#xFF08;basic-concepts&#xFF09;"><b></b>&#x57FA;&#x672C;&#x6982;&#x5FF5;&#xFF08;Basic Concepts&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;input-and-output-operators&#xFF09;"><b></b>&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Input and Output Operators&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x91CD;&#x8F7D;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;overloading-the-output-operator-&#xFF09;"><b></b>&#x91CD;&#x8F7D;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&lt;<（overloading the="" output="" operator="" <<）<="" a=""></（overloading></a></li><li><span class="title-icon "></span><a href="#&#x91CD;&#x8F7D;&#x8F93;&#x5165;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;overloading-the-input-operator-&#xFF09;"><b></b>&#x91CD;&#x8F7D;&#x8F93;&#x5165;&#x8FD0;&#x7B97;&#x7B26;&gt;&gt;&#xFF08;Overloading the Input Operator &gt;&gt;&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x7B97;&#x672F;&#x548C;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;arithmetic-and-relational-operators&#xFF09;"><b></b>&#x7B97;&#x672F;&#x548C;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Arithmetic and Relational Operators&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x76F8;&#x7B49;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;equality-operators&#xFF09;"><b></b>&#x76F8;&#x7B49;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Equality Operators&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;relational-operators&#xFF09;"><b></b>&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Relational Operators&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;assignment-operators&#xFF09;"><b></b>&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Assignment Operators&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x6807;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;subscript-operator&#xFF09;"><b></b>&#x4E0B;&#x6807;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Subscript Operator&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x9012;&#x589E;&#x548C;&#x9012;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;increment-and-decrement-operators&#xFF09;"><b></b>&#x9012;&#x589E;&#x548C;&#x9012;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Increment and Decrement Operators&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;member-access-operators&#xFF09;"><b></b>&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Member Access Operators&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;function-call-operator&#xFF09;"><b></b>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Function-Call Operator&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#lambda&#x662F;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;lambdas-are-function-objects&#xFF09;"><b></b>lambda&#x662F;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;Lambdas Are Function Objects&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x6807;&#x51C6;&#x5E93;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;library-defined-function-objects&#xFF09;"><b></b>&#x6807;&#x51C6;&#x5E93;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;Library-Defined Function Objects&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x53EF;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x4E0E;function&#xFF08;callable-objects-and-function&#xFF09;"><b></b>&#x53EF;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x4E0E;function&#xFF08;Callable Objects and function&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x91CD;&#x8F7D;&#x3001;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;overloading&#xFF0C;conversions&#xFF0C;and-operators&#xFF09;"><b></b>&#x91CD;&#x8F7D;&#x3001;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Overloading&#xFF0C;Conversions&#xFF0C;and Operators&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;conversion-operators&#xFF09;"><b></b>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Conversion Operators&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x907F;&#x514D;&#x6709;&#x4E8C;&#x4E49;&#x6027;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;avoiding-ambiguous-conversions&#xFF09;"><b></b>&#x907F;&#x514D;&#x6709;&#x4E8C;&#x4E49;&#x6027;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;Avoiding Ambiguous Conversions&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x5339;&#x914D;&#x4E0E;&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;function-matching-and-overloaded-operators&#xFF09;"><b></b>&#x51FD;&#x6570;&#x5339;&#x914D;&#x4E0E;&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Function Matching and Overloaded Operators&#xFF09;</a></li></ul></ul></ul></div><a href="#&#x7B2C;14&#x7AE0;-&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x4E0E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;14&#x7AE0;-&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x4E0E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;"><a name="&#x7B2C;14&#x7AE0;-&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x4E0E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;14&#x7AE0;-&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x4E0E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;14&#x7AE0; &#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x4E0E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</h1>
+<h2 id="&#x57FA;&#x672C;&#x6982;&#x5FF5;&#xFF08;basic-concepts&#xFF09;"><a name="&#x57FA;&#x672C;&#x6982;&#x5FF5;&#xFF08;basic-concepts&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x6982;&#x5FF5;&#xFF08;basic-concepts&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x672C;&#x6982;&#x5FF5;&#xFF08;Basic Concepts&#xFF09;</h2>
+<p>&#x91CD;&#x8F7D;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x662F;&#x5177;&#x6709;&#x7279;&#x6B8A;&#x540D;&#x5B57;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x540D;&#x5B57;&#x7531;&#x5173;&#x952E;&#x5B57;<code>operator</code>&#x548C;&#x5176;&#x540E;&#x8981;&#x5B9A;&#x4E49;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x53F7;&#x7EC4;&#x6210;&#x3002;</p>
+<p>&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x6570;&#x91CF;&#x548C;&#x8BE5;&#x8FD0;&#x7B97;&#x7B26;&#x4F5C;&#x7528;&#x7684;&#x8FD0;&#x7B97;&#x5BF9;&#x8C61;&#x6570;&#x91CF;&#x4E00;&#x6837;&#x591A;&#x3002;&#x5BF9;&#x4E8E;&#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x6765;&#x8BF4;&#xFF0C;&#x5DE6;&#x4FA7;&#x8FD0;&#x7B97;&#x5BF9;&#x8C61;&#x4F20;&#x9012;&#x7ED9;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x53F3;&#x4FA7;&#x8FD0;&#x7B97;&#x5BF9;&#x8C61;&#x4F20;&#x9012;&#x7ED9;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x9664;&#x4E86;&#x91CD;&#x8F7D;&#x7684;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;<code>operator()</code>&#x4E4B;&#x5916;&#xFF0C;&#x5176;&#x4ED6;&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x7B26;&#x4E0D;&#x80FD;&#x542B;&#x6709;&#x9ED8;&#x8BA4;&#x5B9E;&#x53C2;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;&#x662F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x5B83;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x5BF9;&#x8C61;&#x4F1A;&#x7ED1;&#x5B9A;&#x5230;&#x9690;&#x5F0F;&#x7684;<code>this</code>&#x6307;&#x9488;&#x4E0A;&#x3002;&#x56E0;&#x6B64;&#x6210;&#x5458;&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;&#x7684;&#x663E;&#x5F0F;&#x53C2;&#x6570;&#x6570;&#x91CF;&#x6BD4;&#x8FD0;&#x7B97;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x91CF;&#x5C11;&#x4E00;&#x4E2A;&#x3002;</p>
+<p>&#x5F53;&#x8FD0;&#x7B97;&#x7B26;&#x4F5C;&#x7528;&#x4E8E;&#x5185;&#x7F6E;&#x7C7B;&#x578B;&#x7684;&#x8FD0;&#x7B97;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x65E0;&#x6CD5;&#x6539;&#x53D8;&#x8BE5;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x542B;&#x4E49;&#x3002;</p>
+<p>&#x53EA;&#x80FD;&#x91CD;&#x8F7D;&#x5927;&#x591A;&#x6570;&#x5DF2;&#x6709;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x65E0;&#x6743;&#x58F0;&#x660E;&#x65B0;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x53F7;&#x3002;</p>
+<p><img src="Images/14-1.png" alt="14-1"></p>
+<p>&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x548C;&#x7ED3;&#x5408;&#x5F8B;&#x4E0E;&#x5BF9;&#x5E94;&#x7684;&#x5185;&#x7F6E;&#x8FD0;&#x7B97;&#x7B26;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x50CF;&#x8C03;&#x7528;&#x666E;&#x901A;&#x51FD;&#x6570;&#x4E00;&#x6837;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// equivalent calls to a nonmember operator function
+data1 + data2;              // normal expression
+operator+(data1, data2);    // equivalent function call
+data1 += data2;             // expression-based &apos;&apos;call&apos;&apos;
+data1.operator+=(data2);    // equivalent call to a member operator function
+</code></pre>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E0D;&#x5E94;&#x8BE5;&#x91CD;&#x8F7D;&#x9017;&#x53F7;<code>,</code>&#x3001;&#x53D6;&#x5730;&#x5740;<code>&amp;</code>&#x3001;&#x903B;&#x8F91;&#x4E0E;<code>&amp;&amp;</code>&#x548C;&#x903B;&#x8F91;&#x6216;<code>||</code>&#x8FD0;&#x7B97;&#x7B26;&#x3002;</p>
+<p>&#x5EFA;&#x8BAE;&#x53EA;&#x6709;&#x5F53;&#x64CD;&#x4F5C;&#x7684;&#x542B;&#x4E49;&#x5BF9;&#x4E8E;&#x7528;&#x6237;&#x6765;&#x8BF4;&#x6E05;&#x6670;&#x660E;&#x4E86;&#x65F6;&#x624D;&#x4F7F;&#x7528;&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E5F;&#x5E94;&#x8BE5;&#x4E0E;&#x5176;&#x5185;&#x7F6E;&#x7248;&#x672C;&#x7684;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x517C;&#x5BB9;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7C7B;&#x4E2D;&#x542B;&#x6709;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;&#x6216;&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5219;&#x6700;&#x597D;&#x4E5F;&#x63D0;&#x4F9B;&#x5BF9;&#x5E94;&#x7684;&#x590D;&#x5408;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x3002;</p>
+<p>&#x628A;&#x8FD0;&#x7B97;&#x7B26;&#x5B9A;&#x4E49;&#x4E3A;&#x6210;&#x5458;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5B83;&#x7684;&#x5DE6;&#x4FA7;&#x8FD0;&#x7B97;&#x5BF9;&#x8C61;&#x5FC5;&#x987B;&#x662F;&#x8FD0;&#x7B97;&#x7B26;&#x6240;&#x5C5E;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre class="language-"><code class="lang-C++">string s = &quot;world&quot;;
+string t = s + &quot;!&quot;;     // ok: we can add a const char* to a string
+string u = &quot;hi&quot; + s;    // would be an error if + were a member of string
+</code></pre>
+<p>&#x5982;&#x4F55;&#x9009;&#x62E9;&#x5C06;&#x8FD0;&#x7B97;&#x7B26;&#x5B9A;&#x4E49;&#x4E3A;&#x6210;&#x5458;&#x51FD;&#x6570;&#x8FD8;&#x662F;&#x666E;&#x901A;&#x51FD;&#x6570;&#xFF1A;</p>
+<ul>
+<li>&#x8D4B;&#x503C;<code>=</code>&#x3001;&#x4E0B;&#x6807;<code>[]</code>&#x3001;&#x8C03;&#x7528;<code>()</code>&#x548C;&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x7BAD;&#x5934;<code>-&gt;</code>&#x8FD0;&#x7B97;&#x7B26;&#x5FC5;&#x987B;&#x662F;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x590D;&#x5408;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x4E00;&#x822C;&#x662F;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x5E76;&#x975E;&#x5FC5;&#x987B;&#x3002;</li>
+<li>&#x6539;&#x53D8;&#x5BF9;&#x8C61;&#x72B6;&#x6001;&#x6216;&#x8005;&#x4E0E;&#x7ED9;&#x5B9A;&#x7C7B;&#x578B;&#x5BC6;&#x5207;&#x76F8;&#x5173;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5982;&#x9012;&#x589E;&#x3001;&#x9012;&#x51CF;&#x3001;&#x89E3;&#x5F15;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x5177;&#x6709;&#x5BF9;&#x79F0;&#x6027;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x53EF;&#x80FD;&#x8F6C;&#x6362;&#x4EFB;&#x610F;&#x4E00;&#x7AEF;&#x7684;&#x8FD0;&#x7B97;&#x5BF9;&#x8C61;&#xFF0C;&#x5982;&#x7B97;&#x672F;&#x3001;&#x76F8;&#x7B49;&#x6027;&#x3001;&#x5173;&#x7CFB;&#x548C;&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x666E;&#x901A;&#x51FD;&#x6570;&#x3002;</li>
+</ul>
+<h2 id="&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;input-and-output-operators&#xFF09;"><a name="&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;input-and-output-operators&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;input-and-output-operators&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Input and Output Operators&#xFF09;</h2>
+<h3 id="&#x91CD;&#x8F7D;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;overloading-the-output-operator-&#xFF09;"><a name="&#x91CD;&#x8F7D;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;overloading-the-output-operator-&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x8F7D;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;overloading-the-output-operator-&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x91CD;&#x8F7D;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&lt;&lt;&#xFF08;Overloading the Output Operator &lt;&lt;&#xFF09;</h3>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5F62;&#x53C2;&#x662F;<code>ostream</code>&#x7C7B;&#x578B;&#x7684;&#x666E;&#x901A;&#x5F15;&#x7528;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5F62;&#x53C2;&#x662F;&#x8981;&#x6253;&#x5370;&#x7C7B;&#x578B;&#x7684;&#x5E38;&#x91CF;&#x5F15;&#x7528;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x5B83;&#x7684;<code>ostream</code>&#x5F62;&#x53C2;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">ostream &amp;operator&lt;&lt;(ostream &amp;os, const Sales_data &amp;item)
+{
+    os &lt;&lt; item.isbn() &lt;&lt; &quot; &quot; &lt;&lt; item.units_sold &lt;&lt; &quot; &quot;
+        &lt;&lt; item.revenue &lt;&lt; &quot; &quot; &lt;&lt; item.avg_price();
+    return os;
+}
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x51CF;&#x5C11;&#x683C;&#x5F0F;&#x5316;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#x5FC5;&#x987B;&#x662F;&#x975E;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;&#x800C;&#x7531;&#x4E8E;IO&#x64CD;&#x4F5C;&#x901A;&#x5E38;&#x9700;&#x8981;&#x8BFB;&#x5199;&#x7C7B;&#x7684;&#x975E;&#x516C;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x6240;&#x4EE5;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#x4E00;&#x822C;&#x88AB;&#x58F0;&#x660E;&#x4E3A;&#x53CB;&#x5143;&#x3002;</p>
+<h3 id="&#x91CD;&#x8F7D;&#x8F93;&#x5165;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;overloading-the-input-operator-&#xFF09;"><a name="&#x91CD;&#x8F7D;&#x8F93;&#x5165;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;overloading-the-input-operator-&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x8F7D;&#x8F93;&#x5165;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;overloading-the-input-operator-&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x91CD;&#x8F7D;&#x8F93;&#x5165;&#x8FD0;&#x7B97;&#x7B26;&gt;&gt;&#xFF08;Overloading the Input Operator &gt;&gt;&#xFF09;</h3>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5F62;&#x53C2;&#x662F;&#x8981;&#x8BFB;&#x53D6;&#x7684;&#x6D41;&#x7684;&#x666E;&#x901A;&#x5F15;&#x7528;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5F62;&#x53C2;&#x662F;&#x8981;&#x8BFB;&#x5165;&#x7684;&#x76EE;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x666E;&#x901A;&#x5F15;&#x7528;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x5B83;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5F62;&#x53C2;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">istream &amp;operator&gt;&gt;(istream &amp;is, Sales_data &amp;item)
+{
+    double price;   // no need to initialize; we&apos;ll read into price before we use it
+    is &gt;&gt; item.bookNo &gt;&gt; item.units_sold &gt;&gt; price;
+    if (is)    // check that the inputs succeeded
+        item.revenue = item.units_sold * price;
+    else
+        item = Sales_data();    // input failed: give the object the default state
+    return is;
+}
+</code></pre>
+<p>&#x8F93;&#x5165;&#x8FD0;&#x7B97;&#x7B26;&#x5FC5;&#x987B;&#x5904;&#x7406;&#x8F93;&#x5165;&#x5931;&#x8D25;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x800C;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#x4E0D;&#x9700;&#x8981;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x60C5;&#x51B5;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x8BFB;&#x53D6;&#x64CD;&#x4F5C;&#x5931;&#x8D25;&#xFF1A;</p>
+<ul>
+<li>&#x8BFB;&#x53D6;&#x4E86;&#x9519;&#x8BEF;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x8BFB;&#x53D6;&#x64CD;&#x4F5C;&#x5230;&#x8FBE;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x3002;</li>
+<li>&#x9047;&#x5230;&#x8F93;&#x5165;&#x6D41;&#x7684;&#x5176;&#x4ED6;&#x9519;&#x8BEF;&#x3002;</li>
+</ul>
+<p>&#x5F53;&#x8BFB;&#x53D6;&#x64CD;&#x4F5C;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x65F6;&#xFF0C;&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#x7B26;&#x5E94;&#x8BE5;&#x8D1F;&#x8D23;&#x4ECE;&#x9519;&#x8BEF;&#x72B6;&#x6001;&#x4E2D;&#x6062;&#x590D;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x4E0D;&#x7B26;&#x5408;&#x89C4;&#x5B9A;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x5373;&#x4F7F;&#x4ECE;&#x6280;&#x672F;&#x4E0A;&#x770B;IO&#x64CD;&#x4F5C;&#x662F;&#x6210;&#x529F;&#x7684;&#xFF0C;&#x8F93;&#x5165;&#x8FD0;&#x7B97;&#x7B26;&#x4E5F;&#x5E94;&#x8BE5;&#x8BBE;&#x7F6E;&#x6D41;&#x7684;&#x6761;&#x4EF6;&#x72B6;&#x6001;&#x4EE5;&#x6807;&#x793A;&#x51FA;&#x5931;&#x8D25;&#x4FE1;&#x606F;&#x3002;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x8FD0;&#x7B97;&#x7B26;&#x53EA;&#x8BBE;&#x7F6E;<code>failbit</code>&#x72B6;&#x6001;&#x3002;<code>eofbit</code>&#x3001;<code>badbit</code>&#x7B49;&#x9519;&#x8BEF;&#x6700;&#x597D;&#x7531;IO&#x6807;&#x51C6;&#x5E93;&#x81EA;&#x5DF1;&#x6807;&#x793A;&#x3002;</p>
+<h2 id="&#x7B97;&#x672F;&#x548C;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;arithmetic-and-relational-operators&#xFF09;"><a name="&#x7B97;&#x672F;&#x548C;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;arithmetic-and-relational-operators&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7B97;&#x672F;&#x548C;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;arithmetic-and-relational-operators&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B97;&#x672F;&#x548C;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Arithmetic and Relational Operators&#xFF09;</h2>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7B97;&#x672F;&#x548C;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#x5E94;&#x8BE5;&#x5B9A;&#x4E49;&#x4E3A;&#x975E;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E24;&#x4FA7;&#x7684;&#x8FD0;&#x7B97;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x8F6C;&#x6362;&#x3002;&#x5176;&#x6B21;&#xFF0C;&#x7531;&#x4E8E;&#x8FD9;&#x4E9B;&#x8FD0;&#x7B97;&#x7B26;&#x4E00;&#x822C;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x8FD0;&#x7B97;&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x6240;&#x4EE5;&#x5F62;&#x53C2;&#x90FD;&#x662F;&#x5E38;&#x91CF;&#x5F15;&#x7528;&#x3002;</p>
+<p>&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;&#x901A;&#x5E38;&#x4F1A;&#x8BA1;&#x7B97;&#x5B83;&#x7684;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x5BF9;&#x8C61;&#x5E76;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x65B0;&#x503C;&#xFF0C;&#x8FD9;&#x4E2A;&#x503C;&#x901A;&#x5E38;&#x5B58;&#x50A8;&#x5728;&#x4E00;&#x4E2A;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x5185;&#xFF0C;&#x64CD;&#x4F5C;&#x5B8C;&#x6210;&#x540E;&#x8FD4;&#x56DE;&#x8BE5;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x7684;&#x526F;&#x672C;&#x4F5C;&#x4E3A;&#x7ED3;&#x679C;&#xFF08;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x5EFA;&#x8BAE;&#x8BBE;&#x7F6E;&#x4E3A;&#x539F;&#x5BF9;&#x8C61;&#x7684;<code>const</code>&#x7C7B;&#x578B;&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// assumes that both objects refer to the same book
+Sales_data operator+(const Sales_data &amp;lhs, const Sales_data &amp;rhs)
+{
+    Sales_data sum = lhs;   // copy data members from lhs into sum
+    sum += rhs;     // add rhs into sum
+    return sum;
+}
+</code></pre>
+<p>&#x5982;&#x679C;&#x7C7B;&#x5B9A;&#x4E49;&#x4E86;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5219;&#x901A;&#x5E38;&#x4E5F;&#x4F1A;&#x5B9A;&#x4E49;&#x5BF9;&#x5E94;&#x7684;&#x590D;&#x5408;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x6B64;&#x65F6;&#x6700;&#x6709;&#x6548;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x4F7F;&#x7528;&#x590D;&#x5408;&#x8D4B;&#x503C;&#x6765;&#x5B9E;&#x73B0;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;&#x3002;</p>
+<h3 id="&#x76F8;&#x7B49;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;equality-operators&#xFF09;"><a name="&#x76F8;&#x7B49;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;equality-operators&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x76F8;&#x7B49;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;equality-operators&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76F8;&#x7B49;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Equality Operators&#xFF09;</h3>
+<p>&#x76F8;&#x7B49;&#x8FD0;&#x7B97;&#x7B26;&#x8BBE;&#x8BA1;&#x51C6;&#x5219;&#xFF1A;</p>
+<ul>
+<li><p>&#x5982;&#x679C;&#x7C7B;&#x5728;&#x903B;&#x8F91;&#x4E0A;&#x6709;&#x76F8;&#x7B49;&#x6027;&#x7684;&#x542B;&#x4E49;&#xFF0C;&#x5219;&#x5E94;&#x8BE5;&#x5B9A;&#x4E49;<code>operator==</code>&#x800C;&#x975E;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x547D;&#x540D;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x4FBF;&#x4E8E;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x5E93;&#x5BB9;&#x5668;&#x548C;&#x7B97;&#x6CD5;&#xFF0C;&#x4E5F;&#x66F4;&#x5BB9;&#x6613;&#x8BB0;&#x5FC6;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>operator==</code>&#x5E94;&#x8BE5;&#x5177;&#x6709;&#x4F20;&#x9012;&#x6027;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x7C7B;&#x5B9A;&#x4E49;&#x4E86;<code>operator==</code>&#xFF0C;&#x5219;&#x4E5F;&#x5E94;&#x8BE5;&#x5B9A;&#x4E49;<code>operator!=</code>&#x3002;</p>
+</li>
+<li><p><code>operator==</code>&#x548C;<code>operator!=</code>&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5E94;&#x8BE5;&#x628A;&#x5177;&#x4F53;&#x5DE5;&#x4F5C;&#x59D4;&#x6258;&#x7ED9;&#x53E6;&#x4E00;&#x4E2A;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">bool operator==(const Sales_data &amp;lhs, const Sales_data &amp;rhs)
+{
+    return lhs.isbn() == rhs.isbn() &amp;&amp;
+        lhs.units_sold == rhs.units_sold &amp;&amp;
+        lhs.revenue == rhs.revenue;
+}
+
+bool operator!=(const Sales_data &amp;lhs, const Sales_data &amp;rhs)
+{
+    return !(lhs == rhs);
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;relational-operators&#xFF09;"><a name="&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;relational-operators&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;relational-operators&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Relational Operators&#xFF09;</h3>
+<p>&#x5B9A;&#x4E49;&#x4E86;&#x76F8;&#x7B49;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x7C7B;&#x901A;&#x5E38;&#x4E5F;&#x4F1A;&#x5B9A;&#x4E49;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#x3002;&#x56E0;&#x4E3A;&#x5173;&#x8054;&#x5BB9;&#x5668;&#x548C;&#x4E00;&#x4E9B;&#x7B97;&#x6CD5;&#x8981;&#x7528;&#x5230;&#x5C0F;&#x4E8E;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x6240;&#x4EE5;&#x5B9A;&#x4E49;<code>operator&lt;</code>&#x4F1A;&#x6BD4;&#x8F83;&#x5B9E;&#x7528;&#x3002;</p>
+<p>&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#x8BBE;&#x8BA1;&#x51C6;&#x5219;&#xFF1A;</p>
+<ul>
+<li>&#x5B9A;&#x4E49;&#x987A;&#x5E8F;&#x5173;&#x7CFB;&#xFF0C;&#x4EE4;&#x5176;&#x4E0E;&#x5173;&#x8054;&#x5BB9;&#x5668;&#x4E2D;&#x5BF9;&#x5173;&#x952E;&#x5B57;&#x7684;&#x8981;&#x6C42;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x7C7B;&#x5B9A;&#x4E49;&#x4E86;<code>operator==</code>&#xFF0C;&#x5219;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x5B9A;&#x4E49;&#x5E94;&#x8BE5;&#x4E0E;<code>operator==</code>&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;&#x7279;&#x522B;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x4E0D;&#x76F8;&#x7B49;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5E94;&#x8BE5;&#x5C0F;&#x4E8E;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x53EA;&#x6709;&#x5B58;&#x5728;&#x552F;&#x4E00;&#x4E00;&#x79CD;&#x903B;&#x8F91;&#x53EF;&#x9760;&#x7684;&#x5C0F;&#x4E8E;&#x5173;&#x7CFB;&#x65F6;&#xFF0C;&#x624D;&#x5E94;&#x8BE5;&#x8003;&#x8651;&#x4E3A;&#x7C7B;&#x5B9A;&#x4E49;<code>operator&lt;</code>&#x3002;</li>
+</ul>
+<h2 id="&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;assignment-operators&#xFF09;"><a name="&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;assignment-operators&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;assignment-operators&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Assignment Operators&#xFF09;</h2>
+<p>&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#x4E3A;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x590D;&#x5408;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x901A;&#x5E38;&#x4E5F;&#x662F;&#x5982;&#x6B64;&#x3002;&#x8FD9;&#x4E24;&#x7C7B;&#x8FD0;&#x7B97;&#x7B26;&#x90FD;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x5176;&#x5DE6;&#x4FA7;&#x8FD0;&#x7B97;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">StrVec &amp;StrVec::operator=(initializer_list<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span> il)
+{
+    // alloc_n_copy allocates space and copies elements from the given range
+    auto data = alloc_n_copy(il.begin(), il.end());
+    free();     // destroy the elements in this object and free the space
+    elements = data.first;      // update data members to point to the new
+    space
+    first_free = cap = data.second;
+    return *this;
+}
+
+// member binary operator: left-hand operand is bound to the implicit this pointer
+// assumes that both objects refer to the same book
+Sales_data&amp; Sales_data::operator+=(const Sales_data &amp;rhs)
+{
+    units_sold += rhs.units_sold;
+    revenue += rhs.revenue;
+    return *this;
+}
+</code></pre>
+<h2 id="&#x4E0B;&#x6807;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;subscript-operator&#xFF09;"><a name="&#x4E0B;&#x6807;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;subscript-operator&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x4E0B;&#x6807;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;subscript-operator&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0B;&#x6807;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Subscript Operator&#xFF09;</h2>
+<p>&#x4E0B;&#x6807;&#x8FD0;&#x7B97;&#x7B26;&#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#x4E3A;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x7C7B;&#x901A;&#x5E38;&#x4F1A;&#x5B9A;&#x4E49;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x4E0B;&#x6807;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x666E;&#x901A;&#x5F15;&#x7528;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x7C7B;&#x7684;&#x5E38;&#x91CF;&#x6210;&#x5458;&#x5E76;&#x8FD4;&#x56DE;&#x5E38;&#x91CF;&#x5F15;&#x7528;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class StrVec
+{
+public:
+    std::string&amp; operator[](std::size_t n)
+    { return elements[n]; }
+    const std::string&amp; operator[](std::size_t n) const
+    { return elements[n]; }
+
+private:
+    std::string *elements;  // pointer to the first element in the array
+}
+</code></pre>
+<h2 id="&#x9012;&#x589E;&#x548C;&#x9012;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;increment-and-decrement-operators&#xFF09;"><a name="&#x9012;&#x589E;&#x548C;&#x9012;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;increment-and-decrement-operators&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x9012;&#x589E;&#x548C;&#x9012;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;increment-and-decrement-operators&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9012;&#x589E;&#x548C;&#x9012;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Increment and Decrement Operators&#xFF09;</h2>
+<p>&#x5B9A;&#x4E49;&#x9012;&#x589E;&#x548C;&#x9012;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x7C7B;&#x5E94;&#x8BE5;&#x540C;&#x65F6;&#x5B9A;&#x4E49;&#x524D;&#x7F6E;&#x548C;&#x540E;&#x7F6E;&#x7248;&#x672C;&#xFF0C;&#x8FD9;&#x4E9B;&#x8FD0;&#x7B97;&#x7B26;&#x901A;&#x5E38;&#x5B9A;&#x4E49;&#x4E3A;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x4E0E;&#x5185;&#x7F6E;&#x64CD;&#x4F5C;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF0C;&#x524D;&#x7F6E;&#x9012;&#x589E;&#x6216;&#x9012;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x8FD0;&#x7B97;&#x540E;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// prefix: return a reference to the incremented/decremented object
+StrBlobPtr&amp; StrBlobPtr::operator++()
+{
+    ++curr;     // advance the current state
+    return *this;
+}
+</code></pre>
+<p>&#x540E;&#x7F6E;&#x9012;&#x589E;&#x6216;&#x9012;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;&#xFF08;&#x4E0D;&#x88AB;&#x4F7F;&#x7528;&#xFF09;<code>int</code>&#x7C7B;&#x578B;&#x5F62;&#x53C2;&#xFF0C;&#x8BE5;&#x5F62;&#x53C2;&#x7684;&#x552F;&#x4E00;&#x4F5C;&#x7528;&#x5C31;&#x662F;&#x533A;&#x5206;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x524D;&#x7F6E;&#x548C;&#x540E;&#x7F6E;&#x7248;&#x672C;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class StrBlobPtr
+{
+public:
+    // increment and decrement
+    StrBlobPtr&amp; operator++();    // prefix operators
+    StrBlobPtr&amp; operator--();
+    StrBlobPtr operator++(int);  // postfix operators
+    StrBlobPtr operator--(int);
+};
+</code></pre>
+<p>&#x4E3A;&#x4E86;&#x4E0E;&#x5185;&#x7F6E;&#x64CD;&#x4F5C;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF0C;&#x540E;&#x7F6E;&#x9012;&#x589E;&#x6216;&#x9012;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x8FD0;&#x7B97;&#x524D;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x503C;&#xFF08;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x5EFA;&#x8BAE;&#x8BBE;&#x7F6E;&#x4E3A;&#x539F;&#x5BF9;&#x8C61;&#x7684;<code>const</code>&#x7C7B;&#x578B;&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">StrBlobPtr StrBlobPtr::operator++(int)
+{
+    StrBlobPtr ret = *this;    // save the current value
+    ++*this;      // advance one element; prefix ++ checks the increment
+    return ret;   // return the saved state
+}
+</code></pre>
+<p>&#x5982;&#x679C;&#x60F3;&#x901A;&#x8FC7;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;&#x540E;&#x7F6E;&#x9012;&#x589E;&#x6216;&#x9012;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x4E3A;&#x5B83;&#x7684;&#x6574;&#x578B;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x503C;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">StrBlobPtr p(a1);   // p points to the vector inside a1
+p.operator++(0);    // call postfix operator++
+p.operator++();     // call prefix operator++
+</code></pre>
+<h2 id="&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;member-access-operators&#xFF09;"><a name="&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;member-access-operators&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;member-access-operators&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Member Access Operators&#xFF09;</h2>
+<p>&#x7BAD;&#x5934;&#x8FD0;&#x7B97;&#x7B26;&#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#x4E3A;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x89E3;&#x5F15;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#x901A;&#x5E38;&#x4E5F;&#x662F;&#x5982;&#x6B64;&#x3002;</p>
+<p>&#x91CD;&#x8F7D;&#x7684;&#x7BAD;&#x5934;&#x8FD0;&#x7B97;&#x7B26;&#x5FC5;&#x987B;&#x8FD4;&#x56DE;&#x7C7B;&#x7684;&#x6307;&#x9488;&#x6216;&#x8005;&#x81EA;&#x5B9A;&#x4E49;&#x4E86;&#x7BAD;&#x5934;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class StrBlobPtr
+{
+public:
+    std::string&amp; operator*() const
+    {
+        return (*p)[curr];   // (*p) is the vector to which this object points
+    }
+    std::string* operator-&gt;() const
+    {   // delegate the real work to the dereference operator
+        return &amp; this-&gt;operator*();
+    }
+};
+</code></pre>
+<p>&#x5BF9;&#x4E8E;&#x5F62;&#x5982;<code>point-&gt;mem</code>&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x8BF4;&#xFF0C;<em>point</em>&#x5FC5;&#x987B;&#x662F;&#x6307;&#x5411;&#x7C7B;&#x5BF9;&#x8C61;&#x7684;&#x6307;&#x9488;&#x6216;&#x8005;&#x662F;&#x4E00;&#x4E2A;&#x91CD;&#x8F7D;&#x4E86;<code>operator-&gt;</code>&#x7684;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x3002;<em>point</em>&#x7C7B;&#x578B;&#x4E0D;&#x540C;&#xFF0C;<code>point-&gt;mem</code>&#x7684;&#x542B;&#x4E49;&#x4E5F;&#x4E0D;&#x540C;&#x3002;</p>
+<ul>
+<li>&#x5982;&#x679C;<em>point</em>&#x662F;&#x6307;&#x9488;&#xFF0C;&#x5219;&#x8C03;&#x7528;&#x5185;&#x7F6E;&#x7BAD;&#x5934;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x7B49;&#x4EF7;&#x4E8E;<code>(*point).mem</code>&#x3002;</li>
+<li>&#x5982;&#x679C;<em>point</em>&#x662F;&#x91CD;&#x8F7D;&#x4E86;<code>operator-&gt;</code>&#x7684;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x4F7F;&#x7528;<code>point.operator-&gt;()</code>&#x7684;&#x7ED3;&#x679C;&#x6765;&#x83B7;&#x53D6;<em>mem</em>&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x7B49;&#x4EF7;&#x4E8E;<code>(point.operator-&gt;())-&gt;mem</code>&#x3002;&#x5176;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#xFF0C;&#x5219;&#x6267;&#x884C;&#x5185;&#x7F6E;&#x64CD;&#x4F5C;&#xFF0C;&#x5426;&#x5219;&#x91CD;&#x590D;&#x8C03;&#x7528;&#x5F53;&#x524D;&#x64CD;&#x4F5C;&#x3002;</li>
+</ul>
+<h2 id="&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;function-call-operator&#xFF09;"><a name="&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;function-call-operator&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;function-call-operator&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Function-Call Operator&#xFF09;</h2>
+<p>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#x4E3A;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;&#x4E00;&#x4E2A;&#x7C7B;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7684;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x76F8;&#x4E92;&#x4E4B;&#x95F4;&#x5FC5;&#x987B;&#x5728;&#x53C2;&#x6570;&#x6570;&#x91CF;&#x6216;&#x7C7B;&#x578B;&#x4E0A;&#x6709;&#x6240;&#x533A;&#x522B;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class PrintString
+{
+public:
+    PrintString(ostream &amp;o = cout, char c = &apos; &apos;):
+        os(o), sep(c) { }
+    void operator()(const string &amp;s) const
+    {
+        os &lt;&lt; s &lt;&lt; sep;
+    }
+
+private:
+    ostream <span class="token entity named-entity" title="&amp;os;">&amp;os;</span>   // stream on which to write
+    char sep;      // character to print after each output
+};
+
+PrintString printer;  // uses the defaults; prints to cout
+printer(s);     // prints s followed by a space on cout
+</code></pre>
+<p>&#x5982;&#x679C;&#x7C7B;&#x5B9A;&#x4E49;&#x4E86;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5219;&#x8BE5;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x88AB;&#x79F0;&#x4F5C;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;function object&#xFF09;&#xFF0C;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x5E38;&#x5E38;&#x4F5C;&#x4E3A;&#x6CDB;&#x578B;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x53C2;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">for_each(vs.begin(), vs.end(), PrintString(cerr, &apos;\n&apos;));
+</code></pre>
+<h3 id="lambda&#x662F;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;lambdas-are-function-objects&#xFF09;"><a name="lambda&#x662F;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;lambdas-are-function-objects&#xFF09;" class="anchor-navigation-ex-anchor" href="#lambda&#x662F;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;lambdas-are-function-objects&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>lambda&#x662F;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;Lambdas Are Function Objects&#xFF09;</h3>
+<p>&#x7F16;&#x5199;&#x4E00;&#x4E2A;<code>lambda</code>&#x540E;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x5C06;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x672A;&#x547D;&#x540D;&#x7C7B;&#x7684;&#x672A;&#x547D;&#x540D;&#x5BF9;&#x8C61;&#xFF0C;&#x7C7B;&#x4E2D;&#x542B;&#x6709;&#x4E00;&#x4E2A;&#x91CD;&#x8F7D;&#x7684;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// sort words by size, but maintain alphabetical order for words of the same size
+stable_sort(words.begin(), words.end(),
+    [](const string &amp;a, const string &amp;b) { return a.size() &lt; b.size(); });
+
+// acts like an unnamed object of a class that would look something like
+class ShorterString
+{
+public:
+    bool operator()(const string &amp;s1, const string &amp;s2) const
+    {
+        return s1.size() &lt; s2.size();
+    }
+};
+</code></pre>
+<p><code>lambda</code>&#x9ED8;&#x8BA4;&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x5B83;&#x6355;&#x83B7;&#x7684;&#x53D8;&#x91CF;&#x3002;&#x56E0;&#x6B64;&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7531;<code>lambda</code>&#x4EA7;&#x751F;&#x7684;&#x7C7B;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#x662F;&#x4E00;&#x4E2A;<code>const</code>&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;&#x5982;&#x679C;<code>lambda</code>&#x88AB;&#x58F0;&#x660E;&#x4E3A;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x5219;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#x5C31;&#x4E0D;&#x518D;&#x662F;<code>const</code>&#x51FD;&#x6570;&#x4E86;&#x3002;</p>
+<p><code>lambda</code>&#x901A;&#x8FC7;&#x5F15;&#x7528;&#x6355;&#x83B7;&#x53D8;&#x91CF;&#x65F6;&#xFF0C;&#x7531;&#x7A0B;&#x5E8F;&#x8D1F;&#x8D23;&#x786E;&#x4FDD;<code>lambda</code>&#x6267;&#x884C;&#x65F6;&#x8BE5;&#x5F15;&#x7528;&#x6240;&#x7ED1;&#x5B9A;&#x7684;&#x5BF9;&#x8C61;&#x786E;&#x5B9E;&#x5B58;&#x5728;&#x3002;&#x56E0;&#x6B64;&#x7F16;&#x8BD1;&#x5668;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x8BE5;&#x5F15;&#x7528;&#x800C;&#x65E0;&#x987B;&#x5728;<code>lambda</code>&#x4EA7;&#x751F;&#x7684;&#x7C7B;&#x4E2D;&#x5C06;&#x5176;&#x5B58;&#x50A8;&#x4E3A;&#x6570;&#x636E;&#x6210;&#x5458;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x901A;&#x8FC7;&#x503C;&#x6355;&#x83B7;&#x7684;&#x53D8;&#x91CF;&#x88AB;&#x62F7;&#x8D1D;&#x5230;<code>lambda</code>&#x4E2D;&#xFF0C;&#x6B64;&#x65F6;<code>lambda</code>&#x4EA7;&#x751F;&#x7684;&#x7C7B;&#x5FC5;&#x987B;&#x4E3A;&#x6BCF;&#x4E2A;&#x503C;&#x6355;&#x83B7;&#x7684;&#x53D8;&#x91CF;&#x5EFA;&#x7ACB;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x5E76;&#x521B;&#x5EFA;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6355;&#x83B7;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x6765;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x6210;&#x5458;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// get an iterator to the first element whose size() is &gt;= sz
+auto wc = find_if(words.begin(), words.end(),
+            [sz](const string &amp;a) { return a.size() &gt;= sz; });
+
+// would generate a class that looks something like
+class SizeComp
+{
+public:
+    SizeComp(size_t n): sz(n) { }   // parameter for each captured variable
+    // call operator with the same return type, parameters, and body as the lambda
+    bool operator()(const string &amp;s) const
+    {
+        return s.size() &gt;= sz;
+    }
+
+private:
+    size_t sz;   // a data member for each variable captured by value
+};
+</code></pre>
+<p><code>lambda</code>&#x4EA7;&#x751F;&#x7684;&#x7C7B;&#x4E0D;&#x5305;&#x542B;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3001;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x548C;&#x9ED8;&#x8BA4;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x662F;&#x5426;&#x5305;&#x542B;&#x9ED8;&#x8BA4;&#x62F7;&#x8D1D;/&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5219;&#x901A;&#x5E38;&#x8981;&#x89C6;&#x6355;&#x83B7;&#x7684;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x800C;&#x5B9A;&#x3002;</p>
+<h3 id="&#x6807;&#x51C6;&#x5E93;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;library-defined-function-objects&#xFF09;"><a name="&#x6807;&#x51C6;&#x5E93;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;library-defined-function-objects&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6807;&#x51C6;&#x5E93;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;library-defined-function-objects&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6807;&#x51C6;&#x5E93;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;Library-Defined Function Objects&#xFF09;</h3>
+<p>&#x6807;&#x51C6;&#x5E93;&#x5728;&#x5934;&#x6587;&#x4EF6;<em>functional</em>&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x7EC4;&#x8868;&#x793A;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;&#x3001;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#x548C;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x7C7B;&#xFF0C;&#x6BCF;&#x4E2A;&#x7C7B;&#x5206;&#x522B;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x547D;&#x540D;&#x64CD;&#x4F5C;&#x7684;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#x3002;&#x8FD9;&#x4E9B;&#x7C7B;&#x90FD;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x6A21;&#x677F;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x5176;&#x6307;&#x5B9A;&#x5177;&#x4F53;&#x7684;&#x5E94;&#x7528;&#x7C7B;&#x578B;&#xFF08;&#x5373;&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x5F62;&#x53C2;&#x7C7B;&#x578B;&#xFF09;&#x3002;</p>
+<p><img src="Images/14-2.png" alt="14-2"></p>
+<p>&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x7C7B;&#x901A;&#x5E38;&#x88AB;&#x7528;&#x6765;&#x66FF;&#x6362;&#x7B97;&#x6CD5;&#x4E2D;&#x7684;&#x9ED8;&#x8BA4;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x8FD9;&#x4E9B;&#x7C7B;&#x5BF9;&#x4E8E;&#x6307;&#x9488;&#x540C;&#x6837;&#x9002;&#x7528;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">vector<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span> <span class="token attr-name">*</span><span class="token punctuation">&gt;</span></span> nameTable;    // vector of pointers
+// error: the pointers in nameTable are unrelated, so &lt; is undefined
+sort(nameTable.begin(), nameTable.end(),
+        [](string *a, string *b) { return a &lt; b; });
+// ok: library guarantees that less on pointer types is well defined
+sort(nameTable.begin(), nameTable.end(), less<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string*</span><span class="token punctuation">&gt;</span></span>());
+</code></pre>
+<h3 id="&#x53EF;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x4E0E;function&#xFF08;callable-objects-and-function&#xFF09;"><a name="&#x53EF;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x4E0E;function&#xFF08;callable-objects-and-function&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x53EF;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x4E0E;function&#xFF08;callable-objects-and-function&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53EF;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x4E0E;function&#xFF08;Callable Objects and function&#xFF09;</h3>
+<p>&#x8C03;&#x7528;&#x5F62;&#x5F0F;&#x6307;&#x660E;&#x4E86;&#x8C03;&#x7528;&#x8FD4;&#x56DE;&#x7684;&#x7C7B;&#x578B;&#x4EE5;&#x53CA;&#x4F20;&#x9012;&#x7ED9;&#x8C03;&#x7528;&#x7684;&#x5B9E;&#x53C2;&#x7C7B;&#x578B;&#x3002;&#x4E0D;&#x540C;&#x7684;&#x53EF;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x53EF;&#x80FD;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x8C03;&#x7528;&#x5F62;&#x5F0F;&#x3002;</p>
+<p>&#x6807;&#x51C6;&#x5E93;<code>function</code>&#x7C7B;&#x578B;&#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#xFF0C;&#x5B9A;&#x4E49;&#x5728;&#x5934;&#x6587;&#x4EF6;<em>functional</em>&#x4E2D;&#xFF0C;&#x7528;&#x6765;&#x8868;&#x793A;&#x5BF9;&#x8C61;&#x7684;&#x8C03;&#x7528;&#x5F62;&#x5F0F;&#x3002;</p>
+<p><img src="Images/14-3.png" alt="14-3"></p>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;<code>function</code>&#x7C7B;&#x578B;&#x65F6;&#x5FC5;&#x987B;&#x63D0;&#x4F9B;&#x5176;&#x6240;&#x8868;&#x793A;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x8C03;&#x7528;&#x5F62;&#x5F0F;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// ordinary function
+int add(int i, int j) { return i + j; }
+// function-object class
+struct div
+{
+    int operator()(int denominator, int divisor)
+    {
+        return denominator / divisor;
+    }
+};
+
+function<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int(int,</span> <span class="token attr-name">int)</span><span class="token punctuation">&gt;</span></span> f1 = add;      // function pointer
+function<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int(int,</span> <span class="token attr-name">int)</span><span class="token punctuation">&gt;</span></span> f2 = div();    // object of a function-object class
+function<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int(int,</span> <span class="token attr-name">int)</span><span class="token punctuation">&gt;</span></span> f3 = [](int i, int j) { return i * j; };  // lambda
+
+cout &lt;&lt; f1(4,2) &lt;&lt; endl;   // prints 6
+cout &lt;&lt; f2(4,2) &lt;&lt; endl;   // prints 2
+cout &lt;&lt; f3(4,2) &lt;&lt; endl;   // prints 8
+</code></pre>
+<p>&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x5C06;&#x91CD;&#x8F7D;&#x51FD;&#x6570;&#x7684;&#x540D;&#x5B57;&#x5B58;&#x5165;<code>function</code>&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x505A;&#x4F1A;&#x4EA7;&#x751F;&#x4E8C;&#x4E49;&#x6027;&#x9519;&#x8BEF;&#x3002;&#x6D88;&#x9664;&#x4E8C;&#x4E49;&#x6027;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x4F7F;&#x7528;<code>lambda</code>&#x6216;&#x8005;&#x5B58;&#x50A8;&#x51FD;&#x6570;&#x6307;&#x9488;&#x800C;&#x975E;&#x51FD;&#x6570;&#x540D;&#x5B57;&#x3002;</p>
+<p>C++11&#x65B0;&#x6807;&#x51C6;&#x5E93;&#x4E2D;&#x7684;<code>function</code>&#x7C7B;&#x4E0E;&#x65E7;&#x7248;&#x672C;&#x4E2D;&#x7684;<code>unary_function</code>&#x548C;<code>binary_function</code>&#x6CA1;&#x6709;&#x5173;&#x7CFB;&#xFF0C;&#x540E;&#x4E24;&#x4E2A;&#x7C7B;&#x5DF2;&#x7ECF;&#x88AB;<code>bind</code>&#x51FD;&#x6570;&#x4EE3;&#x66FF;&#x3002;</p>
+<h2 id="&#x91CD;&#x8F7D;&#x3001;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;overloading&#xFF0C;conversions&#xFF0C;and-operators&#xFF09;"><a name="&#x91CD;&#x8F7D;&#x3001;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;overloading&#xFF0C;conversions&#xFF0C;and-operators&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x8F7D;&#x3001;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;overloading&#xFF0C;conversions&#xFF0C;and-operators&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x91CD;&#x8F7D;&#x3001;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Overloading&#xFF0C;Conversions&#xFF0C;and Operators&#xFF09;</h2>
+<p>&#x8F6C;&#x6362;&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#x5171;&#x540C;&#x5B9A;&#x4E49;&#x4E86;&#x7C7B;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;class-type conversion&#xFF09;&#x3002;</p>
+<h3 id="&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;conversion-operators&#xFF09;"><a name="&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;conversion-operators&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;conversion-operators&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Conversion Operators&#xFF09;</h3>
+<p>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#x662F;&#x7C7B;&#x7684;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x8D1F;&#x8D23;&#x5C06;&#x4E00;&#x4E2A;&#x7C7B;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x8F6C;&#x6362;&#x6210;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x3002;&#x5B83;&#x4E0D;&#x80FD;&#x58F0;&#x660E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#xFF0C;&#x5F62;&#x53C2;&#x5217;&#x8868;&#x4E5F;&#x5FC5;&#x987B;&#x4E3A;&#x7A7A;&#xFF0C;&#x4E00;&#x822C;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c++">operator type() const;
+</code></pre>
+<p>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#x53EF;&#x4EE5;&#x9762;&#x5411;&#x9664;&#x4E86;<code>void</code>&#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x610F;&#x7C7B;&#x578B;&#xFF08;&#x8BE5;&#x7C7B;&#x578B;&#x8981;&#x80FD;&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#xFF09;&#x8FDB;&#x884C;&#x5B9A;&#x4E49;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class SmallInt
+{
+public:
+    SmallInt(int i = 0): val(i)
+    {
+        if (i &lt; 0 || i &gt; 255)
+            throw std::out_of_range(&quot;Bad SmallInt value&quot;);
+    }   
+    operator int() const { return val; }
+
+private:
+    std::size_t val;
+};
+</code></pre>
+<p>&#x9690;&#x5F0F;&#x7684;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x53EF;&#x4EE5;&#x7F6E;&#x4E8E;&#x4E00;&#x4E2A;&#x6807;&#x51C6;&#xFF08;&#x5185;&#x7F6E;&#xFF09;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E4B;&#x524D;&#x6216;&#x4E4B;&#x540E;&#xFF0C;&#x5E76;&#x4E0E;&#x5176;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// the double argument is converted to int using the built-in conversion
+SmallInt si = 3.14;     // calls the SmallInt(int) constructor
+// the SmallInt conversion operator converts si to int;
+si + 3.14;     // that int is converted to double using the built-in conversion
+</code></pre>
+<p>&#x5E94;&#x8BE5;&#x907F;&#x514D;&#x8FC7;&#x5EA6;&#x4F7F;&#x7528;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x51FD;&#x6570;&#x3002;&#x5982;&#x679C;&#x5728;&#x7C7B;&#x7C7B;&#x578B;&#x548C;&#x8F6C;&#x6362;&#x7C7B;&#x578B;&#x4E4B;&#x95F4;&#x4E0D;&#x5B58;&#x5728;&#x660E;&#x663E;&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#xFF0C;&#x5219;&#x8FD9;&#x6837;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x53EF;&#x80FD;&#x5177;&#x6709;&#x8BEF;&#x5BFC;&#x6027;&#x3002;</p>
+<p>C++11&#x5F15;&#x5165;&#x4E86;&#x663E;&#x793A;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;explicit conversion operator&#xFF09;&#x3002;&#x548C;&#x663E;&#x5F0F;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E00;&#x6837;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x901A;&#x5E38;&#x4E0D;&#x4F1A;&#x5C06;&#x663E;&#x5F0F;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#x7528;&#x4E8E;&#x9690;&#x5F0F;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class SmallInt
+{
+public:
+    // the compiler won&apos;t automatically apply this conversion
+    explicit operator int() const { return val; }
+    // other members as before
+};
+
+SmallInt si = 3;    // ok: the SmallInt constructor is not explicit
+si + 3;     // error: implicit is conversion required, but operator int is explicit
+static_cast<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>(si) + 3;    // ok: explicitly request the conversion
+</code></pre>
+<p>&#x5982;&#x679C;&#x8868;&#x8FBE;&#x5F0F;&#x88AB;&#x7528;&#x4F5C;&#x6761;&#x4EF6;&#xFF0C;&#x5219;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x9690;&#x5F0F;&#x5730;&#x6267;&#x884C;&#x663E;&#x5F0F;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;</p>
+<ul>
+<li><code>if</code>&#x3001;<code>while</code>&#x3001;<code>do-while</code>&#x8BED;&#x53E5;&#x7684;&#x6761;&#x4EF6;&#x90E8;&#x5206;&#x3002;</li>
+<li><code>for</code>&#x8BED;&#x53E5;&#x5934;&#x7684;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</li>
+<li>&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26;<code>? :</code>&#x7684;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</li>
+<li>&#x903B;&#x8F91;&#x975E;&#x8FD0;&#x7B97;&#x7B26;<code>!</code>&#x3001;&#x903B;&#x8F91;&#x6216;&#x8FD0;&#x7B97;&#x7B26;<code>||</code>&#x3001;&#x903B;&#x8F91;&#x4E0E;&#x8FD0;&#x7B97;&#x7B26;<code>&amp;&amp;</code>&#x7684;&#x8FD0;&#x7B97;&#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<p>&#x7C7B;&#x7C7B;&#x578B;&#x5411;<code>bool</code>&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x901A;&#x5E38;&#x7528;&#x5728;&#x6761;&#x4EF6;&#x90E8;&#x5206;&#xFF0C;&#x56E0;&#x6B64;<code>operator bool</code>&#x4E00;&#x822C;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x663E;&#x5F0F;&#x7684;&#x3002;</p>
+<h3 id="&#x907F;&#x514D;&#x6709;&#x4E8C;&#x4E49;&#x6027;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;avoiding-ambiguous-conversions&#xFF09;"><a name="&#x907F;&#x514D;&#x6709;&#x4E8C;&#x4E49;&#x6027;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;avoiding-ambiguous-conversions&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x907F;&#x514D;&#x6709;&#x4E8C;&#x4E49;&#x6027;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;avoiding-ambiguous-conversions&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x907F;&#x514D;&#x6709;&#x4E8C;&#x4E49;&#x6027;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;Avoiding Ambiguous Conversions&#xFF09;</h3>
+<p>&#x5728;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x80FD;&#x4EA7;&#x751F;&#x591A;&#x91CD;&#x8F6C;&#x6362;&#x8DEF;&#x5F84;&#xFF1A;</p>
+<ul>
+<li><p><em>A</em>&#x7C7B;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x63A5;&#x53D7;<em>B</em>&#x7C7B;&#x5BF9;&#x8C61;&#x7684;&#x8F6C;&#x6362;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x540C;&#x65F6;<em>B</em>&#x7C7B;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x8F6C;&#x6362;&#x76EE;&#x6807;&#x662F;<em>A</em>&#x7C7B;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// usually a bad idea to have mutual conversions between two class types
+struct B;
+struct A
+{
+    A() = default;
+    A(const B&amp;); // converts a B to an A
+    // other members
+};
+
+struct B
+{
+    operator A() const; // also converts a B to an A
+    // other members
+};
+
+A f(const A&amp;);
+B b;
+A a = f(b);    // error ambiguous: f(B::operator A())
+               // or f(A::A(const B&amp;))
+</code></pre>
+</li>
+<li><p>&#x7C7B;&#x5B9A;&#x4E49;&#x4E86;&#x591A;&#x4E2A;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x89C4;&#x5219;&#xFF0C;&#x800C;&#x8FD9;&#x4E9B;&#x8F6C;&#x6362;&#x6D89;&#x53CA;&#x7684;&#x7C7B;&#x578B;&#x672C;&#x8EAB;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8054;&#x7CFB;&#x5728;&#x4E00;&#x8D77;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">struct A
+{
+    A(int = 0);     // usually a bad idea to have two
+    A(double);      // conversions from arithmetic types
+    operator int() const;       // usually a bad idea to have two
+    operator double() const;    // conversions to arithmetic types
+    // other members
+};
+
+void f2(long double);
+A a;
+f2(a);    // error ambiguous: f(A::operator int())
+          // or f(A::operator double())
+long lg;
+A a2(lg);   // error ambiguous: A::A(int) or A::A(double)
+</code></pre>
+</li>
+</ul>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x663E;&#x5F0F;&#x8C03;&#x7528;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#x6216;&#x8F6C;&#x6362;&#x6784;&#x9020;&#x51FD;&#x6570;&#x89E3;&#x51B3;&#x4E8C;&#x4E49;&#x6027;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x56E0;&#x4E3A;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x672C;&#x8EAB;&#x4E5F;&#x5B58;&#x5728;&#x4E8C;&#x4E49;&#x6027;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">A a1 = f(b.operator A());    // ok: use B&apos;s conversion operator
+A a2 = f(A(b));     // ok: use A&apos;s constructor
+</code></pre>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E0D;&#x8981;&#x4E3A;&#x7C7B;&#x5B9A;&#x4E49;&#x76F8;&#x540C;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x4E5F;&#x4E0D;&#x8981;&#x5728;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x4E24;&#x4E2A;&#x53CA;&#x4E24;&#x4E2A;&#x4EE5;&#x4E0A;&#x8F6C;&#x6362;&#x6E90;&#x6216;&#x8F6C;&#x6362;&#x76EE;&#x6807;&#x90FD;&#x662F;&#x7B97;&#x672F;&#x7C7B;&#x578B;&#x7684;&#x8F6C;&#x6362;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x8F6C;&#x6362;&#x524D;&#x540E;&#x5B58;&#x5728;&#x6807;&#x51C6;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x5219;&#x7531;&#x6807;&#x51C6;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x51B3;&#x5B9A;&#x6700;&#x4F73;&#x5339;&#x914D;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5728;&#x8C03;&#x7528;&#x91CD;&#x8F7D;&#x51FD;&#x6570;&#x65F6;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6216;&#x8005;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x6765;&#x6539;&#x53D8;&#x5B9E;&#x53C2;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x901A;&#x5E38;&#x610F;&#x5473;&#x7740;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x5B58;&#x5728;&#x4E0D;&#x8DB3;&#x3002;</p>
+<p>&#x8C03;&#x7528;&#x91CD;&#x8F7D;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x989D;&#x5916;&#x7684;&#x6807;&#x51C6;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x5219;&#x8BE5;&#x8F6C;&#x6362;&#x53EA;&#x6709;&#x5728;&#x6240;&#x6709;&#x53EF;&#x884C;&#x51FD;&#x6570;&#x90FD;&#x8BF7;&#x6C42;&#x540C;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x65F6;&#x624D;&#x6709;&#x7528;&#x3002;&#x5982;&#x679C;&#x6240;&#x9700;&#x7684;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E0D;&#x6B62;&#x4E00;&#x4E2A;&#xFF0C;&#x5373;&#x4F7F;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x8C03;&#x7528;&#x80FD;&#x7CBE;&#x786E;&#x5339;&#x914D;&#x800C;&#x53E6;&#x4E00;&#x4E2A;&#x8C03;&#x7528;&#x9700;&#x8981;&#x989D;&#x5916;&#x7684;&#x6807;&#x51C6;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x4E5F;&#x4F1A;&#x4EA7;&#x751F;&#x4E8C;&#x4E49;&#x6027;&#x9519;&#x8BEF;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">struct C
+{
+    C(int);
+    // other members
+};
+
+struct E
+{
+    E(double);
+    // other members
+};
+
+void manip2(const C&amp;);
+void manip2(const E&amp;);
+// error ambiguous: two different user-defined conversions could be used
+manip2(10);    // manip2(C(10) or manip2(E(double(10)))
+</code></pre>
+<h3 id="&#x51FD;&#x6570;&#x5339;&#x914D;&#x4E0E;&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;function-matching-and-overloaded-operators&#xFF09;"><a name="&#x51FD;&#x6570;&#x5339;&#x914D;&#x4E0E;&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;function-matching-and-overloaded-operators&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x5339;&#x914D;&#x4E0E;&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;function-matching-and-overloaded-operators&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x5339;&#x914D;&#x4E0E;&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Function Matching and Overloaded Operators&#xFF09;</h3>
+<p>&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x5019;&#x9009;&#x51FD;&#x6570;&#x96C6;&#x65E2;&#x5305;&#x62EC;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x4E5F;&#x5305;&#x62EC;&#x975E;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class SmallInt
+{
+    friend SmallInt operator+(const SmallInt&amp;, const SmallInt&amp;);
+
+public:
+    SmallInt(int = 0);    // conversion from int
+    operator int() const { return val; }    // conversion to int
+
+private:
+    std::size_t val;
+};
+
+SmallInt s1, s2;
+SmallInt s3 = s1 + s2;    // uses overloaded operator+
+int i = s3 + 0;    // error: ambiguous
+</code></pre>
+<p>&#x5982;&#x679C;&#x7C7B;&#x65E2;&#x5B9A;&#x4E49;&#x4E86;&#x8F6C;&#x6362;&#x76EE;&#x6807;&#x662F;&#x7B97;&#x672F;&#x7C7B;&#x578B;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x4E5F;&#x5B9A;&#x4E49;&#x4E86;&#x91CD;&#x8F7D;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5219;&#x4F1A;&#x9047;&#x5230;&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x7B26;&#x4E0E;&#x5185;&#x7F6E;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x4E8C;&#x4E49;&#x6027;&#x95EE;&#x9898;&#x3002; </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; bookins.cn 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-07-17 09:10:04
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Chapter-13 Copy Control/" class="navigation navigation-prev " aria-label="Previous page: Chapter 13 Copy Control">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter-15 Object-Oriented Programming/" class="navigation navigation-next " aria-label="Next page: Chapter 15 Object Oriented Programming">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 14 Overloaded Operations And Conversions","level":"1.15","depth":1,"next":{"title":"Chapter 15 Object Oriented Programming","level":"1.16","depth":1,"path":"Chapter-15 Object-Oriented Programming/README.md","ref":"Chapter-15 Object-Oriented Programming/README.md","articles":[]},"previous":{"title":"Chapter 13 Copy Control","level":"1.14","depth":1,"path":"Chapter-13 Copy Control/README.md","ref":"Chapter-13 Copy Control/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","chapter-fold","splitter","-sharing","github-buttons","tbfed-pagefooter","baidu-tongji","anchor-navigation-ex","summary"],"styles":{"website":"./public-repertory/css/gitbook-configure.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy bookins.cn 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"shell":"bash"}},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"55e7dfe47f4dc1c018d4042fdfa62565"},"summary":{},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"yao-yue","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"yao-yue","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"yaoyue","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"yaoyue 的随笔","language":"zh-hans","gitbook":"*","description":"邀月的随笔，少即是多，简单"},"file":{"path":"Chapter-14 Overloaded Operations and Conversions/README.md","mtime":"2021-07-17T09:10:04.597Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-07-17T09:10:44.336Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

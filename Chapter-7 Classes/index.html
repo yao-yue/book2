@@ -1,0 +1,1155 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 7 Classes · yaoyue 的随笔</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yaoyue">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter-8 The IO Library/" />
+    
+    
+    <link rel="prev" href="../Chapter-6 Functions/" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"yao-yue","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"yao-yue","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter-1 Getting Started/">
+            
+                <a href="../Chapter-1 Getting Started/">
+            
+                    
+                    Chapter 1 Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter-2 Variables and Basic Types/">
+            
+                <a href="../Chapter-2 Variables and Basic Types/">
+            
+                    
+                    Chapter 2 Variables And Basic Types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter-2 Variables and Basic Types/1-基本内置类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/1-基本内置类型.html">
+            
+                    
+                    基本内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter-2 Variables and Basic Types/2-变量.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/2-变量.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chapter-2 Variables and Basic Types/3-复合类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/3-复合类型.html">
+            
+                    
+                    复合类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Chapter-2 Variables and Basic Types/4-const限定符.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/4-const限定符.html">
+            
+                    
+                    Const限定符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Chapter-2 Variables and Basic Types/5-处理类型.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/5-处理类型.html">
+            
+                    
+                    处理类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Chapter-2 Variables and Basic Types/6-自定义数据结构.html">
+            
+                <a href="../Chapter-2 Variables and Basic Types/6-自定义数据结构.html">
+            
+                    
+                    自定义数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter-3 Strings, Vectors, and Arrays/">
+            
+                <a href="../Chapter-3 Strings, Vectors, and Arrays/">
+            
+                    
+                    Chapter 3 Strings, Vectors, And Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter-4 Expressions/">
+            
+                <a href="../Chapter-4 Expressions/">
+            
+                    
+                    Chapter 4 Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter-5 Statements/">
+            
+                <a href="../Chapter-5 Statements/">
+            
+                    
+                    Chapter 5 Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter-6 Functions/">
+            
+                <a href="../Chapter-6 Functions/">
+            
+                    
+                    Chapter 6 Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter 7 Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Chapter-8 The IO Library/">
+            
+                <a href="../Chapter-8 The IO Library/">
+            
+                    
+                    Chapter 8 The IO Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Chapter-9 Sequential Containers/">
+            
+                <a href="../Chapter-9 Sequential Containers/">
+            
+                    
+                    Chapter 9 Sequential Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Chapter-10 Generic Algorithms/">
+            
+                <a href="../Chapter-10 Generic Algorithms/">
+            
+                    
+                    Chapter 10 Generic Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Chapter-11 Associative Containers/">
+            
+                <a href="../Chapter-11 Associative Containers/">
+            
+                    
+                    Chapter 11 Associative Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Chapter-12 Dynamic Memory/">
+            
+                <a href="../Chapter-12 Dynamic Memory/">
+            
+                    
+                    Chapter 12 Dynamic Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Chapter-13 Copy Control/">
+            
+                <a href="../Chapter-13 Copy Control/">
+            
+                    
+                    Chapter 13 Copy Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Chapter-14 Overloaded Operations and Conversions/">
+            
+                <a href="../Chapter-14 Overloaded Operations and Conversions/">
+            
+                    
+                    Chapter 14 Overloaded Operations And Conversions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Chapter-15 Object-Oriented Programming/">
+            
+                <a href="../Chapter-15 Object-Oriented Programming/">
+            
+                    
+                    Chapter 15 Object Oriented Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Chapter-16 Templates and Generic Programming/">
+            
+                <a href="../Chapter-16 Templates and Generic Programming/">
+            
+                    
+                    Chapter 16 Templates And Generic Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../Chapter-17 Specialized Library Facilities/">
+            
+                <a href="../Chapter-17 Specialized Library Facilities/">
+            
+                    
+                    Chapter 17 Specialized Library Facilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../Chapter-18 Tools for Large Programs/">
+            
+                <a href="../Chapter-18 Tools for Large Programs/">
+            
+                    
+                    Chapter 18 Tools For Large Programs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../Chapter-19 Specialized Tools and Techniques/">
+            
+                <a href="../Chapter-19 Specialized Tools and Techniques/">
+            
+                    
+                    Chapter 19 Specialized Tools And Techniques
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Chapter 7 Classes</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;7&#x7AE0;-&#x7C7B;"><b></b>&#x7B2C;7&#x7AE0; &#x7C7B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;&#x62BD;&#x8C61;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF08;defining-abstract-data-types&#xFF09;"><b></b>&#x5B9A;&#x4E49;&#x62BD;&#x8C61;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF08;Defining Abstract Data Types&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8BBE;&#x8BA1;salesdata&#x7C7B;&#xFF08;designing-the-salesdata-class&#xFF09;"><b></b>&#x8BBE;&#x8BA1;Sales_data&#x7C7B;&#xFF08;Designing the Sales_data Class&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;&#x6539;&#x8FDB;&#x7684;salesdata&#x7C7B;&#xFF08;defining-the-revised-salesdata-class&#xFF09;"><b></b>&#x5B9A;&#x4E49;&#x6539;&#x8FDB;&#x7684;Sales_data&#x7C7B;&#xFF08;Defining the Revised Sales_data Class&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;&#x7C7B;&#x76F8;&#x5173;&#x7684;&#x975E;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;defining-nonmember-class-related-functions&#xFF09;"><b></b>&#x5B9A;&#x4E49;&#x7C7B;&#x76F8;&#x5173;&#x7684;&#x975E;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;Defining Nonmember Class-Related Functions&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;constructors&#xFF09;"><b></b>&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;Constructors&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x62F7;&#x8D1D;&#x3001;&#x8D4B;&#x503C;&#x548C;&#x6790;&#x6784;&#xFF08;copy&#x3001;assignment&#xFF0C;and-destruction&#xFF09;"><b></b>&#x62F7;&#x8D1D;&#x3001;&#x8D4B;&#x503C;&#x548C;&#x6790;&#x6784;&#xFF08;Copy&#x3001;Assignment&#xFF0C;and Destruction&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x4E0E;&#x5C01;&#x88C5;&#xFF08;access-control-and-encapsulation&#xFF09;"><b></b>&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x4E0E;&#x5C01;&#x88C5;&#xFF08;Access Control and Encapsulation&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x53CB;&#x5143;&#xFF08;friends&#xFF09;"><b></b>&#x53CB;&#x5143;&#xFF08;Friends&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x7279;&#x6027;&#xFF08;additional-class-features&#xFF09;"><b></b>&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x7279;&#x6027;&#xFF08;Additional Class Features&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7C7B;&#x6210;&#x5458;&#x518D;&#x63A2;&#xFF08;class-members-revisited&#xFF09;"><b></b>&#x7C7B;&#x6210;&#x5458;&#x518D;&#x63A2;&#xFF08;Class Members Revisited&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;this&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;functions-that-return-this&#xFF09;"><b></b>&#x8FD4;&#x56DE;*this&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;Functions That Return *this&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x7C7B;&#x7C7B;&#x578B;&#xFF08;class-types&#xFF09;"><b></b>&#x7C7B;&#x7C7B;&#x578B;&#xFF08;Class Types&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x53CB;&#x5143;&#x518D;&#x63A2;&#xFF08;friendship-revisited&#xFF09;"><b></b>&#x53CB;&#x5143;&#x518D;&#x63A2;&#xFF08;Friendship Revisited&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x7C7B;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF08;class-scope&#xFF09;"><b></b>&#x7C7B;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF08;Class Scope&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x540D;&#x5B57;&#x67E5;&#x627E;&#x4E0E;&#x4F5C;&#x7528;&#x57DF;&#xFF08;name-lookup-and-class-scope&#xFF09;"><b></b>&#x540D;&#x5B57;&#x67E5;&#x627E;&#x4E0E;&#x4F5C;&#x7528;&#x57DF;&#xFF08;Name Lookup and Class Scope&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6784;&#x9020;&#x51FD;&#x6570;&#x518D;&#x63A2;&#xFF08;constructors-revisited&#xFF09;"><b></b>&#x6784;&#x9020;&#x51FD;&#x6570;&#x518D;&#x63A2;&#xFF08;Constructors Revisited&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x503C;&#x5217;&#x8868;&#xFF08;constructor-initializer-list&#xFF09;"><b></b>&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x503C;&#x5217;&#x8868;&#xFF08;Constructor Initializer List&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x59D4;&#x6258;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;delegating-constructors&#xFF09;"><b></b>&#x59D4;&#x6258;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;Delegating Constructors&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#xFF08;the-role-of-the-default-constructor&#xFF09;"><b></b>&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#xFF08;The Role of the Default Constructor&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x9690;&#x5F0F;&#x7684;&#x7C7B;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;implicit-class-type-conversions&#xFF09;"><b></b>&#x9690;&#x5F0F;&#x7684;&#x7C7B;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;Implicit Class-Type Conversions&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x805A;&#x5408;&#x7C7B;&#xFF08;aggregate-classes&#xFF09;"><b></b>&#x805A;&#x5408;&#x7C7B;&#xFF08;Aggregate Classes&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5B57;&#x9762;&#x503C;&#x5E38;&#x91CF;&#x7C7B;&#xFF08;literal-classes&#xFF09;"><b></b>&#x5B57;&#x9762;&#x503C;&#x5E38;&#x91CF;&#x7C7B;&#xFF08;Literal Classes&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x7C7B;&#x7684;&#x9759;&#x6001;&#x6210;&#x5458;&#xFF08;static-class-members&#xFF09;"><b></b>&#x7C7B;&#x7684;&#x9759;&#x6001;&#x6210;&#x5458;&#xFF08;static Class Members&#xFF09;</a></li></ul></ul></div><a href="#&#x7B2C;7&#x7AE0;-&#x7C7B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;7&#x7AE0;-&#x7C7B;"><a name="&#x7B2C;7&#x7AE0;-&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;7&#x7AE0;-&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;7&#x7AE0; &#x7C7B;</h1>
+<p>&#x7C7B;&#x7684;&#x57FA;&#x672C;&#x601D;&#x60F3;&#x662F;&#x6570;&#x636E;&#x62BD;&#x8C61;&#xFF08;data abstraction&#xFF09;&#x548C;&#x5C01;&#x88C5;&#xFF08;encapsulation&#xFF09;&#x3002;&#x6570;&#x636E;&#x62BD;&#x8C61;&#x662F;&#x4E00;&#x79CD;&#x4F9D;&#x8D56;&#x4E8E;&#x63A5;&#x53E3;&#xFF08;interface&#xFF09;&#x548C;&#x5B9E;&#x73B0;&#xFF08;implementation&#xFF09;&#x5206;&#x79BB;&#x7684;&#x7F16;&#x7A0B;&#x53CA;&#x8BBE;&#x8BA1;&#x6280;&#x672F;&#x3002;&#x7C7B;&#x7684;&#x63A5;&#x53E3;&#x5305;&#x62EC;&#x7528;&#x6237;&#x6240;&#x80FD;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#xFF1B;&#x7C7B;&#x7684;&#x5B9E;&#x73B0;&#x5305;&#x62EC;&#x7C7B;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#x3001;&#x8D1F;&#x8D23;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x7684;&#x51FD;&#x6570;&#x4F53;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x79C1;&#x6709;&#x51FD;&#x6570;&#x3002;</p>
+<h2 id="&#x5B9A;&#x4E49;&#x62BD;&#x8C61;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF08;defining-abstract-data-types&#xFF09;"><a name="&#x5B9A;&#x4E49;&#x62BD;&#x8C61;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF08;defining-abstract-data-types&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x62BD;&#x8C61;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF08;defining-abstract-data-types&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9A;&#x4E49;&#x62BD;&#x8C61;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF08;Defining Abstract Data Types&#xFF09;</h2>
+<h3 id="&#x8BBE;&#x8BA1;salesdata&#x7C7B;&#xFF08;designing-the-salesdata-class&#xFF09;"><a name="&#x8BBE;&#x8BA1;salesdata&#x7C7B;&#xFF08;designing-the-salesdata-class&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x8BA1;salesdata&#x7C7B;&#xFF08;designing-the-salesdata-class&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBE;&#x8BA1;Sales_data&#x7C7B;&#xFF08;Designing the Sales_data Class&#xFF09;</h3>
+<p>&#x7C7B;&#x7684;&#x7528;&#x6237;&#x662F;&#x7A0B;&#x5E8F;&#x5458;&#xFF0C;&#x800C;&#x975E;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x6700;&#x7EC8;&#x4F7F;&#x7528;&#x8005;&#x3002;</p>
+<h3 id="&#x5B9A;&#x4E49;&#x6539;&#x8FDB;&#x7684;salesdata&#x7C7B;&#xFF08;defining-the-revised-salesdata-class&#xFF09;"><a name="&#x5B9A;&#x4E49;&#x6539;&#x8FDB;&#x7684;salesdata&#x7C7B;&#xFF08;defining-the-revised-salesdata-class&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x6539;&#x8FDB;&#x7684;salesdata&#x7C7B;&#xFF08;defining-the-revised-salesdata-class&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9A;&#x4E49;&#x6539;&#x8FDB;&#x7684;Sales_data&#x7C7B;&#xFF08;Defining the Revised Sales_data Class&#xFF09;</h3>
+<p>&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;member function&#xFF09;&#x7684;&#x58F0;&#x660E;&#x5FC5;&#x987B;&#x5728;&#x7C7B;&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x5B9A;&#x4E49;&#x5219;&#x65E2;&#x53EF;&#x4EE5;&#x5728;&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x7C7B;&#x7684;&#x5916;&#x90E8;&#x3002;&#x5B9A;&#x4E49;&#x5728;&#x7C7B;&#x5185;&#x90E8;&#x7684;&#x51FD;&#x6570;&#x662F;&#x9690;&#x5F0F;&#x7684;&#x5185;&#x8054;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">struct Sales_data
+{
+    // new members: operations on Sales_data objects
+    std::string isbn() const { return bookNo; }
+    Sales_data&amp; combine(const Sales_data&amp;);
+    double avg_price() const;
+
+    // data members
+    std::string bookNo;
+    unsigned units_sold = 0;
+    double revenue = 0.0;
+};
+</code></pre>
+<p>&#x6210;&#x5458;&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>this</code>&#x7684;&#x9690;&#x5F0F;&#x989D;&#x5916;&#x53C2;&#x6570;&#x6765;&#x8BBF;&#x95EE;&#x8C03;&#x7528;&#x5B83;&#x7684;&#x5BF9;&#x8C61;&#x3002;<code>this</code>&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;&#x6307;&#x9488;&#xFF0C;&#x88AB;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x8C03;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#x7684;&#x5BF9;&#x8C61;&#x5730;&#x5740;&#x3002;&#x5728;&#x51FD;&#x6570;&#x4F53;&#x5185;&#x53EF;&#x4EE5;&#x663E;&#x5F0F;&#x4F7F;&#x7528;<code>this</code>&#x6307;&#x9488;&#x3002; </p>
+<pre class="language-"><code class="lang-c++">total.isbn()
+// pseudo-code illustration of how a call to a member function is translated
+Sales_data::isbn(&amp;total)
+
+std::string isbn() const { return this-&gt;bookNo; }
+std::string isbn() const { return bookNo; }
+</code></pre>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>this</code>&#x7684;&#x7C7B;&#x578B;&#x662F;&#x6307;&#x5411;&#x7C7B;&#x7C7B;&#x578B;&#x975E;&#x5E38;&#x91CF;&#x7248;&#x672C;&#x7684;&#x5E38;&#x91CF;&#x6307;&#x9488;&#x3002;<code>this</code>&#x4E5F;&#x9075;&#x5FAA;&#x521D;&#x59CB;&#x5316;&#x89C4;&#x5219;&#xFF0C;&#x6240;&#x4EE5;&#x9ED8;&#x8BA4;&#x4E0D;&#x80FD;&#x628A;<code>this</code>&#x7ED1;&#x5B9A;&#x5230;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;&#x5BF9;&#x8C61;&#x4E0A;&#xFF0C;&#x5373;&#x4E0D;&#x80FD;&#x5728;&#x5E38;&#x91CF;&#x5BF9;&#x8C61;&#x4E0A;&#x8C03;&#x7528;&#x666E;&#x901A;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;</p>
+<p>C++&#x5141;&#x8BB8;&#x5728;&#x6210;&#x5458;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x5217;&#x8868;&#x540E;&#x9762;&#x6DFB;&#x52A0;&#x5173;&#x952E;&#x5B57;<code>const</code>&#xFF0C;&#x8868;&#x793A;<code>this</code>&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x5411;&#x5E38;&#x91CF;&#x7684;&#x6307;&#x9488;&#x3002;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;<code>const</code>&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x88AB;&#x79F0;&#x4F5C;&#x5E38;&#x91CF;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;const member function&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// pseudo-code illustration of how the implicit this pointer is used
+// this code is illegal: we may not explicitly define the this pointer ourselves
+// note that this is a pointer to const because isbn is a const member
+std::string Sales_data::isbn(const Sales_data *const this)
+{ 
+    return this-&gt;isbn;
+}
+</code></pre>
+<p>&#x5E38;&#x91CF;&#x5BF9;&#x8C61;&#x548C;&#x6307;&#x5411;&#x5E38;&#x91CF;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x6216;&#x6307;&#x9488;&#x90FD;&#x53EA;&#x80FD;&#x8C03;&#x7528;&#x5E38;&#x91CF;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x7C7B;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x6210;&#x5458;&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x5D4C;&#x5957;&#x5728;&#x7C7B;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E4B;&#x5185;&#x3002;&#x7F16;&#x8BD1;&#x5668;&#x5904;&#x7406;&#x7C7B;&#x65F6;&#xFF0C;&#x4F1A;&#x5148;&#x7F16;&#x8BD1;&#x6210;&#x5458;&#x58F0;&#x660E;&#xFF0C;&#x518D;&#x7F16;&#x8BD1;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4F53;&#xFF08;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#xFF09;&#xFF0C;&#x56E0;&#x6B64;&#x6210;&#x5458;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x4F7F;&#x7528;&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x6210;&#x5458;&#x800C;&#x65E0;&#x987B;&#x5728;&#x610F;&#x8FD9;&#x4E9B;&#x6210;&#x5458;&#x7684;&#x51FA;&#x73B0;&#x987A;&#x5E8F;&#x3002;</p>
+<p>&#x5728;&#x7C7B;&#x7684;&#x5916;&#x90E8;&#x5B9A;&#x4E49;&#x6210;&#x5458;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x6210;&#x5458;&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x5FC5;&#x987B;&#x4E0E;&#x5B83;&#x7684;&#x58F0;&#x660E;&#x76F8;&#x5339;&#x914D;&#x3002;&#x5982;&#x679C;&#x6210;&#x5458;&#x51FD;&#x6570;&#x88AB;&#x58F0;&#x660E;&#x4E3A;&#x5E38;&#x91CF;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x7684;&#x5B9A;&#x4E49;&#x4E5F;&#x5FC5;&#x987B;&#x5728;&#x53C2;&#x6570;&#x5217;&#x8868;&#x540E;&#x9762;&#x6307;&#x5B9A;<code>const</code>&#x5C5E;&#x6027;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x7C7B;&#x5916;&#x90E8;&#x5B9A;&#x4E49;&#x7684;&#x6210;&#x5458;&#x540D;&#x5B57;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x5B83;&#x6240;&#x5C5E;&#x7684;&#x7C7B;&#x540D;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">double Sales_data::avg_price() const 
+{
+    if (units_sold)
+        return revenue / units_sold;
+    else
+        return 0;
+}
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x8FD4;&#x56DE;<code>this</code>&#x5BF9;&#x8C61;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">Sales_data&amp; Sales_data::combine(const Sales_data &amp;rhs)
+{
+    units_sold += rhs.units_sold;   // add the members of rhs into
+    revenue += rhs.revenue;     // the members of &apos;this&apos; object
+    return *this;       // return the object on which the function was called
+}
+</code></pre>
+<h3 id="&#x5B9A;&#x4E49;&#x7C7B;&#x76F8;&#x5173;&#x7684;&#x975E;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;defining-nonmember-class-related-functions&#xFF09;"><a name="&#x5B9A;&#x4E49;&#x7C7B;&#x76F8;&#x5173;&#x7684;&#x975E;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;defining-nonmember-class-related-functions&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x7C7B;&#x76F8;&#x5173;&#x7684;&#x975E;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;defining-nonmember-class-related-functions&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9A;&#x4E49;&#x7C7B;&#x76F8;&#x5173;&#x7684;&#x975E;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;Defining Nonmember Class-Related Functions&#xFF09;</h3>
+<p>&#x7C7B;&#x7684;&#x4F5C;&#x8005;&#x901A;&#x5E38;&#x4F1A;&#x5B9A;&#x4E49;&#x4E00;&#x4E9B;&#x8F85;&#x52A9;&#x51FD;&#x6570;&#xFF0C;&#x5C3D;&#x7BA1;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x4ECE;&#x6982;&#x5FF5;&#x4E0A;&#x6765;&#x8BF4;&#x5C5E;&#x4E8E;&#x7C7B;&#x63A5;&#x53E3;&#x7684;&#x7EC4;&#x6210;&#x90E8;&#x5206;&#xFF0C;&#x4F46;&#x5B9E;&#x9645;&#x4E0A;&#x5B83;&#x4EEC;&#x5E76;&#x4E0D;&#x5C5E;&#x4E8E;&#x7C7B;&#x672C;&#x8EAB;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// input transactions contain ISBN, number of copies sold, and sales price
+istream &amp;read(istream &amp;is, Sales_data &amp;item)
+{
+    double price = 0;
+    is &gt;&gt; item.bookNo &gt;&gt; item.units_sold &gt;&gt; price;
+    item.revenue = price * item.units_sold;
+    return is;
+}
+
+ostream &amp;print(ostream &amp;os, const Sales_data &amp;item)
+{
+    os &lt;&lt; item.isbn() &lt;&lt; &quot; &quot; &lt;&lt; item.units_sold &lt;&lt; &quot; &quot;
+        &lt;&lt; item.revenue &lt;&lt; &quot; &quot; &lt;&lt; item.avg_price();
+    return os;
+}
+</code></pre>
+<p>&#x5982;&#x679C;&#x975E;&#x6210;&#x5458;&#x51FD;&#x6570;&#x662F;&#x7C7B;&#x63A5;&#x53E3;&#x7684;&#x7EC4;&#x6210;&#x90E8;&#x5206;&#xFF0C;&#x5219;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x7684;&#x58F0;&#x660E;&#x5E94;&#x8BE5;&#x4E0E;&#x7C7B;&#x653E;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5934;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x6267;&#x884C;&#x8F93;&#x51FA;&#x4EFB;&#x52A1;&#x7684;&#x51FD;&#x6570;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x51CF;&#x5C11;&#x5BF9;&#x683C;&#x5F0F;&#x7684;&#x63A7;&#x5236;&#x3002;</p>
+<h3 id="&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;constructors&#xFF09;"><a name="&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;constructors&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;constructors&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;Constructors&#xFF09;</h3>
+<p>&#x7C7B;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x6216;&#x51E0;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x6765;&#x63A7;&#x5236;&#x5176;&#x5BF9;&#x8C61;&#x7684;&#x521D;&#x59CB;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x88AB;&#x79F0;&#x4F5C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x53EA;&#x8981;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x88AB;&#x521B;&#x5EFA;&#xFF0C;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x540D;&#x5B57;&#x548C;&#x7C7B;&#x540D;&#x76F8;&#x540C;&#xFF0C;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#xFF0C;&#x4E14;&#x4E0D;&#x80FD;&#x88AB;&#x58F0;&#x660E;&#x4E3A;<code>const</code>&#x51FD;&#x6570;&#x3002;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5728;<code>const</code>&#x5BF9;&#x8C61;&#x7684;&#x6784;&#x9020;&#x8FC7;&#x7A0B;&#x4E2D;&#x53EF;&#x4EE5;&#x5411;&#x5176;&#x5199;&#x503C;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">struct Sales_data 
+{
+    // constructors added
+    Sales_data() = default;
+    Sales_data(const std::string &amp;s): bookNo(s) { }
+    Sales_data(const std::string &amp;s, unsigned n, double p):
+        bookNo(s), units_sold(n), revenue(p*n) { }
+    Sales_data(std::istream &amp;);
+    // other members as before
+};
+</code></pre>
+<p>&#x7C7B;&#x901A;&#x8FC7;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;default constructor&#xFF09;&#x6765;&#x63A7;&#x5236;&#x9ED8;&#x8BA4;&#x521D;&#x59CB;&#x5316;&#x8FC7;&#x7A0B;&#xFF0C;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65E0;&#x987B;&#x4EFB;&#x4F55;&#x5B9E;&#x53C2;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7C7B;&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x5730;&#x5B9A;&#x4E49;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x4E3A;&#x7C7B;&#x9690;&#x5F0F;&#x5730;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E5F;&#x88AB;&#x79F0;&#x4E3A;&#x5408;&#x6210;&#x7684;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;synthesized default constructor&#xFF09;&#x3002;&#x5BF9;&#x4E8E;&#x5927;&#x591A;&#x6570;&#x7C7B;&#x6765;&#x8BF4;&#xFF0C;&#x5408;&#x6210;&#x7684;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x6210;&#x5458;&#x7684;&#x89C4;&#x5219;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x5B58;&#x5728;&#x7C7B;&#x5185;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x5219;&#x7528;&#x5B83;&#x6765;&#x521D;&#x59CB;&#x5316;&#x6210;&#x5458;&#x3002;</li>
+<li>&#x5426;&#x5219;&#x9ED8;&#x8BA4;&#x521D;&#x59CB;&#x5316;&#x8BE5;&#x6210;&#x5458;&#x3002;</li>
+</ul>
+<p>&#x67D0;&#x4E9B;&#x7C7B;&#x4E0D;&#x80FD;&#x4F9D;&#x8D56;&#x4E8E;&#x5408;&#x6210;&#x7684;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<ul>
+<li>&#x53EA;&#x6709;&#x5F53;&#x7C7B;&#x6CA1;&#x6709;&#x58F0;&#x660E;&#x4EFB;&#x4F55;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x624D;&#x4F1A;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x4E00;&#x65E6;&#x7C7B;&#x5B9A;&#x4E49;&#x4E86;&#x5176;&#x4ED6;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x9664;&#x975E;&#x518D;&#x663E;&#x5F0F;&#x5730;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5426;&#x5219;&#x7C7B;&#x5C06;&#x6CA1;&#x6709;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x7C7B;&#x5305;&#x542B;&#x5185;&#x7F6E;&#x7C7B;&#x578B;&#x6216;&#x8005;&#x590D;&#x5408;&#x7C7B;&#x578B;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x5219;&#x53EA;&#x6709;&#x5F53;&#x8FD9;&#x4E9B;&#x6210;&#x5458;&#x5168;&#x90E8;&#x5B58;&#x5728;&#x7C7B;&#x5185;&#x521D;&#x59CB;&#x503C;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x624D;&#x9002;&#x5408;&#x4F7F;&#x7528;&#x5408;&#x6210;&#x7684;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x5426;&#x5219;&#x7528;&#x6237;&#x5728;&#x521B;&#x5EFA;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x65F6;&#x5C31;&#x53EF;&#x80FD;&#x5F97;&#x5230;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x503C;&#x3002;</li>
+<li>&#x7F16;&#x8BD1;&#x5668;&#x4E0D;&#x80FD;&#x4E3A;&#x67D0;&#x4E9B;&#x7C7B;&#x5408;&#x6210;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x4F8B;&#x5982;&#x7C7B;&#x4E2D;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x5176;&#x4ED6;&#x7C7B;&#x7C7B;&#x578B;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x4E14;&#x8BE5;&#x7C7B;&#x578B;&#x6CA1;&#x6709;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x7F16;&#x8BD1;&#x5668;&#x5C06;&#x65E0;&#x6CD5;&#x521D;&#x59CB;&#x5316;&#x8BE5;&#x6210;&#x5458;&#x3002;</li>
+</ul>
+<p>&#x5728;C++11&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x7C7B;&#x9700;&#x8981;&#x9ED8;&#x8BA4;&#x7684;&#x51FD;&#x6570;&#x884C;&#x4E3A;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x53C2;&#x6570;&#x5217;&#x8868;&#x540E;&#x9762;&#x6DFB;&#x52A0;<code>=default</code>&#x6765;&#x8981;&#x6C42;&#x7F16;&#x8BD1;&#x5668;&#x751F;&#x6210;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x5176;&#x4E2D;<code>=default</code>&#x65E2;&#x53EF;&#x4EE5;&#x548C;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E00;&#x8D77;&#x51FA;&#x73B0;&#x5728;&#x7C7B;&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x5B9A;&#x4E49;&#x51FA;&#x73B0;&#x5728;&#x7C7B;&#x7684;&#x5916;&#x90E8;&#x3002;&#x548C;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x4E00;&#x6837;&#xFF0C;&#x5982;&#x679C;<code>=default</code>&#x5728;&#x7C7B;&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x662F;&#x5185;&#x8054;&#x7684;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">Sales_data() = default;
+</code></pre>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x503C;&#x5217;&#x8868;&#xFF08;constructor initializer list&#xFF09;&#x8D1F;&#x8D23;&#x4E3A;&#x65B0;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x51E0;&#x4E2A;&#x6570;&#x636E;&#x6210;&#x5458;&#x8D4B;&#x521D;&#x59CB;&#x503C;&#x3002;&#x5F62;&#x5F0F;&#x662F;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x540D;&#x5B57;&#x540E;&#x9762;&#x7D27;&#x8DDF;&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;&#x7684;&#xFF08;&#x6216;&#x8005;&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x5185;&#x7684;&#xFF09;&#x6210;&#x5458;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x4E0D;&#x540C;&#x6210;&#x5458;&#x7684;&#x521D;&#x59CB;&#x503C;&#x901A;&#x8FC7;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">Sales_data(const std::string &amp;s): bookNo(s) { }
+Sales_data(const std::string &amp;s, unsigned n, double p):
+    bookNo(s), units_sold(n), revenue(p*n) { }
+</code></pre>
+<p>&#x5F53;&#x67D0;&#x4E2A;&#x6570;&#x636E;&#x6210;&#x5458;&#x88AB;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x503C;&#x5217;&#x8868;&#x5FFD;&#x7565;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x4EE5;&#x4E0E;&#x5408;&#x6210;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x9690;&#x5F0F;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// has the same behavior as the original constructor defined above
+Sales_data(const std::string &amp;s):
+    bookNo(s), units_sold(0), revenue(0) { }
+</code></pre>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0D;&#x5E94;&#x8BE5;&#x8F7B;&#x6613;&#x8986;&#x76D6;&#x6389;&#x7C7B;&#x5185;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x9664;&#x975E;&#x65B0;&#x503C;&#x4E0E;&#x539F;&#x503C;&#x4E0D;&#x540C;&#x3002;&#x5982;&#x679C;&#x7F16;&#x8BD1;&#x5668;&#x4E0D;&#x652F;&#x6301;&#x7C7B;&#x5185;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x5219;&#x6240;&#x6709;&#x6784;&#x9020;&#x51FD;&#x6570;&#x90FD;&#x5E94;&#x8BE5;&#x663E;&#x5F0F;&#x521D;&#x59CB;&#x5316;&#x6BCF;&#x4E2A;&#x5185;&#x7F6E;&#x7C7B;&#x578B;&#x7684;&#x6210;&#x5458;&#x3002; </p>
+<h3 id="&#x62F7;&#x8D1D;&#x3001;&#x8D4B;&#x503C;&#x548C;&#x6790;&#x6784;&#xFF08;copy&#x3001;assignment&#xFF0C;and-destruction&#xFF09;"><a name="&#x62F7;&#x8D1D;&#x3001;&#x8D4B;&#x503C;&#x548C;&#x6790;&#x6784;&#xFF08;copy&#x3001;assignment&#xFF0C;and-destruction&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x62F7;&#x8D1D;&#x3001;&#x8D4B;&#x503C;&#x548C;&#x6790;&#x6784;&#xFF08;copy&#x3001;assignment&#xFF0C;and-destruction&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x62F7;&#x8D1D;&#x3001;&#x8D4B;&#x503C;&#x548C;&#x6790;&#x6784;&#xFF08;Copy&#x3001;Assignment&#xFF0C;and Destruction&#xFF09;</h3>
+<p>&#x7F16;&#x8BD1;&#x5668;&#x80FD;&#x5408;&#x6210;&#x62F7;&#x8D1D;&#x3001;&#x8D4B;&#x503C;&#x548C;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x67D0;&#x4E9B;&#x7C7B;&#x6765;&#x8BF4;&#x5408;&#x6210;&#x7684;&#x7248;&#x672C;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;&#x7279;&#x522B;&#x662F;&#x5F53;&#x7C7B;&#x9700;&#x8981;&#x5206;&#x914D;&#x7C7B;&#x5BF9;&#x8C61;&#x4E4B;&#x5916;&#x7684;&#x8D44;&#x6E90;&#x65F6;&#xFF0C;&#x5408;&#x6210;&#x7684;&#x7248;&#x672C;&#x901A;&#x5E38;&#x4F1A;&#x5931;&#x6548;&#x3002;</p>
+<h2 id="&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x4E0E;&#x5C01;&#x88C5;&#xFF08;access-control-and-encapsulation&#xFF09;"><a name="&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x4E0E;&#x5C01;&#x88C5;&#xFF08;access-control-and-encapsulation&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x4E0E;&#x5C01;&#x88C5;&#xFF08;access-control-and-encapsulation&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x4E0E;&#x5C01;&#x88C5;&#xFF08;Access Control and Encapsulation&#xFF09;</h2>
+<p>&#x4F7F;&#x7528;&#x8BBF;&#x95EE;&#x8BF4;&#x660E;&#x7B26;&#xFF08;access specifier&#xFF09;&#x53EF;&#x4EE5;&#x52A0;&#x5F3A;&#x7C7B;&#x7684;&#x5C01;&#x88C5;&#x6027;&#xFF1A;</p>
+<ul>
+<li>&#x5B9A;&#x4E49;&#x5728;<code>public</code>&#x8BF4;&#x660E;&#x7B26;&#x4E4B;&#x540E;&#x7684;&#x6210;&#x5458;&#x5728;&#x6574;&#x4E2A;&#x7A0B;&#x5E8F;&#x5185;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x8BBF;&#x95EE;&#x3002;<code>public</code>&#x6210;&#x5458;&#x5B9A;&#x4E49;&#x7C7B;&#x7684;&#x63A5;&#x53E3;&#x3002;</li>
+<li>&#x5B9A;&#x4E49;&#x5728;<code>private</code>&#x8BF4;&#x660E;&#x7B26;&#x4E4B;&#x540E;&#x7684;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x88AB;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x8BBF;&#x95EE;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x88AB;&#x4F7F;&#x7528;&#x8BE5;&#x7C7B;&#x7684;&#x4EE3;&#x7801;&#x8BBF;&#x95EE;&#x3002;<code>private</code>&#x90E8;&#x5206;&#x5C01;&#x88C5;&#x4E86;&#x7C7B;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x3002;</li>
+</ul>
+<pre class="language-"><code class="lang-c++">class Sales_data 
+{
+public: // access specifier added
+    Sales_data() = default;
+    Sales_data(const std::string &amp;s, unsigned n, double p):
+    bookNo(s), units_sold(n), revenue(p*n) { }
+    Sales_data(const std::string &amp;s): bookNo(s) { }
+    Sales_data(std::istream&amp;);
+    std::string isbn() const { return bookNo; }
+    Sales_data &amp;combine(const Sales_data&amp;);
+
+private: // access specifier added
+    double avg_price() const { return units_sold ? revenue/units_sold : 0; }   
+    std::string bookNo;
+    unsigned units_sold = 0;
+    double revenue = 0.0;
+};
+</code></pre>
+<p>&#x4E00;&#x4E2A;&#x7C7B;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x96F6;&#x6216;&#x591A;&#x4E2A;&#x8BBF;&#x95EE;&#x8BF4;&#x660E;&#x7B26;&#xFF0C;&#x6BCF;&#x4E2A;&#x8BBF;&#x95EE;&#x8BF4;&#x660E;&#x7B26;&#x6307;&#x5B9A;&#x4E86;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x6210;&#x5458;&#x7684;&#x8BBF;&#x95EE;&#x7EA7;&#x522B;&#xFF0C;&#x5176;&#x6709;&#x6548;&#x8303;&#x56F4;&#x5230;&#x51FA;&#x73B0;&#x4E0B;&#x4E00;&#x4E2A;&#x8BBF;&#x95EE;&#x8BF4;&#x660E;&#x7B26;&#x6216;&#x7C7B;&#x7684;&#x7ED3;&#x5C3E;&#x5904;&#x4E3A;&#x6B62;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;<code>struct</code>&#x5B9A;&#x4E49;&#x7C7B;&#x65F6;&#xFF0C;&#x5B9A;&#x4E49;&#x5728;&#x7B2C;&#x4E00;&#x4E2A;&#x8BBF;&#x95EE;&#x8BF4;&#x660E;&#x7B26;&#x4E4B;&#x524D;&#x7684;&#x6210;&#x5458;&#x662F;<code>public</code>&#x7684;&#xFF1B;&#x800C;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;<code>class</code>&#x65F6;&#xFF0C;&#x8FD9;&#x4E9B;&#x6210;&#x5458;&#x662F;<code>private</code>&#x7684;&#x3002;&#x4E8C;&#x8005;&#x552F;&#x4E00;&#x7684;&#x533A;&#x522B;&#x5C31;&#x662F;&#x9ED8;&#x8BA4;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x4E0D;&#x540C;&#x3002;</p>
+<h3 id="&#x53CB;&#x5143;&#xFF08;friends&#xFF09;"><a name="&#x53CB;&#x5143;&#xFF08;friends&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x53CB;&#x5143;&#xFF08;friends&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53CB;&#x5143;&#xFF08;Friends&#xFF09;</h3>
+<p>&#x7C7B;&#x53EF;&#x4EE5;&#x5141;&#x8BB8;&#x5176;&#x4ED6;&#x7C7B;&#x6216;&#x51FD;&#x6570;&#x8BBF;&#x95EE;&#x5B83;&#x7684;&#x975E;&#x516C;&#x6709;&#x6210;&#x5458;&#xFF0C;&#x65B9;&#x6CD5;&#x662F;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;<code>friend</code>&#x5C06;&#x5176;&#x4ED6;&#x7C7B;&#x6216;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E3A;&#x5B83;&#x7684;&#x53CB;&#x5143;&#x3002;</p>
+<pre class="language-"><code class="lang-C++">class Sales_data 
+{
+    // friend declarations for nonmember Sales_data operations added
+    friend Sales_data add(const Sales_data&amp;, const Sales_data&amp;);
+    friend std::istream &amp;read(std::istream&amp;, Sales_data&amp;);
+    friend std::ostream &amp;print(std::ostream&amp;, const Sales_data&amp;);
+
+    // other members and access specifiers as before
+public:
+    Sales_data() = default;
+    Sales_data(const std::string &amp;s, unsigned n, double p):
+    bookNo(s), units_sold(n), revenue(p*n) { }
+    Sales_data(const std::string &amp;s): bookNo(s) { }
+    Sales_data(std::istream&amp;);
+    std::string isbn() const { return bookNo; }
+    Sales_data &amp;combine(const Sales_data&amp;);
+
+private:
+    std::string bookNo;
+    unsigned units_sold = 0;
+    double revenue = 0.0;
+};
+
+// declarations for nonmember parts of the Sales_data interface
+Sales_data add(const Sales_data&amp;, const Sales_data&amp;);
+std::istream &amp;read(std::istream&amp;, Sales_data&amp;);
+std::ostream &amp;print(std::ostream&amp;, const Sales_data&amp;);
+</code></pre>
+<p>&#x53CB;&#x5143;&#x58F0;&#x660E;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x5728;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x5177;&#x4F53;&#x4F4D;&#x7F6E;&#x4E0D;&#x9650;&#x3002;&#x53CB;&#x5143;&#x4E0D;&#x662F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x4E5F;&#x4E0D;&#x53D7;&#x5B83;&#x6240;&#x5728;&#x533A;&#x57DF;&#x8BBF;&#x95EE;&#x7EA7;&#x522B;&#x7684;&#x7EA6;&#x675F;&#x3002;</p>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6700;&#x597D;&#x5728;&#x7C7B;&#x5B9A;&#x4E49;&#x5F00;&#x59CB;&#x6216;&#x7ED3;&#x675F;&#x524D;&#x7684;&#x4F4D;&#x7F6E;&#x96C6;&#x4E2D;&#x58F0;&#x660E;&#x53CB;&#x5143;&#x3002;</p>
+<p>&#x5C01;&#x88C5;&#x7684;&#x597D;&#x5904;&#xFF1A;</p>
+<ul>
+<li>&#x786E;&#x4FDD;&#x7528;&#x6237;&#x4EE3;&#x7801;&#x4E0D;&#x4F1A;&#x65E0;&#x610F;&#x95F4;&#x7834;&#x574F;&#x5C01;&#x88C5;&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x3002;</li>
+<li>&#x88AB;&#x5C01;&#x88C5;&#x7684;&#x7C7B;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x53EF;&#x4EE5;&#x968F;&#x65F6;&#x6539;&#x53D8;&#xFF0C;&#x800C;&#x65E0;&#x987B;&#x8C03;&#x6574;&#x7528;&#x6237;&#x7EA7;&#x522B;&#x7684;&#x4EE3;&#x7801;&#x3002;</li>
+</ul>
+<p>&#x53CB;&#x5143;&#x58F0;&#x660E;&#x4EC5;&#x4EC5;&#x6307;&#x5B9A;&#x4E86;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#xFF0C;&#x800C;&#x5E76;&#x975E;&#x4E00;&#x4E2A;&#x901A;&#x5E38;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x3002;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x7C7B;&#x7684;&#x7528;&#x6237;&#x80FD;&#x8C03;&#x7528;&#x67D0;&#x4E2A;&#x53CB;&#x5143;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x5728;&#x53CB;&#x5143;&#x58F0;&#x660E;&#x4E4B;&#x5916;&#x518D;&#x4E13;&#x95E8;&#x5BF9;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x58F0;&#x660E;&#xFF08;&#x90E8;&#x5206;&#x7F16;&#x8BD1;&#x5668;&#x6CA1;&#x6709;&#x8BE5;&#x9650;&#x5236;&#xFF09;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x4F7F;&#x53CB;&#x5143;&#x5BF9;&#x7C7B;&#x7684;&#x7528;&#x6237;&#x53EF;&#x89C1;&#xFF0C;&#x901A;&#x5E38;&#x4F1A;&#x628A;&#x53CB;&#x5143;&#x7684;&#x58F0;&#x660E;&#xFF08;&#x7C7B;&#x7684;&#x5916;&#x90E8;&#xFF09;&#x4E0E;&#x7C7B;&#x672C;&#x8EAB;&#x653E;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5934;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<h2 id="&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x7279;&#x6027;&#xFF08;additional-class-features&#xFF09;"><a name="&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x7279;&#x6027;&#xFF08;additional-class-features&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x7279;&#x6027;&#xFF08;additional-class-features&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x7279;&#x6027;&#xFF08;Additional Class Features&#xFF09;</h2>
+<h3 id="&#x7C7B;&#x6210;&#x5458;&#x518D;&#x63A2;&#xFF08;class-members-revisited&#xFF09;"><a name="&#x7C7B;&#x6210;&#x5458;&#x518D;&#x63A2;&#xFF08;class-members-revisited&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x6210;&#x5458;&#x518D;&#x63A2;&#xFF08;class-members-revisited&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x6210;&#x5458;&#x518D;&#x63A2;&#xFF08;Class Members Revisited&#xFF09;</h3>
+<p>&#x7531;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x578B;&#x540D;&#x5B57;&#x548C;&#x5176;&#x4ED6;&#x6210;&#x5458;&#x4E00;&#x6837;&#x5B58;&#x5728;&#x8BBF;&#x95EE;&#x9650;&#x5236;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;<code>public</code>&#x6216;<code>private</code>&#x4E2D;&#x7684;&#x4E00;&#x79CD;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Screen 
+{
+public:
+    // alternative way to declare a type member using a type alias
+    using pos = std::string::size_type;
+    // other members as before
+};
+</code></pre>
+<p>&#x4E0E;&#x666E;&#x901A;&#x6210;&#x5458;&#x4E0D;&#x540C;&#xFF0C;&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x7684;&#x6210;&#x5458;&#x5FC5;&#x987B;&#x5148;&#x5B9A;&#x4E49;&#x540E;&#x4F7F;&#x7528;&#x3002;&#x7C7B;&#x578B;&#x6210;&#x5458;&#x901A;&#x5E38;&#x4F4D;&#x4E8E;&#x7C7B;&#x8D77;&#x59CB;&#x5904;&#x3002;</p>
+<p>&#x5B9A;&#x4E49;&#x5728;&#x7C7B;&#x5185;&#x90E8;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x662F;&#x81EA;&#x52A8;&#x5185;&#x8054;&#x7684;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x663E;&#x5F0F;&#x58F0;&#x660E;&#x5185;&#x8054;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x5EFA;&#x8BAE;&#x53EA;&#x5728;&#x7C7B;&#x5916;&#x90E8;&#x5B9A;&#x4E49;&#x7684;&#x4F4D;&#x7F6E;&#x8BF4;&#x660E;<code>inline</code>&#x3002;</p>
+<p><code>inline</code>&#x6210;&#x5458;&#x51FD;&#x6570;&#x8BE5;&#x4E0E;&#x7C7B;&#x5B9A;&#x4E49;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5934;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;<code>mutable</code>&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x53EF;&#x53D8;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF08;mutable data member&#xFF09;&#x3002;&#x53EF;&#x53D8;&#x6570;&#x636E;&#x6210;&#x5458;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x662F;<code>const</code>&#x7684;&#xFF0C;&#x5373;&#x4F7F;&#x5B83;&#x5728;<code>const</code>&#x5BF9;&#x8C61;&#x5185;&#x3002;&#x56E0;&#x6B64;<code>const</code>&#x6210;&#x5458;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x53EF;&#x53D8;&#x6210;&#x5458;&#x7684;&#x503C;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Screen 
+{
+public:
+    void some_member() const;
+private:
+    mutable size_t access_ctr;  // may change even in a const object
+    // other members as before
+};
+
+void Screen::some_member() const
+{
+    ++access_ctr;   // keep a count of the calls to any member function
+    // whatever other work this member needs to do
+}
+</code></pre>
+<p>&#x63D0;&#x4F9B;&#x7C7B;&#x5185;&#x521D;&#x59CB;&#x503C;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;<code>=</code>&#x6216;&#x82B1;&#x62EC;&#x53F7;&#x5F62;&#x5F0F;&#x3002;</p>
+<h3 id="&#x8FD4;&#x56DE;this&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;functions-that-return-this&#xFF09;"><a name="&#x8FD4;&#x56DE;this&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;functions-that-return-this&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;this&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;functions-that-return-this&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD4;&#x56DE;*this&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF08;Functions That Return *this&#xFF09;</h3>
+<p><code>const</code>&#x6210;&#x5458;&#x51FD;&#x6570;&#x5982;&#x679C;&#x4EE5;&#x5F15;&#x7528;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;<code>*this</code>&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x662F;&#x5E38;&#x91CF;&#x5F15;&#x7528;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x533A;&#x5206;&#x6210;&#x5458;&#x51FD;&#x6570;&#x662F;&#x5426;&#x4E3A;<code>const</code>&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x91CD;&#x8F7D;&#x3002;&#x5728;&#x5E38;&#x91CF;&#x5BF9;&#x8C61;&#x4E0A;&#x53EA;&#x80FD;&#x8C03;&#x7528;<code>const</code>&#x7248;&#x672C;&#x7684;&#x51FD;&#x6570;&#xFF1B;&#x5728;&#x975E;&#x5E38;&#x91CF;&#x5BF9;&#x8C61;&#x4E0A;&#xFF0C;&#x5C3D;&#x7BA1;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#x90FD;&#x80FD;&#x8C03;&#x7528;&#xFF0C;&#x4F46;&#x4F1A;&#x9009;&#x62E9;&#x975E;&#x5E38;&#x91CF;&#x7248;&#x672C;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Screen 
+{
+public:
+    // display overloaded on whether the object is const or not
+    Screen &amp;display(std::ostream &amp;os)
+    { do_display(os); return *this; }
+    const Screen &amp;display(std::ostream &amp;os) const
+    { do_display(os); return *this; }
+
+private:
+    // function to do the work of displaying a Screen
+    void do_display(std::ostream &amp;os) const
+    { os &lt;&lt; contents; }
+    // other members as before
+};
+
+Screen myScreen(5,3);
+const Screen blank(5, 3);
+myScreen.set(&apos;#&apos;).display(cout);    // calls non const version
+blank.display(cout);    // calls const version
+</code></pre>
+<h3 id="&#x7C7B;&#x7C7B;&#x578B;&#xFF08;class-types&#xFF09;"><a name="&#x7C7B;&#x7C7B;&#x578B;&#xFF08;class-types&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x7C7B;&#x578B;&#xFF08;class-types&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x7C7B;&#x578B;&#xFF08;Class Types&#xFF09;</h3>
+<p>&#x6BCF;&#x4E2A;&#x7C7B;&#x5B9A;&#x4E49;&#x4E86;&#x552F;&#x4E00;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x5373;&#x4F7F;&#x4E24;&#x4E2A;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x5217;&#x8868;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#xFF0C;&#x5B83;&#x4EEC;&#x4E5F;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x4EC5;&#x4EC5;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x7C7B;&#x800C;&#x6682;&#x65F6;&#x4E0D;&#x5B9A;&#x4E49;&#x5B83;&#x3002;&#x8FD9;&#x79CD;&#x58F0;&#x660E;&#x88AB;&#x79F0;&#x4F5C;&#x524D;&#x5411;&#x58F0;&#x660E;&#xFF08;forward declaration&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x5F15;&#x5165;&#x7C7B;&#x7684;&#x540D;&#x5B57;&#x3002;&#x5728;&#x7C7B;&#x58F0;&#x660E;&#x4E4B;&#x540E;&#x5B9A;&#x4E49;&#x4E4B;&#x524D;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x5B8C;&#x5168;&#x7C7B;&#x578B;&#xFF08;incomplete type&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Screen;   // declaration of the Screen class
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x6307;&#x5411;&#x4E0D;&#x5B8C;&#x5168;&#x7C7B;&#x578B;&#x7684;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#xFF08;&#x4E0D;&#x80FD;&#x5B9A;&#x4E49;&#xFF09;&#x4EE5;&#x4E0D;&#x5B8C;&#x5168;&#x7C7B;&#x578B;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x6216;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x53EA;&#x6709;&#x5F53;&#x7C7B;&#x5168;&#x90E8;&#x5B8C;&#x6210;&#x540E;&#x624D;&#x7B97;&#x88AB;&#x5B9A;&#x4E49;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x7C7B;&#x578B;&#x4E0D;&#x80FD;&#x662F;&#x8BE5;&#x7C7B;&#x672C;&#x8EAB;&#x3002;&#x4F46;&#x662F;&#x4E00;&#x65E6;&#x7C7B;&#x7684;&#x540D;&#x5B57;&#x51FA;&#x73B0;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x58F0;&#x660E;&#x8FC7;&#x4E86;&#xFF0C;&#x56E0;&#x6B64;&#x7C7B;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x6307;&#x5411;&#x5B83;&#x81EA;&#x8EAB;&#x7C7B;&#x578B;&#x7684;&#x5F15;&#x7528;&#x6216;&#x6307;&#x9488;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Link_screen
+{
+    Screen window;
+    Link_screen *next;
+    Link_screen *prev;
+};
+</code></pre>
+<h3 id="&#x53CB;&#x5143;&#x518D;&#x63A2;&#xFF08;friendship-revisited&#xFF09;"><a name="&#x53CB;&#x5143;&#x518D;&#x63A2;&#xFF08;friendship-revisited&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x53CB;&#x5143;&#x518D;&#x63A2;&#xFF08;friendship-revisited&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53CB;&#x5143;&#x518D;&#x63A2;&#xFF08;Friendship Revisited&#xFF09;</h3>
+<p>&#x9664;&#x4E86;&#x666E;&#x901A;&#x51FD;&#x6570;&#xFF0C;&#x7C7B;&#x8FD8;&#x53EF;&#x4EE5;&#x628A;&#x5176;&#x4ED6;&#x7C7B;&#x6216;&#x5176;&#x4ED6;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E3A;&#x53CB;&#x5143;&#x3002;&#x53CB;&#x5143;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x6B64;&#x7C7B;&#x5305;&#x62EC;&#x975E;&#x516C;&#x6709;&#x6210;&#x5458;&#x5728;&#x5185;&#x7684;&#x6240;&#x6709;&#x6210;&#x5458;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Screen 
+{
+    // Window_mgr members can access the private parts of class Screen
+    friend class Window_mgr;
+    // ... rest of the Screen class
+};
+</code></pre>
+<p>&#x53CB;&#x5143;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5B9A;&#x4E49;&#x5728;&#x7C7B;&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x8FD9;&#x79CD;&#x51FD;&#x6570;&#x662F;&#x9690;&#x5F0F;&#x5185;&#x8054;&#x7684;&#x3002;&#x4F46;&#x662F;&#x5FC5;&#x987B;&#x5728;&#x7C7B;&#x5916;&#x90E8;&#x63D0;&#x4F9B;&#x76F8;&#x5E94;&#x58F0;&#x660E;&#x4EE4;&#x51FD;&#x6570;&#x53EF;&#x89C1;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">struct X
+{
+    friend void f() { /* friend function can be defined in the class body */ }
+    X() { f(); }   // error: no declaration for f
+    void g();
+    void h();
+};
+
+void X::g() { return f(); }     // error: f hasn&apos;t been declared
+void f();   // declares the function defined inside X
+void X::h() { return f(); }     // ok: declaration for f is now in scope
+</code></pre>
+<p>&#x53CB;&#x5143;&#x5173;&#x7CFB;&#x4E0D;&#x5B58;&#x5728;&#x4F20;&#x9012;&#x6027;&#x3002;</p>
+<p>&#x628A;&#x5176;&#x4ED6;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E3A;&#x53CB;&#x5143;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x660E;&#x786E;&#x6307;&#x5B9A;&#x8BE5;&#x51FD;&#x6570;&#x6240;&#x5C5E;&#x7684;&#x7C7B;&#x540D;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Screen
+{
+    // Window_mgr::clear must have been declared before class Screen
+    friend void Window_mgr::clear(ScreenIndex);
+    // ... rest of the Screen class
+};
+</code></pre>
+<p>&#x5982;&#x679C;&#x7C7B;&#x60F3;&#x628A;&#x4E00;&#x7EC4;&#x91CD;&#x8F7D;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E3A;&#x53CB;&#x5143;&#xFF0C;&#x9700;&#x8981;&#x5BF9;&#x8FD9;&#x7EC4;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5206;&#x522B;&#x58F0;&#x660E;&#x3002;</p>
+<h2 id="&#x7C7B;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF08;class-scope&#xFF09;"><a name="&#x7C7B;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF08;class-scope&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF08;class-scope&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF08;Class Scope&#xFF09;</h2>
+<p>&#x5F53;&#x6210;&#x5458;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x5728;&#x7C7B;&#x5916;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x540D;&#x5B57;&#x4F4D;&#x4E8E;&#x7C7B;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E4B;&#x5916;&#xFF0C;&#x6B64;&#x65F6;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x6307;&#x660E;&#x5B83;&#x662F;&#x54EA;&#x4E2A;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Window_mgr
+{
+public:
+    // add a Screen to the window and returns its index
+    ScreenIndex addScreen(const Screen&amp;);
+    // other members as before
+};
+
+// return type is seen before we&apos;re in the scope of Window_mgr
+Window_mgr::ScreenIndex Window_mgr::addScreen(const Screen &amp;s)
+{
+    screens.push_back(s);
+    return screens.size() - 1;
+}
+</code></pre>
+<h3 id="&#x540D;&#x5B57;&#x67E5;&#x627E;&#x4E0E;&#x4F5C;&#x7528;&#x57DF;&#xFF08;name-lookup-and-class-scope&#xFF09;"><a name="&#x540D;&#x5B57;&#x67E5;&#x627E;&#x4E0E;&#x4F5C;&#x7528;&#x57DF;&#xFF08;name-lookup-and-class-scope&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x540D;&#x5B57;&#x67E5;&#x627E;&#x4E0E;&#x4F5C;&#x7528;&#x57DF;&#xFF08;name-lookup-and-class-scope&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x540D;&#x5B57;&#x67E5;&#x627E;&#x4E0E;&#x4F5C;&#x7528;&#x57DF;&#xFF08;Name Lookup and Class Scope&#xFF09;</h3>
+<p>&#x6210;&#x5458;&#x51FD;&#x6570;&#x4F53;&#x76F4;&#x5230;&#x6574;&#x4E2A;&#x7C7B;&#x53EF;&#x89C1;&#x540E;&#x624D;&#x4F1A;&#x88AB;&#x5904;&#x7406;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x80FD;&#x4F7F;&#x7528;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x4EFB;&#x4F55;&#x540D;&#x5B57;&#x3002;</p>
+<p>&#x58F0;&#x660E;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x5305;&#x62EC;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x6216;&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF0C;&#x90FD;&#x5FC5;&#x987B;&#x786E;&#x4FDD;&#x4F7F;&#x7528;&#x524D;&#x53EF;&#x89C1;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x4F7F;&#x7528;&#x4E86;&#x5916;&#x5C42;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x67D0;&#x4E2A;&#x540D;&#x5B57;&#xFF0C;&#x800C;&#x8BE5;&#x540D;&#x5B57;&#x8868;&#x793A;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#xFF0C;&#x5219;&#x7C7B;&#x4E0D;&#x80FD;&#x5728;&#x4E4B;&#x540E;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#x8BE5;&#x540D;&#x5B57;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">typedef double Money;
+class Account
+{
+public:
+    Money balance() { return bal; } // uses Money from the outer scop
+private:
+    typedef double Money; // error: cannot redefine Money
+    Money bal;
+    // ...
+};
+</code></pre>
+<p>&#x7C7B;&#x578B;&#x540D;&#x5B9A;&#x4E49;&#x901A;&#x5E38;&#x51FA;&#x73B0;&#x5728;&#x7C7B;&#x8D77;&#x59CB;&#x5904;&#xFF0C;&#x8FD9;&#x6837;&#x80FD;&#x786E;&#x4FDD;&#x6240;&#x6709;&#x4F7F;&#x7528;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x6210;&#x5458;&#x90FD;&#x4F4D;&#x4E8E;&#x7C7B;&#x578B;&#x540D;&#x5B9A;&#x4E49;&#x4E4B;&#x540E;&#x3002;</p>
+<p>&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E2D;&#x540D;&#x5B57;&#x7684;&#x89E3;&#x6790;&#x987A;&#x5E8F;&#xFF1A;</p>
+<ul>
+<li>&#x5728;&#x6210;&#x5458;&#x51FD;&#x6570;&#x5185;&#x67E5;&#x627E;&#x8BE5;&#x540D;&#x5B57;&#x7684;&#x58F0;&#x660E;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#x51FA;&#x73B0;&#x7684;&#x58F0;&#x660E;&#x624D;&#x4F1A;&#x88AB;&#x8003;&#x8651;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x5728;&#x6210;&#x5458;&#x51FD;&#x6570;&#x5185;&#x6CA1;&#x6709;&#x627E;&#x5230;&#xFF0C;&#x5219;&#x4F1A;&#x5728;&#x7C7B;&#x5185;&#x7EE7;&#x7EED;&#x67E5;&#x627E;&#xFF0C;&#x8FD9;&#x65F6;&#x4F1A;&#x8003;&#x8651;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x6210;&#x5458;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x7C7B;&#x5185;&#x4E5F;&#x6CA1;&#x6709;&#x627E;&#x5230;&#xFF0C;&#x4F1A;&#x5728;&#x6210;&#x5458;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x4E4B;&#x524D;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x67E5;&#x627E;&#x3002;</li>
+</ul>
+<pre class="language-"><code class="lang-c++">// it is generally a bad idea to use the same name for a parameter and a member
+int height;   // defines a name subsequently used inside Screen
+class Screen
+{
+public:
+    typedef std::string::size_type pos;
+    void dummy_fcn(pos height)
+    {
+        cursor = width * height;  // which height? the parameter
+    }
+
+private:
+    pos cursor = 0;
+    pos height = 0, width = 0;
+};
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F5C;&#x7528;&#x57DF;&#x8FD0;&#x7B97;&#x7B26;<code>::</code>&#x6216;&#x663E;&#x5F0F;<code>this</code>&#x6307;&#x9488;&#x6765;&#x5F3A;&#x5236;&#x8BBF;&#x95EE;&#x88AB;&#x9690;&#x85CF;&#x7684;&#x7C7B;&#x6210;&#x5458;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// bad practice: names local to member functions shouldn&apos;t hide member names
+void Screen::dummy_fcn(pos height)
+{
+    cursor = width * this-&gt;height;  // member height
+    // alternative way to indicate the member
+    cursor = width * Screen::height;  // member height
+}
+
+// good practice: don&apos;t use a member name for a parameter or other local variable
+void Screen::dummy_fcn(pos ht)
+{
+    cursor = width * height;  // member height
+}
+</code></pre>
+<h2 id="&#x6784;&#x9020;&#x51FD;&#x6570;&#x518D;&#x63A2;&#xFF08;constructors-revisited&#xFF09;"><a name="&#x6784;&#x9020;&#x51FD;&#x6570;&#x518D;&#x63A2;&#xFF08;constructors-revisited&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6784;&#x9020;&#x51FD;&#x6570;&#x518D;&#x63A2;&#xFF08;constructors-revisited&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6784;&#x9020;&#x51FD;&#x6570;&#x518D;&#x63A2;&#xFF08;Constructors Revisited&#xFF09;</h2>
+<h3 id="&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x503C;&#x5217;&#x8868;&#xFF08;constructor-initializer-list&#xFF09;"><a name="&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x503C;&#x5217;&#x8868;&#xFF08;constructor-initializer-list&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x503C;&#x5217;&#x8868;&#xFF08;constructor-initializer-list&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x503C;&#x5217;&#x8868;&#xFF08;Constructor Initializer List&#xFF09;</h3>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x503C;&#x5217;&#x8868;&#x4E2D;&#x663E;&#x5F0F;&#x521D;&#x59CB;&#x5316;&#x6210;&#x5458;&#xFF0C;&#x8BE5;&#x6210;&#x5458;&#x4F1A;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4F53;&#x4E4B;&#x524D;&#x6267;&#x884C;&#x9ED8;&#x8BA4;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6210;&#x5458;&#x662F;<code>const</code>&#x3001;&#x5F15;&#x7528;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x67D0;&#x79CD;&#x672A;&#x5B9A;&#x4E49;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x7C7B;&#x7C7B;&#x578B;&#xFF0C;&#x5FC5;&#x987B;&#x5728;&#x521D;&#x59CB;&#x503C;&#x5217;&#x8868;&#x4E2D;&#x5C06;&#x5176;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class ConstRef
+{
+public:
+    ConstRef(int ii);
+private:
+    int i;
+    const int ci;
+    int <span class="token entity named-entity" title="&amp;ri;">&amp;ri;</span>
+};
+
+// ok: explicitly initialize reference and const members
+ConstRef::ConstRef(int ii): i(ii), ci(ii), ri(i) { }
+</code></pre>
+<p>&#x6700;&#x597D;&#x4EE4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x503C;&#x7684;&#x987A;&#x5E8F;&#x4E0E;&#x6210;&#x5458;&#x58F0;&#x660E;&#x7684;&#x987A;&#x5E8F;&#x4E00;&#x81F4;&#xFF0C;&#x5E76;&#x4E14;&#x5C3D;&#x91CF;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x67D0;&#x4E9B;&#x6210;&#x5458;&#x521D;&#x59CB;&#x5316;&#x5176;&#x4ED6;&#x6210;&#x5458;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E3A;&#x6240;&#x6709;&#x53C2;&#x6570;&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x9ED8;&#x8BA4;&#x5B9E;&#x53C2;&#xFF0C;&#x5219;&#x5B83;&#x5B9E;&#x9645;&#x4E0A;&#x4E5F;&#x5B9A;&#x4E49;&#x4E86;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<h3 id="&#x59D4;&#x6258;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;delegating-constructors&#xFF09;"><a name="&#x59D4;&#x6258;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;delegating-constructors&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x59D4;&#x6258;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;delegating-constructors&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x59D4;&#x6258;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;Delegating Constructors&#xFF09;</h3>
+<p>C++11&#x6269;&#x5C55;&#x4E86;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x503C;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x59D4;&#x6258;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x59D4;&#x6258;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x5B83;&#x6240;&#x5C5E;&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6267;&#x884C;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x521D;&#x59CB;&#x5316;&#x8FC7;&#x7A0B;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Sales_data
+{
+public:
+    // defines the default constructor as well as one that takes a string argument
+    Sales_data(std::string s = &quot;&quot;): bookNo(s) { }
+    // remaining constructors unchanged
+    Sales_data(std::string s, unsigned cnt, double rev):
+        bookNo(s), units_sold(cnt), revenue(rev*cnt) { }
+    Sales_data(std::istream &amp;is) { read(is, *this); }
+    // remaining members as before
+}
+</code></pre>
+<h3 id="&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#xFF08;the-role-of-the-default-constructor&#xFF09;"><a name="&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#xFF08;the-role-of-the-default-constructor&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#xFF08;the-role-of-the-default-constructor&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#xFF08;The Role of the Default Constructor&#xFF09;</h3>
+<p>&#x5F53;&#x5BF9;&#x8C61;&#x88AB;&#x9ED8;&#x8BA4;&#x521D;&#x59CB;&#x5316;&#x6216;&#x503C;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x4F1A;&#x81EA;&#x52A8;&#x6267;&#x884C;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x521D;&#x59CB;&#x5316;&#x7684;&#x53D1;&#x751F;&#x60C5;&#x51B5;&#xFF1A;</p>
+<ul>
+<li>&#x5728;&#x5757;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x4E0D;&#x4F7F;&#x7528;&#x521D;&#x59CB;&#x503C;&#x5B9A;&#x4E49;&#x975E;&#x9759;&#x6001;&#x53D8;&#x91CF;&#x6216;&#x6570;&#x7EC4;&#x3002;</li>
+<li>&#x7C7B;&#x672C;&#x8EAB;&#x542B;&#x6709;&#x7C7B;&#x7C7B;&#x578B;&#x7684;&#x6210;&#x5458;&#x4E14;&#x4F7F;&#x7528;&#x5408;&#x6210;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x7C7B;&#x7C7B;&#x578B;&#x7684;&#x6210;&#x5458;&#x6CA1;&#x6709;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x503C;&#x5217;&#x8868;&#x4E2D;&#x663E;&#x5F0F;&#x521D;&#x59CB;&#x5316;&#x3002;</li>
+</ul>
+<p>&#x503C;&#x521D;&#x59CB;&#x5316;&#x7684;&#x53D1;&#x751F;&#x60C5;&#x51B5;&#xFF1A;</p>
+<ul>
+<li>&#x6570;&#x7EC4;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x63D0;&#x4F9B;&#x7684;&#x521D;&#x59CB;&#x503C;&#x6570;&#x91CF;&#x5C11;&#x4E8E;&#x6570;&#x7EC4;&#x5927;&#x5C0F;&#x3002;</li>
+<li>&#x4E0D;&#x4F7F;&#x7528;&#x521D;&#x59CB;&#x503C;&#x5B9A;&#x4E49;&#x5C40;&#x90E8;&#x9759;&#x6001;&#x53D8;&#x91CF;&#x3002;</li>
+<li>&#x901A;&#x8FC7;<code>T()</code>&#x5F62;&#x5F0F;&#xFF08;<em>T</em>&#x4E3A;&#x7C7B;&#x578B;&#xFF09;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x663E;&#x5F0F;&#x5730;&#x8BF7;&#x6C42;&#x503C;&#x521D;&#x59CB;&#x5316;&#x3002;</li>
+</ul>
+<p>&#x7C7B;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60F3;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5E94;&#x8BE5;&#x53BB;&#x6389;&#x5BF9;&#x8C61;&#x540D;&#x540E;&#x7684;&#x7A7A;&#x62EC;&#x53F7;&#x5BF9;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">Sales_data obj();   // oops! declares a function, not an object
+Sales_data obj2;    // ok: obj2 is an object, not a function
+</code></pre>
+<h3 id="&#x9690;&#x5F0F;&#x7684;&#x7C7B;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;implicit-class-type-conversions&#xFF09;"><a name="&#x9690;&#x5F0F;&#x7684;&#x7C7B;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;implicit-class-type-conversions&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x9690;&#x5F0F;&#x7684;&#x7C7B;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;implicit-class-type-conversions&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9690;&#x5F0F;&#x7684;&#x7C7B;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF08;Implicit Class-Type Conversions&#xFF09;</h3>
+<p>&#x5982;&#x679C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x53EA;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5B9E;&#x53C2;&#xFF0C;&#x5219;&#x5B83;&#x5B9E;&#x9645;&#x4E0A;&#x5B9A;&#x4E49;&#x4E86;&#x8F6C;&#x6362;&#x4E3A;&#x6B64;&#x7C7B;&#x7C7B;&#x578B;&#x7684;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#x673A;&#x5236;&#x3002;&#x8FD9;&#x79CD;&#x6784;&#x9020;&#x51FD;&#x6570;&#x88AB;&#x79F0;&#x4E3A;&#x8F6C;&#x6362;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;converting constructor&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">string null_book = &quot;9-999-99999-9&quot;;
+// constructs a temporary Sales_data object
+// with units_sold and revenue equal to 0 and bookNo equal to null_book
+item.combine(null_book);
+</code></pre>
+<p>&#x7F16;&#x8BD1;&#x5668;&#x53EA;&#x4F1A;&#x81EA;&#x52A8;&#x6267;&#x884C;&#x4E00;&#x6B65;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// error: requires two user-defined conversions:
+//   (1) convert &quot;9-999-99999-9&quot; to string
+//   (2) convert that (temporary) string to Sales_data
+item.combine(&quot;9-999-99999-9&quot;);
+// ok: explicit conversion to string, implicit conversion to Sales_data
+item.combine(string(&quot;9-999-99999-9&quot;));
+// ok: implicit conversion to string, explicit conversion to Sales_data
+item.combine(Sales_data(&quot;9-999-99999-9&quot;));
+</code></pre>
+<p>&#x5728;&#x8981;&#x6C42;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#x7684;&#x7A0B;&#x5E8F;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5C06;&#x6784;&#x9020;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E3A;<code>explicit</code>&#x7684;&#x52A0;&#x4EE5;&#x963B;&#x6B62;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Sales_data
+{
+public:
+    Sales_data() = default;
+    Sales_data(const std::string &amp;s, unsigned n, double p):
+        bookNo(s), units_sold(n), revenue(p*n) { }
+    explicit Sales_data(const std::string &amp;s): bookNo(s) { }
+    explicit Sales_data(std::istream&amp;);
+    // remaining members as before
+};
+</code></pre>
+<p><code>explicit</code>&#x5173;&#x952E;&#x5B57;&#x53EA;&#x5BF9;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5B9E;&#x53C2;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6709;&#x6548;&#x3002;</p>
+<p>&#x53EA;&#x80FD;&#x5728;&#x7C7B;&#x5185;&#x58F0;&#x660E;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65F6;&#x4F7F;&#x7528;<code>explicit</code>&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5728;&#x7C7B;&#x5916;&#x5B9A;&#x4E49;&#x65F6;&#x4E0D;&#x80FD;&#x91CD;&#x590D;&#x3002;</p>
+<p>&#x6267;&#x884C;&#x62F7;&#x8D1D;&#x521D;&#x59CB;&#x5316;&#x65F6;&#xFF08;&#x4F7F;&#x7528;<code>=</code>&#xFF09;&#x4F1A;&#x53D1;&#x751F;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#xFF0C;&#x6240;&#x4EE5;<code>explicit</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x76F4;&#x63A5;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">Sales_data item1 (null_book);   // ok: direct initialization
+// error: cannot use the copy form of initialization with an explicit constructor
+Sales_data item2 = null_book;
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>explicit</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#x663E;&#x5F0F;&#x5730;&#x5F3A;&#x5236;&#x8F6C;&#x6362;&#x7C7B;&#x578B;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// ok: the argument is an explicitly constructed Sales_data object
+item.combine(Sales_data(null_book));
+// ok: static_cast can use an explicit constructor
+item.combine(static_cast<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Sales_data</span><span class="token punctuation">&gt;</span></span>(cin));
+</code></pre>
+<h3 id="&#x805A;&#x5408;&#x7C7B;&#xFF08;aggregate-classes&#xFF09;"><a name="&#x805A;&#x5408;&#x7C7B;&#xFF08;aggregate-classes&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x805A;&#x5408;&#x7C7B;&#xFF08;aggregate-classes&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x805A;&#x5408;&#x7C7B;&#xFF08;Aggregate Classes&#xFF09;</h3>
+<p>&#x805A;&#x5408;&#x7C7B;&#x6EE1;&#x8DB3;&#x5982;&#x4E0B;&#x6761;&#x4EF6;&#xFF1A;</p>
+<ul>
+<li>&#x6240;&#x6709;&#x6210;&#x5458;&#x90FD;&#x662F;<code>public</code>&#x7684;&#x3002;</li>
+<li>&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#x4EFB;&#x4F55;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x6CA1;&#x6709;&#x7C7B;&#x5185;&#x521D;&#x59CB;&#x503C;&#x3002;</li>
+<li>&#x6CA1;&#x6709;&#x57FA;&#x7C7B;&#x3002;</li>
+<li>&#x6CA1;&#x6709;&#x865A;&#x51FD;&#x6570;&#x3002;</li>
+</ul>
+<pre class="language-"><code class="lang-c++">struct Data
+{
+    int ival;
+    string s;
+};
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7528;&#x82B1;&#x62EC;&#x53F7;&#x5305;&#x56F4;&#x7684;&#x6210;&#x5458;&#x521D;&#x59CB;&#x503C;&#x5217;&#x8868;&#x521D;&#x59CB;&#x5316;&#x805A;&#x5408;&#x7C7B;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#x3002;&#x521D;&#x59CB;&#x503C;&#x987A;&#x5E8F;&#x5FC5;&#x987B;&#x4E0E;&#x58F0;&#x660E;&#x987A;&#x5E8F;&#x4E00;&#x81F4;&#x3002;&#x5982;&#x679C;&#x521D;&#x59CB;&#x503C;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x5C11;&#x4E8E;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x4E2A;&#x6570;&#xFF0C;&#x5219;&#x9760;&#x540E;&#x7684;&#x6210;&#x5458;&#x88AB;&#x503C;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// val1.ival = 0; val1.s = string(&quot;Anna&quot;)
+Data val1 = { 0, &quot;Anna&quot; };
+</code></pre>
+<h3 id="&#x5B57;&#x9762;&#x503C;&#x5E38;&#x91CF;&#x7C7B;&#xFF08;literal-classes&#xFF09;"><a name="&#x5B57;&#x9762;&#x503C;&#x5E38;&#x91CF;&#x7C7B;&#xFF08;literal-classes&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x9762;&#x503C;&#x5E38;&#x91CF;&#x7C7B;&#xFF08;literal-classes&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B57;&#x9762;&#x503C;&#x5E38;&#x91CF;&#x7C7B;&#xFF08;Literal Classes&#xFF09;</h3>
+<p>&#x6570;&#x636E;&#x6210;&#x5458;&#x90FD;&#x662F;&#x5B57;&#x9762;&#x503C;&#x7C7B;&#x578B;&#x7684;&#x805A;&#x5408;&#x7C7B;&#x662F;&#x5B57;&#x9762;&#x503C;&#x5E38;&#x91CF;&#x7C7B;&#x3002;&#x6216;&#x8005;&#x4E00;&#x4E2A;&#x7C7B;&#x4E0D;&#x662F;&#x805A;&#x5408;&#x7C7B;&#xFF0C;&#x4F46;&#x7B26;&#x5408;&#x4E0B;&#x5217;&#x6761;&#x4EF6;&#xFF0C;&#x5219;&#x4E5F;&#x662F;&#x5B57;&#x9762;&#x503C;&#x5E38;&#x91CF;&#x7C7B;&#xFF1A;</p>
+<ul>
+<li>&#x6570;&#x636E;&#x6210;&#x5458;&#x90FD;&#x662F;&#x5B57;&#x9762;&#x503C;&#x7C7B;&#x578B;&#x3002;</li>
+<li>&#x7C7B;&#x81F3;&#x5C11;&#x542B;&#x6709;&#x4E00;&#x4E2A;<code>constexpr</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x6570;&#x636E;&#x6210;&#x5458;&#x542B;&#x6709;&#x7C7B;&#x5185;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x5219;&#x5185;&#x7F6E;&#x7C7B;&#x578B;&#x6210;&#x5458;&#x7684;&#x521D;&#x59CB;&#x503C;&#x5FC5;&#x987B;&#x662F;&#x5E38;&#x91CF;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x5982;&#x679C;&#x6210;&#x5458;&#x5C5E;&#x4E8E;&#x7C7B;&#x7C7B;&#x578B;&#xFF0C;&#x5219;&#x521D;&#x59CB;&#x503C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x6210;&#x5458;&#x81EA;&#x5DF1;&#x7684;<code>constexpr</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x7C7B;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x6790;&#x6784;&#x51FD;&#x6570;&#x7684;&#x9ED8;&#x8BA4;&#x5B9A;&#x4E49;&#x3002;</li>
+</ul>
+<p><code>constexpr</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x751F;&#x6210;<code>constexpr</code>&#x5BF9;&#x8C61;&#x4EE5;&#x53CA;<code>constexpr</code>&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x6216;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x3002;</p>
+<p><code>constexpr</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x521D;&#x59CB;&#x5316;&#x6240;&#x6709;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x521D;&#x59CB;&#x503C;&#x4F7F;&#x7528;<code>constexpr</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#x6216;&#x5E38;&#x91CF;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</p>
+<h2 id="&#x7C7B;&#x7684;&#x9759;&#x6001;&#x6210;&#x5458;&#xFF08;static-class-members&#xFF09;"><a name="&#x7C7B;&#x7684;&#x9759;&#x6001;&#x6210;&#x5458;&#xFF08;static-class-members&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x7684;&#x9759;&#x6001;&#x6210;&#x5458;&#xFF08;static-class-members&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x7684;&#x9759;&#x6001;&#x6210;&#x5458;&#xFF08;static Class Members&#xFF09;</h2>
+<p>&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;<code>static</code>&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x7C7B;&#x7684;&#x9759;&#x6001;&#x6210;&#x5458;&#x3002;&#x9759;&#x6001;&#x6210;&#x5458;&#x5B58;&#x5728;&#x4E8E;&#x4EFB;&#x4F55;&#x5BF9;&#x8C61;&#x4E4B;&#x5916;&#xFF0C;&#x5BF9;&#x8C61;&#x4E2D;&#x4E0D;&#x5305;&#x542B;&#x4E0E;&#x9759;&#x6001;&#x6210;&#x5458;&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Account
+{
+public:
+    void calculate() { amount += amount * interestRate; }
+    static double rate() { return interestRate; }
+    static void rate(double);
+
+private:
+    std::string owner;
+    double amount;
+    static double interestRate;
+    static double initRate();
+};
+</code></pre>
+<p>&#x7531;&#x4E8E;&#x9759;&#x6001;&#x6210;&#x5458;&#x4E0D;&#x4E0E;&#x4EFB;&#x4F55;&#x5BF9;&#x8C61;&#x7ED1;&#x5B9A;&#xFF0C;&#x56E0;&#x6B64;&#x9759;&#x6001;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E0D;&#x80FD;&#x58F0;&#x660E;&#x4E3A;<code>const</code>&#x7684;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x5728;&#x9759;&#x6001;&#x6210;&#x5458;&#x51FD;&#x6570;&#x5185;&#x4F7F;&#x7528;<code>this</code>&#x6307;&#x9488;&#x3002;</p>
+<p>&#x7528;&#x6237;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4F5C;&#x7528;&#x57DF;&#x8FD0;&#x7B97;&#x7B26;&#x8BBF;&#x95EE;&#x9759;&#x6001;&#x6210;&#x5458;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7C7B;&#x5BF9;&#x8C61;&#x3001;&#x5F15;&#x7528;&#x6216;&#x6307;&#x9488;&#x8BBF;&#x95EE;&#x3002;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x9759;&#x6001;&#x6210;&#x5458;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">double r;
+r = Account::rate(); // access a static member using the scope operator
+
+Account ac1;
+Account *ac2 = <span class="token entity named-entity" title="&amp;ac1;">&amp;ac1;</span>
+// equivalent ways to call the static member rate function
+r = ac1.rate(); // through an Account object or reference
+r = ac2-&gt;rate(); // through a pointer to an Account object
+
+class Account
+{
+public:
+    void calculate() { amount += amount * interestRate; }
+private:
+    static double interestRate;
+    // remaining members as before
+};
+</code></pre>
+<p>&#x5728;&#x7C7B;&#x5916;&#x90E8;&#x5B9A;&#x4E49;&#x9759;&#x6001;&#x6210;&#x5458;&#x65F6;&#xFF0C;&#x4E0D;&#x80FD;&#x91CD;&#x590D;<code>static</code>&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5176;&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x7C7B;&#x5185;&#x90E8;&#x7684;&#x58F0;&#x660E;&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x9759;&#x6001;&#x6570;&#x636E;&#x6210;&#x5458;&#x4E0D;&#x5C5E;&#x4E8E;&#x7C7B;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x4EEC;&#x5E76;&#x4E0D;&#x662F;&#x5728;&#x521B;&#x5EFA;&#x7C7B;&#x5BF9;&#x8C61;&#x65F6;&#x88AB;&#x5B9A;&#x4E49;&#x7684;&#x3002;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E0D;&#x5E94;&#x8BE5;&#x5728;&#x7C7B;&#x5185;&#x90E8;&#x521D;&#x59CB;&#x5316;&#x9759;&#x6001;&#x6210;&#x5458;&#x3002;&#x800C;&#x5FC5;&#x987B;&#x5728;&#x7C7B;&#x5916;&#x90E8;&#x5B9A;&#x4E49;&#x5E76;&#x521D;&#x59CB;&#x5316;&#x6BCF;&#x4E2A;&#x9759;&#x6001;&#x6210;&#x5458;&#x3002;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x6210;&#x5458;&#x53EA;&#x80FD;&#x88AB;&#x5B9A;&#x4E49;&#x4E00;&#x6B21;&#x3002;&#x4E00;&#x65E6;&#x5B83;&#x88AB;&#x5B9A;&#x4E49;&#xFF0C;&#x5C31;&#x4F1A;&#x4E00;&#x76F4;&#x5B58;&#x5728;&#x4E8E;&#x7A0B;&#x5E8F;&#x7684;&#x6574;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">// define and initialize a static class member
+double Account::interestRate = initRate();
+</code></pre>
+<p>&#x5EFA;&#x8BAE;&#x628A;&#x9759;&#x6001;&#x6570;&#x636E;&#x6210;&#x5458;&#x7684;&#x5B9A;&#x4E49;&#x4E0E;&#x5176;&#x4ED6;&#x975E;&#x5185;&#x8054;&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x653E;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x6E90;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x5BF9;&#x8C61;&#x53EA;&#x88AB;&#x5B9A;&#x4E49;&#x4E00;&#x6B21;&#x3002;</p>
+<p>&#x5C3D;&#x7BA1;&#x5728;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E0D;&#x5E94;&#x8BE5;&#x5728;&#x7C7B;&#x5185;&#x90E8;&#x521D;&#x59CB;&#x5316;&#x9759;&#x6001;&#x6210;&#x5458;&#x3002;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x4E3A;&#x9759;&#x6001;&#x6210;&#x5458;&#x63D0;&#x4F9B;<code>const</code>&#x6574;&#x6570;&#x7C7B;&#x578B;&#x7684;&#x7C7B;&#x5185;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x4E0D;&#x8FC7;&#x8981;&#x6C42;&#x9759;&#x6001;&#x6210;&#x5458;&#x5FC5;&#x987B;&#x662F;&#x5B57;&#x9762;&#x503C;&#x5E38;&#x91CF;&#x7C7B;&#x578B;&#x7684;<code>constexpr</code>&#x3002;&#x521D;&#x59CB;&#x503C;&#x5FC5;&#x987B;&#x662F;&#x5E38;&#x91CF;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Account
+{
+public:
+    static double rate() { return interestRate; }
+    static void rate(double);
+private:
+    static constexpr int period = 30;  // period is a constant
+    double daily_tbl[period];
+};
+</code></pre>
+<p>&#x9759;&#x6001;&#x6570;&#x636E;&#x6210;&#x5458;&#x7684;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x662F;&#x5B83;&#x6240;&#x5C5E;&#x7684;&#x7C7B;&#x7C7B;&#x578B;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Bar
+{
+    static Bar mem1;   // ok: static member can have incomplete type
+    Bar *mem2;    // ok: pointer member can have incomplete type
+    Bar mem3;   // error: data members must have complete type
+}
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x9759;&#x6001;&#x6210;&#x5458;&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x53C2;&#x3002;</p>
+<pre class="language-"><code class="lang-c++">class Screen
+{
+public:
+    // bkground refers to the static member
+    // declared later in the class definition
+    Screen&amp; clear(char = bkground);
+private:
+    static const char bkground;
+};
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; bookins.cn 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-07-17 09:10:04
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Chapter-6 Functions/" class="navigation navigation-prev " aria-label="Previous page: Chapter 6 Functions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter-8 The IO Library/" class="navigation navigation-next " aria-label="Next page: Chapter 8 The IO Library">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 7 Classes","level":"1.8","depth":1,"next":{"title":"Chapter 8 The IO Library","level":"1.9","depth":1,"path":"Chapter-8 The IO Library/README.md","ref":"Chapter-8 The IO Library/README.md","articles":[]},"previous":{"title":"Chapter 6 Functions","level":"1.7","depth":1,"path":"Chapter-6 Functions/README.md","ref":"Chapter-6 Functions/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","chapter-fold","splitter","-sharing","github-buttons","tbfed-pagefooter","baidu-tongji","anchor-navigation-ex","summary"],"styles":{"website":"./public-repertory/css/gitbook-configure.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy bookins.cn 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"shell":"bash"}},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"55e7dfe47f4dc1c018d4042fdfa62565"},"summary":{},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"yao-yue","repo":"document-library","type":"star","count":true,"size":"small"},{"user":"yao-yue","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"yaoyue","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"yaoyue 的随笔","language":"zh-hans","gitbook":"*","description":"邀月的随笔，少即是多，简单"},"file":{"path":"Chapter-7 Classes/README.md","mtime":"2021-07-17T09:10:04.609Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-07-17T09:10:44.336Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
