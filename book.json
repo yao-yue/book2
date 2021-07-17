@@ -15,6 +15,7 @@
     "-search",
     "-lunr",
     "expandable-chapters",
+    "chapter-fold",
     "splitter",
     "-sharing",
     "github-buttons",
